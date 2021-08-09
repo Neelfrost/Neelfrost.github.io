@@ -1,0 +1,303 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	D:/My Folder/Dev/inner_monologue/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/6544786c/
+*	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.archive	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__group-month	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__group-month-header	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__group-month:not(:last-of-type)	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__group-posts	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__group-year	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__group-year-header	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__group-year:not(:last-of-type)	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__post	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__post-title	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.archive__post-title a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.archive__post:not(:last-of-type)	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.button+.button	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button-container	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button.link	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button.next .button__icon	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button.outline	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button.outline :hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.button.previous .button__icon	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button.primary	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button.primary:hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button.small	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button.wide	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.button__text	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.code-toolbar	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.code-toolbar .toolbar-item a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.collapsable-code .code-toolbar	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.collapsable-code code:first-line	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code input[type=checkbox]	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code input[type=checkbox] :checked~.code-toolbar	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.collapsable-code input[type=checkbox] :checked~.code-toolbar .toolbar	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.collapsable-code input[type=checkbox] :checked~.code-toolbar pre	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code input[type=checkbox] :checked~label	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code input[type=checkbox] :checked~label .collapsable-code__toggle:after	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.collapsable-code input[type=checkbox] :checked~pre	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code label	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code pre	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code pre:first-line	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.collapsable-code__language	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.collapsable-code__title	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.collapsable-code__toggle	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.collapsable-code__toggle:after	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.command-line-prompt	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.command-line-prompt>span:before	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.command-line-prompt>span[data-prompt] :before	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.command-line-prompt>span[data-user=root] :before	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.command-line-prompt>span[data-user] :before	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.container	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.content	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.copyright	style.css	/^.copyright {$/;"	c
+.footer	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.footer .copyright	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.footer .copyright--user	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.footer .copyright>:first-child:not(:only-child)	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.footer a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.footer__inner	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.framed	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.header	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.header__inner	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.header__right	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.hidden	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.line-numbers .line-numbers-rows	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.line-numbers-rows>span	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.line-numbers-rows>span:before	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.logo	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.logo img	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.logo__cursor	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.logo__cursor	style.css	/^.logo__cursor {$/;"	c
+.logo__mark	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.logo__mark .greater-icon	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.logo__mark .greater-icon path	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.logo__text	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.mdlink	style.css	/^.mdlink {$/;"	c
+.menu	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu .active	style.css	/^.menu .active {$/;"	c
+.menu a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.menu-trigger	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__inner	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__inner .menu__sub-inner-more li	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.menu__inner .menu__sub-inner-more li:hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.menu__inner li	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.menu__inner li:not(:first-of-type)	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.menu__inner--desktop	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__inner--mobile	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__sub-inner	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__sub-inner-more	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__sub-inner-more li a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.menu__sub-inner-more-trigger	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__sub-inner-more-trigger-icon	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__sub-inner-more-trigger-icon .greater-icon	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.menu__sub-inner-more-trigger-icon .greater-icon path	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.menu__sub-inner:not(:only-child)	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.pagination	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.pagination__buttons	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.pagination__buttons a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.pagination__title	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.pagination__title hr	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.pagination__title-h	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.post	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.post--regulation h1	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.post--regulation h2	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.post--regulation h2+h2	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.post-content	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.post-cover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.post-cover img	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.post-meta	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.post-tags	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.post-tags a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.post-title	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.post-title a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.post:not(:last-of-type)	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.terms	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.terms__list	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.terms__list a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+.terms__term	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.terms__term-count	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.theme-toggle	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.theme-toggler	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.atrule	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.attr-name	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.attr-value	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.block-comment	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.bold	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.boolean	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.builtin	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.cdata	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.char	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.class-name	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.comment	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.constant	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.deleted	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.doctype	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.entity	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.function	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.function-name	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.important	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.inserted	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.italic	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.keyword	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.namespace	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.number	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.operator	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.prolog	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.property	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.punctuation	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.regex	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.selector	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.string	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.symbol	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.tag	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.url	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+.token.variable	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+2021	archive/index.html	/^          <h2 class="archive__group-year-header">2021<\/h2>$/;"	i
+404 Page not found	404.html	/^    <\/h1>$/;"	h
+:after	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+:before	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+:not(pre)>code[class*=language-]	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+:root	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+About	about/index.html	/^        <h1 class="post-title">About<\/h1>$/;"	h
+AnonymousFunction4fe64dfd0100	assets/prism.js	/^!function(n){var a={};function i(e){if(a[e])return a[e].exports;var t=a[e]={i:e,l:!1,exports:{}}/;"	f	function:i.t
+AnonymousFunctionfb9399370100	assets/main.js	/^!function(n){var o={};function r(e){if(o[e])return o[e].exports;var t=o[e]={i:e,l:!1,exports:{}}/;"	f	function:r.t
+Archive	archive/index.html	/^    <h1>Archive<\/h1>$/;"	h
+August	archive/index.html	/^              <h3 class="archive__group-month-header">August<\/h3>$/;"	j
+Categories	categories/index.html	/^    <h1>Categories<\/h1>$/;"	h
+Conclusion	posts/melting_freezing_conundrum/index.html	/^<h2 id="conclusion">Conclusion<\/h2>$/;"	i
+Contact	about/index.html	/^<h2 id="contact">Contact<\/h2>$/;"	i
+Hello There 👋🏻	about/index.html	/^            <h2 id="hello-there-">Hello There 👋🏻<\/h2>$/;"	i
+MathJax-script	404.html	/^    id="MathJax-script"$/;"	I
+MathJax-script	about/index.html	/^    id="MathJax-script"$/;"	I
+MathJax-script	archive/index.html	/^    id="MathJax-script"$/;"	I
+MathJax-script	categories/index.html	/^    id="MathJax-script"$/;"	I
+MathJax-script	index.html	/^    id="MathJax-script"$/;"	I
+MathJax-script	posts/index.html	/^    id="MathJax-script"$/;"	I
+MathJax-script	posts/melting_freezing_conundrum/index.html	/^    id="MathJax-script"$/;"	I
+MathJax-script	tags/index.html	/^    id="MathJax-script"$/;"	I
+Nucleation	posts/melting_freezing_conundrum/index.html	/^<h3 id="nucleation">Nucleation<\/h3>$/;"	j
+Solidification	posts/melting_freezing_conundrum/index.html	/^            <h2 id="solidification">Solidification<\/h2>$/;"	i
+Solidification: The melting, freezing point conundrum	archive/index.html	/^                      <\/h3>$/;"	j
+Solidification: The melting, freezing point conundrum	index.html	/^      <h1 class="post-title"><a href="https:\/\/Neelfrost.github.io\/posts\/melting_freezing_con/;"	h
+Solidification: The melting, freezing point conundrum	posts/index.html	/^        <h1 class="post-title"><a href="https:\/\/Neelfrost.github.io\/posts\/melting_freezing_c/;"	h
+Solidification: The melting, freezing point conundrum	posts/melting_freezing_conundrum/index.html	/^        <h1 class="post-title">Solidification: The melting, freezing point conundrum<\/h1>$/;"	h
+Tags	tags/index.html	/^    <h1>Tags<\/h1>$/;"	h
+a	assets/prism.js	/^!function(n){var a={};function i(e){if(a[e])return a[e].exports;var t=a[e]={i:e,l:!1,exports:{}}/;"	v
+a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+a.button	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.button.link	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.button.outline	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.button.outline :hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+a.button.primary	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.button.primary:hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.button.small	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.button.wide	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.read-more	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.read-more:active	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+a.read-more:hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+atom	categories/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	posts/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+atom	tags/index.xml	/^<rss version="2.0" xmlns:atom="http:\/\/www.w3.org\/2005\/Atom">$/;"	n	uri:http://www.w3.org/2005/Atom
+blockquote	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+blockquote p:first-of-type	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+blockquote p:last-of-type	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+blockquote.twitter-tweet	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+blockquote:before	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+body	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+body.dark-theme	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+button	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+button.link	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+button.outline	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+button.outline :hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+button.primary	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+button.primary:hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+button.small	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+button.wide	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+code	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+code code	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+code kbd	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+code.has-jax	style.css	/^code.has-jax {$/;"	c
+code[class*=language-]	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+conclusion	posts/melting_freezing_conundrum/index.html	/^<h2 id="conclusion">Conclusion<\/h2>$/;"	I
+contact	about/index.html	/^<h2 id="contact">Contact<\/h2>$/;"	I
+d	assets/main.js	/^!function(n){var o={};function r(e){if(o[e])return o[e].exports;var t=o[e]={i:e,l:!1,exports:{}}/;"	f	function:r
+d	assets/prism.js	/^!function(n){var a={};function i(e){if(a[e])return a[e].exports;var t=a[e]={i:e,l:!1,exports:{}}/;"	f	function:i
+div.code-toolbar	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+div.code-toolbar:hover>.toolbar	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+div.code-toolbar>.toolbar	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+div.code-toolbar>.toolbar .toolbar-item	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+div.code-toolbar>.toolbar a	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+div.code-toolbar>.toolbar a:focus	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+div.code-toolbar>.toolbar a:hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+div.code-toolbar>.toolbar button	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+div.code-toolbar>.toolbar button:focus	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+div.code-toolbar>.toolbar button:hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+div.code-toolbar>.toolbar span	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+div.code-toolbar>.toolbar span:focus	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+div.code-toolbar>.toolbar span:hover	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+figure	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+figure figcaption	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+figure figcaption.center	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+figure figcaption.left	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+figure figcaption.right	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+figure.center	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+figure.left	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+figure.right	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+h1	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+h2	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+h3	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+h4	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+h5	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+h6	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+hello-there-	about/index.html	/^            <h2 id="hello-there-">Hello There 👋🏻<\/h2>$/;"	I
+homogeneous-nucleation	posts/melting_freezing_conundrum/index.html	/^<h4 id="homogeneous-nucleation">Homogeneous Nucleation<\/h4>$/;"	I
+hr	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+html	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+i	assets/prism.js	/^!function(n){var a={};function i(e){if(a[e])return a[e].exports;var t=a[e]={i:e,l:!1,exports:{}}/;"	f
+img	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+img.center	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+img.left	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+img.right	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+kbd	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+kbd code	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+kbd kbd	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+n	assets/main.js	/^!function(n){var o={};function r(e){if(o[e])return o[e].exports;var t=o[e]={i:e,l:!1,exports:{}}/;"	f	function:r
+n	assets/prism.js	/^!function(n){var a={};function i(e){if(a[e])return a[e].exports;var t=a[e]={i:e,l:!1,exports:{}}/;"	f	function:i
+ns2b972dd70101	sitemap.xml	/^  xmlns:xhtml="http:\/\/www.w3.org\/1999\/xhtml">$/;"	n	uri:http://www.sitemaps.org/schemas/sitemap/0.9
+nucleation	posts/melting_freezing_conundrum/index.html	/^<h3 id="nucleation">Nucleation<\/h3>$/;"	I
+o	assets/main.js	/^!function(n){var o={};function r(e){if(o[e])return o[e].exports;var t=o[e]={i:e,l:!1,exports:{}}/;"	f	function:r
+o	assets/main.js	/^!function(n){var o={};function r(e){if(o[e])return o[e].exports;var t=o[e]={i:e,l:!1,exports:{}}/;"	v
+o	assets/prism.js	/^!function(n){var a={};function i(e){if(a[e])return a[e].exports;var t=a[e]={i:e,l:!1,exports:{}}/;"	f	function:i
+ol	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+ol ol	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+pre	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+pre code	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+pre[class*=language-]	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+pre[class*=language-] .line-numbers	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+pre[class*=language-] .line-numbers>code	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	c
+r	assets/main.js	/^!function(n){var o={};function r(e){if(o[e])return o[e].exports;var t=o[e]={i:e,l:!1,exports:{}}/;"	f
+r	assets/main.js	/^!function(n){var o={};function r(e){if(o[e])return o[e].exports;var t=o[e]={i:e,l:!1,exports:{}}/;"	f	function:r
+r	assets/prism.js	/^!function(n){var a={};function i(e){if(a[e])return a[e].exports;var t=a[e]={i:e,l:!1,exports:{}}/;"	f	function:i
+solidification	posts/melting_freezing_conundrum/index.html	/^            <h2 id="solidification">Solidification<\/h2>$/;"	I
+statistical-nature-of-atoms	posts/melting_freezing_conundrum/index.html	/^<h4 id="statistical-nature-of-atoms">Statistical Nature of Atoms<\/h4>$/;"	I
+t	assets/main.js	/^!function(n){var o={};function r(e){if(o[e])return o[e].exports;var t=o[e]={i:e,l:!1,exports:{}}/;"	f	function:r
+t	assets/prism.js	/^!function(n){var a={};function i(e){if(a[e])return a[e].exports;var t=a[e]={i:e,l:!1,exports:{}}/;"	f	function:i
+table	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+td	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+th	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+ul	assets/style.css	/^@font-face{font-family:Inter;font-style:normal;font-weight:400;font-feature-settings:"liga","tnu/;"	s
+xhtml	sitemap.xml	/^  xmlns:xhtml="http:\/\/www.w3.org\/1999\/xhtml">$/;"	n	uri:http://www.w3.org/1999/xhtml
