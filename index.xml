@@ -2,36 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Inner Monologue</title>
-    
-    
-    
     <link>https://www.innermonologue.xyz/</link>
     <description>Recent content on Inner Monologue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 20:37:19 +0530</lastBuildDate>
-    
-	<atom:link href="https://www.innermonologue.xyz/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 14 Aug 2021 20:37:19 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Telescope.nvim: Find files in specific directory</title>
       <link>https://www.innermonologue.xyz/posts/telescope_custom_dir/</link>
       <pubDate>Sat, 14 Aug 2021 20:37:19 +0530</pubDate>
       
       <guid>https://www.innermonologue.xyz/posts/telescope_custom_dir/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          How to configure telescope.nvim&#39;s &#39;find files&#39; builtin to display files only from a specific directory.
-          
-        
-        </description>
+      <description>I like being able to browse files in certain directories from anywhere. Telescope.nvim already has a feature that allows you to browse files in the cwd; with this guide, we&amp;rsquo;ll extend that feature to only display files in a specific directory.
+ A quick start guide for neovim lua can be found here: nvim-lua-guide.
+ Preview  File structure
+├── init.lua ├── lua │ └── plugins │ ├── telescope.</description>
     </item>
     
     <item>
@@ -40,60 +25,7 @@
       <pubDate>Fri, 06 Aug 2021 22:43:47 +0530</pubDate>
       
       <guid>https://www.innermonologue.xyz/posts/melting_freezing_conundrum/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Logic dictates that melting and freezing points should be the same, but are they?
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.innermonologue.xyz/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.innermonologue.xyz/about/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Hello There 👋🏻 I’m Neel, and this blog is an experiment to get myself to write more often, be present, and procrastinate less.
-Here you&amp;rsquo;ll find a few topics from my undergraduate curriculum (Metallurgical and Materials Engineering) that I enjoyed or found interesting, some philosophical ramblings, and possibly my incoherent inner monologue.
- Stop measuring days by degree of productivity and start experiencing them by the degree of presence. - Alan Watts
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>Archive</title>
-      <link>https://www.innermonologue.xyz/archive/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.innermonologue.xyz/archive/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          
-          
-        
-        </description>
+      <description>Solidification 🔗Any phase change is feasible if and only if there is a driving force, here, it is the decrease in free energy that drives the phase transformation. Let us consider a typical liquid to solid phase transformation. When a liquid is cooled below its equilibrium melting temperature $ \mathrm{(T_m)} $, there is a driving force for solidification $ \mathrm{(G_S - G_L)} $, and thus one expects the liquid phase to solidify spontaneously.</description>
     </item>
     
   </channel>

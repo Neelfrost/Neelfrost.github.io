@@ -1,39 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
-    
-      <title>
-        Telescope.nvim: Find files in specific directory ::
-        Inner Monologue
-      </title>
-    
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telescope.nvim: Find files in specific directory | Inner Monologue</title>
+
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,minimum-scale=1" />
 <meta
     name="description"
     content="
-        I like being able to browse files in certain directories from anywhere. Telescope.nvim already has a feature that allows you to browse files in the cwd; with this guide, we&amp;rsquo;ll extend that feature to only display files in a specific directory.
- A quick start guide for neovim lua can be found here: nvim-lua-guide  Preview  File structure
-├── init.lua ├── lua │ └── plugins │ ├── telescope.
+        How to configure telescope.nvim&#39;s &#39;find files&#39; builtin to display files only from a specific directory.
     "
 />
-<meta
-    name="keywords"
-    content="
+<meta name="generator" content="Hugo 0.88.1" />
+
+
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+ <link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.css" /> 
+    
         
-    "
-/>
-<meta name="robots" content="noodp" />
-<link rel="canonical" href="https://www.innermonologue.xyz/posts/telescope_custom_dir/" />
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/custom.css" />
+    
 
 
-
-
-
-
-<link rel="stylesheet" href="https://www.innermonologue.xyz/assets/style.css" />
-
-<link rel="stylesheet" href="https://www.innermonologue.xyz/style.css" />
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://www.innermonologue.xyz/img/apple-touch-icon.png" />
@@ -44,68 +33,11 @@
 <link rel="shortcut icon" type="image/x-icon" href="https://www.innermonologue.xyz/img/favicon.ico" />
 
 
-<link
-    href="https://www.innermonologue.xyz/assets/fonts/Inter-Italic.woff2"
-    rel="preload"
-    type="font/woff2"
-    as="font"
-    crossorigin=""
-/>
-<link
-    href="https://www.innermonologue.xyz/assets/fonts/Inter-Regular.woff2"
-    rel="preload"
-    type="font/woff2"
-    as="font"
-    crossorigin=""
-/>
-<link
-    href="https://www.innermonologue.xyz/assets/fonts/Inter-Medium.woff2"
-    rel="preload"
-    type="font/woff2"
-    as="font"
-    crossorigin=""
-/>
-<link
-    href="https://www.innermonologue.xyz/assets/fonts/Inter-MediumItalic.woff2"
-    rel="preload"
-    type="font/woff2"
-    as="font"
-    crossorigin=""
-/>
-<link href="https://www.innermonologue.xyz/assets/fonts/Inter-Bold.woff2" rel="preload" type="font/woff2" as="font" crossorigin="" />
-<link
-    href="https://www.innermonologue.xyz/assets/fonts/Inter-BoldItalic.woff2"
-    rel="preload"
-    type="font/woff2"
-    as="font"
-    crossorigin=""
-/>
-
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Telescope.nvim: Find files in specific directory"/>
-<meta name="twitter:description" content="How to configure telescope.nvim&#39;s &#39;find files&#39; builtin to display files only from a specific directory."/>
 
 
 
 
-<meta property="og:title" content="Telescope.nvim: Find files in specific directory" />
-<meta property="og:description" content="How to configure telescope.nvim&#39;s &#39;find files&#39; builtin to display files only from a specific directory." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.innermonologue.xyz/posts/telescope_custom_dir/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-08-14T20:37:19+05:30" />
-<meta property="article:modified_time" content="2021-08-14T20:37:19+05:30" /><meta property="og:site_name" content="Inner Monologue" />
-
-
-
-
-
-
-
-
-
-
-<script>
+    <script>
     MathJax = {
         tex: {
             inlineMath: [
@@ -140,181 +72,104 @@
 ></script>
 
 
+
+
+
+
+
+
+
+<link
+    rel="stylesheet"
+    href="https://www.innermonologue.xyz/css/all.min.css"
+/><script defer src="https://www.innermonologue.xyz/js/all.min.js"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+
+
   </head>
-  <body class="dark-theme">
-    <div class="container">
-      <header class="header">
-  <span class="header__inner">
-    <a
-  href="/"
-  class="logo"
-  style="text-decoration: none;"
->
-  
-    <span class="logo__mark"><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44">
-  <path fill="none" d="M15 8l14.729 14.382L15 35.367" />
-</svg>
-</span>
-    <span class="logo__text"
-      >neel@inner_monologue</span
-    >
-    <span class="logo__cursor"></span>
-  
-</a>
 
-    <span class="header__right">
-      
-        
-<nav class="menu">
-    <ul class="menu__inner menu__inner--desktop">
-        
+  <body>
+    <nav class="navigation">
+    
+        <a href="/">
             
-                
-                    
-                    
+                Home
+            </a
+        >
+    
+    <a href="/about">About</a>
+    <a href="/posts">Archive</a>
+    <a href="/tags">Tags</a>
 
-                    
+    
 
-
-                    <li>
-                        <a class="" href="/about">About</a>
-                    </li>
-                
-            
-                
-                    
-                    
-
-                    
-
-
-                    <li>
-                        <a class="" href="/archive">Archive</a>
-                    </li>
-                
-            
-            
-        
-    </ul>
-
-    <ul class="menu__inner menu__inner--mobile">
-        
-            
-                
-                
-                
-                <li>
-                    <a class="" href="/about">About</a>
-                </li>
-            
-        
-            
-                
-                
-                
-                <li>
-                    <a class="" href="/archive">Archive</a>
-                </li>
-            
-        
-    </ul>
+    
 </nav>
 
-        <span class="menu-trigger">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </span>
+
+    <main class="main">
       
-      <span class="theme-toggle">
-        <svg
-  class="theme-toggler"
-  width="24"
-  height="24"
-  viewBox="0 0 48 48"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
-  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
-  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"
-  />
-</svg>
 
-      </span>
-    </span>
-  </span>
-</header>
+<section id="single">
+    <h1 class="title">Telescope.nvim: Find files in specific directory</h1>
 
+    <div class="tip">
+        <time datetime="2021-08-14 20:37:19 &#43;0530 IST">Aug 14, 2021</time>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          257 words
+        </span>
+        <span class="split">
+          ·
+        </span>
+        <span>
+          2 minute read
+        </span>
+    </div>
 
-      <div class="content">
-        
     
     
 
 
-    <div class="post">
-        <h1 class="post-title">Telescope.nvim: Find files in specific directory</h1>
-        <div class="post-meta">
-            
-                <span class="post-date">
-                    14 Aug 2021
-                </span>
-
-                
-                    
-                
-            
-
-            
-
-            
-                
-                    <span class="post-read-time"
-                        >— 2 min. read</span
-                    >
-                
-            
-        </div>
-
-        
-            <span class="post-tags">
-                
-                    <a href="https://www.innermonologue.xyz/tags/neovim/">#neovim</a>&nbsp;
-                
-                    <a href="https://www.innermonologue.xyz/tags/plugin/">#plugin</a>&nbsp;
-                
-            </span>
-        
-
-        
-
-
-        <div class="post-content">
-            
-            <p>I like being able to browse files in certain directories from anywhere. 
- <a href="https://github.com/nvim-telescope/telescope.nvim" class="mdlink">Telescope.nvim</a> 
- already has a feature that allows you to browse files in the cwd; with this guide, we&rsquo;ll extend that feature to only display files in a specific directory.</p>
+    <div class="content">
+      <p>I like being able to browse files in certain directories from anywhere. <a href="https://github.com/nvim-telescope/telescope.nvim" target="_blank" rel="noopener">Telescope.nvim</a> already has a feature that allows you to browse files in the cwd; with this guide, we&rsquo;ll extend that feature to only display files in a specific directory.</p>
 <blockquote>
-<p>A quick start guide for neovim lua can be found here: 
- <a href="https://github.com/nanotee/nvim-lua-guide" class="mdlink">nvim-lua-guide</a> 
-</p>
+<p>A quick start guide for neovim lua can be found here: <a href="https://github.com/nanotee/nvim-lua-guide" target="_blank" rel="noopener">nvim-lua-guide</a>.</p>
 </blockquote>
 
-  <figure class="center" >
-    <img src="assets/telescope_preview.gif"  alt="Hello Friend"   style="border-radius: 8px;"  />
-    
-      <figcaption class="center" >Preview</figcaption>
-    
-  </figure>
+    <figure class="center">
+        <img
+            src="assets/telescope_preview.gif"
+            alt="Preview"
+            
+        />
+        
+            <figcaption
+                class="
+                    center
+                "
+                
+            >
+                Preview
+            </figcaption>
+        
+    </figure>
 
 
 <ol>
 <li>
 <p>File structure</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">├── init.lua
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">├── init.lua
 ├── lua
 │   └── plugins
 │       ├── telescope.lua
@@ -324,96 +179,69 @@
 <li>
 <p>Configuring the &lsquo;find files&rsquo; builtin</p>
 <p>File: <code>plugins/config/telescope.lua</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#66d9ef">local</span> M <span style="color:#f92672">=</span> {}
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#a2f;font-weight:bold">local</span> M <span style="color:#666">=</span> {}
 
-<span style="color:#75715e">-- Configure find files builtin with custom opts</span>
-<span style="color:#75715e">-- For neovim&#39;s config directory</span>
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">M</span>.<span style="color:#a6e22e">dir_nvim</span>()
-    <span style="color:#66d9ef">local</span> opts <span style="color:#f92672">=</span> {
-        prompt_title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Neovim&#34;</span>, <span style="color:#75715e">-- Title for the picker</span>
-        shorten_path <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>, <span style="color:#75715e">-- Display full paths, short paths are ugly</span>
-        cwd <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;~/Appdata/Local/nvim&#34;</span>, <span style="color:#75715e">-- Set path to directory whose files should be shown</span>
-        file_ignore_patterns <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;.git&#34;</span>, <span style="color:#e6db74">&#34;.png&#34;</span>, <span style="color:#e6db74">&#34;tags&#34;</span> }, <span style="color:#75715e">-- Folder/files to be ignored</span>
-        initial_mode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;insert&#34;</span>, <span style="color:#75715e">-- Start in insert mode</span>
-        selection_strategy <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;reset&#34;</span>, <span style="color:#75715e">-- Start selection from top when list changes</span>
-        theme <span style="color:#f92672">=</span> require(<span style="color:#e6db74">&#34;telescope.themes&#34;</span>).get_dropdown({}), <span style="color:#75715e">-- Theme to be used, can be omitted to use defaults</span>
-        previewer <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>, <span style="color:#75715e">-- Disable previewer</span>
+<span style="color:#080;font-style:italic">-- Configure find files builtin with custom opts</span>
+<span style="color:#080;font-style:italic">-- For neovim&#39;s config directory</span>
+<span style="color:#a2f;font-weight:bold">function</span> <span style="color:#00f">M</span>.<span style="color:#00a000">dir_nvim</span>()
+    <span style="color:#a2f;font-weight:bold">local</span> opts <span style="color:#666">=</span> {
+        prompt_title <span style="color:#666">=</span> <span style="color:#b44">&#34;Neovim&#34;</span>, <span style="color:#080;font-style:italic">-- Title for the picker</span>
+        shorten_path <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">false</span>, <span style="color:#080;font-style:italic">-- Display full paths, short paths are ugly</span>
+        cwd <span style="color:#666">=</span> <span style="color:#b44">&#34;~/Appdata/Local/nvim&#34;</span>, <span style="color:#080;font-style:italic">-- Set path to directory whose files should be shown</span>
+        file_ignore_patterns <span style="color:#666">=</span> { <span style="color:#b44">&#34;.git&#34;</span>, <span style="color:#b44">&#34;.png&#34;</span>, <span style="color:#b44">&#34;tags&#34;</span> }, <span style="color:#080;font-style:italic">-- Folder/files to be ignored</span>
+        initial_mode <span style="color:#666">=</span> <span style="color:#b44">&#34;insert&#34;</span>, <span style="color:#080;font-style:italic">-- Start in insert mode</span>
+        selection_strategy <span style="color:#666">=</span> <span style="color:#b44">&#34;reset&#34;</span>, <span style="color:#080;font-style:italic">-- Start selection from top when list changes</span>
+        theme <span style="color:#666">=</span> require(<span style="color:#b44">&#34;telescope.themes&#34;</span>).get_dropdown({}), <span style="color:#080;font-style:italic">-- Theme to be used, can be omitted to use defaults</span>
+        previewer <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">false</span>, <span style="color:#080;font-style:italic">-- Disable previewer</span>
     }
 
-    <span style="color:#75715e">-- Pass opts to find_files</span>
-    require(<span style="color:#e6db74">&#34;telescope.builtin&#34;</span>).find_files(opts)
-<span style="color:#66d9ef">end</span>
+    <span style="color:#080;font-style:italic">-- Pass opts to find_files</span>
+    require(<span style="color:#b44">&#34;telescope.builtin&#34;</span>).find_files(opts)
+<span style="color:#a2f;font-weight:bold">end</span>
 
-<span style="color:#66d9ef">return</span> M
+<span style="color:#a2f;font-weight:bold">return</span> M
 </code></pre></div><p>When called, this will open a picker that will list all files in <code>~/Appdata/Local/nvim</code>, excluding the ones listed in file_ignore_patterns.</p>
 </li>
 <li>
 <p>Configure mappings</p>
 <p>File: <code>plugins/telescope.lua</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#66d9ef">local</span> opts <span style="color:#f92672">=</span> { noremap <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> }
-vim.api.nvim_set_keymap(<span style="color:#e6db74">&#34;n&#34;</span>, <span style="color:#e6db74">&#34;&lt;Leader&gt;tn&#34;</span>, <span style="color:#e6db74">&#34;&lt;cmd&gt;lua require(&#39;plugins.config.telescope&#39;).dir_nvim()&lt;CR&gt;&#34;</span>, opts)
-</code></pre></div><p>Now, after restarting or reloading neovim, we can use <code>&lt;Leader&gt;tn</code> to browse files in neovim&rsquo;s config directory. Find more examples at 
- <a href="https://github.com/Neelfrost/dotfiles/blob/main/lua/plugins/config/telescope.lua" class="mdlink">config/telescope.lua</a>. 
-</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#a2f;font-weight:bold">local</span> opts <span style="color:#666">=</span> { noremap <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">true</span>, silent <span style="color:#666">=</span> <span style="color:#a2f;font-weight:bold">true</span> }
+vim.api.nvim_set_keymap(<span style="color:#b44">&#34;n&#34;</span>, <span style="color:#b44">&#34;&lt;Leader&gt;tn&#34;</span>, <span style="color:#b44">&#34;&lt;cmd&gt;lua require(&#39;plugins.config.telescope&#39;).dir_nvim()&lt;CR&gt;&#34;</span>, opts)
+</code></pre></div><p>Now, after restarting or reloading neovim, we can use <code>&lt;Leader&gt;tn</code> to browse files in neovim&rsquo;s config directory. Find more examples at <a href="https://github.com/Neelfrost/dotfiles/blob/main/lua/plugins/config/telescope.lua" target="_blank" rel="noopener">config/telescope.lua</a>.</p>
 </li>
 </ol>
 
-        </div>
-        
-            
-                <div class="pagination">
-                    <div class="pagination__title">
-                        <span class="pagination__title-h"
-                            >Read other posts</span
-                        >
-                        <hr />
-                    </div>
-                    <div class="pagination__buttons">
-                        
-                        
-                            <span class="button next">
-                                <a href="https://www.innermonologue.xyz/posts/melting_freezing_conundrum/">
-                                    <span class="button__text">Solidification: The melting, freezing point conundrum</span>
-                                    <span class="button__icon">→</span>
-                                </a>
-                            </span>
-                        
-                    </div>
-                </div>
-            
-        
-
-        
-            
-                
-
-            
-        
-    </div>
-
-      </div>
-
-      
-        <footer class="footer">
-    <div class="footer__inner">
-        
-            <div class="copyright">
-                <span
-                    >© 2021 Powered by
-                    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a></span
-                >
-            </div>
-        
-    </div>
-</footer>
-
-<script src="https://www.innermonologue.xyz/assets/main.js"></script>
-<script src="https://www.innermonologue.xyz/assets/prism.js"></script>
-
-
-      
     </div>
 
     
+        <div class="tags">
+            
+                <a href="https://www.innermonologue.xyz/tags/neovim">neovim</a>
+            
+                <a href="https://www.innermonologue.xyz/tags/plugin">plugin</a>
+            
+        </div>
+    
+    
+    
+
+</section>
+
+
+    </main>
+    
+    <footer id="footer">
+    
+        <div class="powerby">
+            <span class="icon">
+                <i class="fas fa-snowflake" style="color: #5badf0"></i>
+            </span>
+            2021 | Powered by <a href="http://www.gohugo.io/">Hugo</a>
+        </div>
+    
+</footer>
+
+
+
   </body>
 </html>

@@ -2,36 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Inner Monologue</title>
-    
-    
-    
     <link>https://www.innermonologue.xyz/tags/</link>
     <description>Recent content in Tags on Inner Monologue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 20:37:19 +0530</lastBuildDate>
-    
-	<atom:link href="https://www.innermonologue.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 14 Aug 2021 20:37:19 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>neovim</title>
       <link>https://www.innermonologue.xyz/tags/neovim/</link>
       <pubDate>Sat, 14 Aug 2021 20:37:19 +0530</pubDate>
       
       <guid>https://www.innermonologue.xyz/tags/neovim/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          
-          
-        
-        </description>
+      <description></description>
     </item>
     
     <item>
@@ -40,18 +22,7 @@
       <pubDate>Sat, 14 Aug 2021 20:37:19 +0530</pubDate>
       
       <guid>https://www.innermonologue.xyz/tags/plugin/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          
-          
-        
-        </description>
+      <description></description>
     </item>
     
     <item>
@@ -60,18 +31,7 @@
       <pubDate>Fri, 06 Aug 2021 22:43:47 +0530</pubDate>
       
       <guid>https://www.innermonologue.xyz/tags/metallurgy/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          
-          
-        
-        </description>
+      <description></description>
     </item>
     
   </channel>

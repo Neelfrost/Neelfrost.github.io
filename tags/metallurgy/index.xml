@@ -2,36 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>metallurgy on Inner Monologue</title>
-    
-    
-    
     <link>https://www.innermonologue.xyz/tags/metallurgy/</link>
     <description>Recent content in metallurgy on Inner Monologue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 22:43:47 +0530</lastBuildDate>
-    
-	<atom:link href="https://www.innermonologue.xyz/tags/metallurgy/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 06 Aug 2021 22:43:47 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/tags/metallurgy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Solidification: The melting, freezing point conundrum</title>
       <link>https://www.innermonologue.xyz/posts/melting_freezing_conundrum/</link>
       <pubDate>Fri, 06 Aug 2021 22:43:47 +0530</pubDate>
       
       <guid>https://www.innermonologue.xyz/posts/melting_freezing_conundrum/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Logic dictates that melting and freezing points should be the same, but are they?
-          
-        
-        </description>
+      <description>Solidification 🔗Any phase change is feasible if and only if there is a driving force, here, it is the decrease in free energy that drives the phase transformation. Let us consider a typical liquid to solid phase transformation. When a liquid is cooled below its equilibrium melting temperature $ \mathrm{(T_m)} $, there is a driving force for solidification $ \mathrm{(G_S - G_L)} $, and thus one expects the liquid phase to solidify spontaneously.</description>
     </item>
     
   </channel>
