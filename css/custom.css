@@ -4,16 +4,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: "Poppins", sans-serif;
-}
+h6,
 body {
     font-family: "Poppins", sans-serif;
 }
-p code {
-    font-family: "Oxygen Mono", monospace;
-}
+p code,
 pre code {
+    font-family: "Oxygen Mono", monospace;
     font-family: "Oxygen Mono", monospace;
 }
 
@@ -30,9 +27,6 @@ h6 {
 /* Single title */
 #single {
     max-width: 750px;
-}
-#single .title {
-    font-weight: bold;
 }
 
 /* Archive */
@@ -101,25 +95,25 @@ figure figcaption.right {
     text-align: right;
 }
 
-/* footer */
-.powerby {
+/* Footer */
+div.powerby {
     max-width: 750px;
     margin: auto;
     text-align: center;
     font-size: 14px;
 }
-span.icon {
+div.powerby span.icon {
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
 }
-span.icon:hover path {
+div.powerby span.icon:hover path {
     fill: #0366d6;
     transition: 0.7s ease-in;
     cursor: pointer;
 }
 
-/* profile  */
+/* Profile  */
 .profile h1 {
     font-weight: bold;
     letter-spacing: 0px;
@@ -135,39 +129,29 @@ span.icon:hover path {
     margin: 0 auto;
     padding: 0 24px;
 }
-
 #list-page .item {
     margin: 12px 0;
 }
-
 #list-page .title {
-    display: inline-block;
+    display: block;
     color: #404040;
     font-size: 20px;
     font-weight: bold;
-    margin: 0;
     width: 100%;
 }
-
 #list-page .title a {
     color: #404040;
-    display: block;
 }
-
 #list-page .title a:hover {
     color: #0366d6;
 }
-
 #list-page .date {
     width: 100%;
-    float: left;
     text-align: left;
-    position: relative;
-    top: 1px;
-    margin-bottom: 8px;
     color: #bbb;
+    margin-top: auto;
+    margin-bottom: 4px;
 }
-
 #list-page .summary {
     color: #757575;
     margin-top: 12px;
@@ -176,38 +160,23 @@ span.icon:hover path {
     margin-bottom: 36px;
 }
 
-#social {
-    margin: auto;
-    position: relative;
-    text-align: center;
-    width: 750px;
-}
-
 /* Nav text */
 nav.navigation {
     font-weight: bold;
 }
 
-/* Profile title cursor */
-div.logo__cursor {
+/* Profile title */
+div.title-wrapper {
     display: inline-flex;
-    width: 8px;
+}
+div.cursor {
+    width: 4px;
     height: 2ex;
     background: #5badf0;
-    margin: 0ex 0ex -0.25ex 0ex;
-    -webkit-animation: cursor 2s infinite;
+    margin-left: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
     animation: cursor 2s infinite;
-}
-@-webkit-keyframes cursor {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
 }
 @keyframes cursor {
     0% {
@@ -224,8 +193,6 @@ div.logo__cursor {
 /* Dark mode */
 html {
     background-color: rgb(255, 255, 255) !important;
-}
-html {
     filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
     -webkit-filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
 }
@@ -241,11 +208,7 @@ body * [style*="background-image"] {
 nav.navigation {
     background: rgb(255, 255, 255);
 }
-
-.powerby {
-    color: rgb(150, 150, 150);
-}
-
+div.powerby,
 #list-page .date {
     color: rgb(150, 150, 150);
 }
