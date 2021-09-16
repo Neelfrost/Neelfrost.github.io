@@ -102,14 +102,7 @@ div.powerby {
     text-align: center;
     font-size: 14px;
 }
-div.powerby span.icon {
-    cursor: pointer;
-    display: inline-block;
-    vertical-align: top;
-}
-div.powerby span.icon:hover path {
-    fill: #0366d6;
-    transition: 0.7s ease-in;
+div.powerby a.icon {
     cursor: pointer;
 }
 
@@ -190,25 +183,6 @@ div.cursor {
     }
 }
 
-/* Dark mode */
-html {
-    background-color: rgb(255, 255, 255) !important;
-    filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
-    -webkit-filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
-}
-body {
-    background-color: rgb(255, 255, 255) !important;
-}
-img,
-video,
-body * [style*="background-image"] {
-    filter: hue-rotate(180deg) contrast(100%) invert(100%);
-    -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
-}
-nav.navigation {
-    background: rgb(255, 255, 255);
-}
-div.powerby,
-#list-page .date {
-    color: rgb(150, 150, 150);
+a.dark-mode-toggle {
+    cursor: pointer;
 }

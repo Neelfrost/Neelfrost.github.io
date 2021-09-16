@@ -79,10 +79,9 @@
 
 
 
-<link
-    rel="stylesheet"
-    href="https://www.innermonologue.xyz/css/all.min.css"
-/><script defer src="https://www.innermonologue.xyz/js/all.min.js"></script>
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/fontawesome.min.css" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/solid.min.css" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/brands.min.css" />
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -92,6 +91,9 @@
     rel="stylesheet"
 />
 <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+
+
+<link disabled id="dark-mode-theme" rel="stylesheet" href="https://www.innermonologue.xyz/css/dark.css" />
 
 
   </head>
@@ -108,6 +110,7 @@
     <a href="/about">About</a>
     <a href="/posts">Archive</a>
     <a href="/tags">Tags</a>
+    <a class="dark-mode-toggle" id="dark-mode-toggle"><i id="dark-mode-toggle-icon" class="fas fa-moon"></i></a>
 
     
 
@@ -115,58 +118,83 @@
 </nav>
 
 
+<script src="https://www.innermonologue.xyz/js/dark_mode_toggle.js"></script>
+
+
     <main class="main">
       
 
-<div id="page-404">
-  <div class="text">
-      
-          <h1>404 - Page Not Found</h1>
-      
+    <div id="page-404">
+        <div class="text">
+            
+                <h1>404 - Page Not Found</h1>
+            
 
-      
-          <div>The content you&#39;re looking for doesn&#39;t seem to exist.</div>
-      
+            
+                <h3>The content you&#39;re looking for doesn&#39;t seem to exist.</h3>
+            
+        </div>
     </div>
-
-  
-      <h2 class="read-more">Read more</h2> 
-  
-
-  
-
-
-    
-    
-    
+    <section id="archive">
         
         
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/telescope_custom_dir/'>Telescope.nvim: Find files in specific directory</a></h1>   
-            <div class="date">Aug 14, 2021</div>
-          </div>
-        </section>
-    
         
+            
+            
+            <div class="group">
+                <div class="value">
+                    <div class="date" style="min-width: 100px;">
+                        Aug 14, 2021
+                    </div>
+                    <div class="title">
+                        <a href="https://www.innermonologue.xyz/posts/telescope_custom_dir/">
+                            Telescope.nvim: Find files in specific directory
+                        </a>
+
+                        
+                            <div class="tags">
+                                
+                                    <a href="https://www.innermonologue.xyz/tags/neovim">neovim</a>
+                                
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
         
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='/posts/melting_freezing_conundrum/'>Solidification: The melting, freezing point conundrum</a></h1>   
-            <div class="date">Aug 6, 2021</div>
-          </div>
-        </section>
-    
-</div>
+            
+            
+            <div class="group">
+                <div class="value">
+                    <div class="date" style="min-width: 100px;">
+                        Aug 6, 2021
+                    </div>
+                    <div class="title">
+                        <a href="https://www.innermonologue.xyz/posts/melting_freezing_conundrum/">
+                            Solidification: The melting, freezing point conundrum
+                        </a>
+
+                        
+                            <div class="tags">
+                                
+                                    <a href="https://www.innermonologue.xyz/tags/metallurgy">metallurgy</a>
+                                
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+    </section>
 
     </main>
     
     <footer id="footer">
     
         <div class="powerby">
-            <span class="icon">
-                <i class="fas fa-snowflake" style="color: #5badf0"></i>
-            </span>
+            <a class="icon">
+                <i class="fas fa-snowflake"></i>
+            </a>
             2021 | Powered by <a href="http://www.gohugo.io/">Hugo</a>
         </div>
     

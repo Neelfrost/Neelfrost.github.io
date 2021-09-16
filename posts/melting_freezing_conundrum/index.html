@@ -79,10 +79,9 @@
 
 
 
-<link
-    rel="stylesheet"
-    href="https://www.innermonologue.xyz/css/all.min.css"
-/><script defer src="https://www.innermonologue.xyz/js/all.min.js"></script>
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/fontawesome.min.css" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/solid.min.css" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/brands.min.css" />
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -92,6 +91,9 @@
     rel="stylesheet"
 />
 <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+
+
+<link disabled id="dark-mode-theme" rel="stylesheet" href="https://www.innermonologue.xyz/css/dark.css" />
 
 
   </head>
@@ -108,11 +110,15 @@
     <a href="/about">About</a>
     <a href="/posts">Archive</a>
     <a href="/tags">Tags</a>
+    <a class="dark-mode-toggle" id="dark-mode-toggle"><i id="dark-mode-toggle-icon" class="fas fa-moon"></i></a>
 
     
 
     
 </nav>
+
+
+<script src="https://www.innermonologue.xyz/js/dark_mode_toggle.js"></script>
 
 
     <main class="main">
@@ -301,9 +307,9 @@ r^{*}        &amp; = -\frac{2\gamma}{\Delta G_{V}} \label{eq:3}           \\<br>
     <footer id="footer">
     
         <div class="powerby">
-            <span class="icon">
-                <i class="fas fa-snowflake" style="color: #5badf0"></i>
-            </span>
+            <a class="icon">
+                <i class="fas fa-snowflake"></i>
+            </a>
             2021 | Powered by <a href="http://www.gohugo.io/">Hugo</a>
         </div>
     
