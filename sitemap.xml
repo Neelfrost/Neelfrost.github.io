@@ -2,16 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.innermonologue.xyz/</loc>
-    <lastmod>2021-08-14T20:37:19+05:30</lastmod>
+    <loc>https://www.innermonologue.xyz/tags/configuration/</loc>
+    <lastmod>2021-09-21T21:13:30+05:30</lastmod>
   </url><url>
-    <loc>https://www.innermonologue.xyz/tags/neovim/</loc>
-    <lastmod>2021-08-14T20:37:19+05:30</lastmod>
+    <loc>https://www.innermonologue.xyz/</loc>
+    <lastmod>2021-09-21T21:13:30+05:30</lastmod>
   </url><url>
     <loc>https://www.innermonologue.xyz/posts/</loc>
-    <lastmod>2021-08-14T20:37:19+05:30</lastmod>
+    <lastmod>2021-09-21T21:13:30+05:30</lastmod>
+  </url><url>
+    <loc>https://www.innermonologue.xyz/posts/windows_cli/</loc>
+    <lastmod>2021-09-21T21:13:30+05:30</lastmod>
   </url><url>
     <loc>https://www.innermonologue.xyz/tags/</loc>
+    <lastmod>2021-09-21T21:13:30+05:30</lastmod>
+  </url><url>
+    <loc>https://www.innermonologue.xyz/tags/windows/</loc>
+    <lastmod>2021-09-21T21:13:30+05:30</lastmod>
+  </url><url>
+    <loc>https://www.innermonologue.xyz/tags/neovim/</loc>
     <lastmod>2021-08-14T20:37:19+05:30</lastmod>
   </url><url>
     <loc>https://www.innermonologue.xyz/posts/telescope_custom_dir/</loc>

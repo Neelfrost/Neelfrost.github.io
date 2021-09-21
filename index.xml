@@ -6,7 +6,18 @@
     <description>Recent content on Inner Monologue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Aug 2021 20:37:19 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Sep 2021 21:13:30 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spice up your Windows CLI experience</title>
+      <link>https://www.innermonologue.xyz/posts/windows_cli/</link>
+      <pubDate>Tue, 21 Sep 2021 21:13:30 +0530</pubDate>
+      
+      <guid>https://www.innermonologue.xyz/posts/windows_cli/</guid>
+      <description>The terminal experience in windows is not great, but it can be made better. We&amp;rsquo;ll learn how to turn this   into this   Oh My Posh Theme: custom | Windows Terminal (in focus mode) Theme: Gruvbox Dark
+Font: CaskaydiaCove NF
+Nerd Fonts 🔗Nerd Fonts provides patched versions of monospace fonts containing a large number of glyphs (icons). The glyphs will be needed to correctly render the prompts from oh-my-posh.</description>
+    </item>
+    
     <item>
       <title>Telescope.nvim: Find files in specific directory</title>
       <link>https://www.innermonologue.xyz/posts/telescope_custom_dir/</link>

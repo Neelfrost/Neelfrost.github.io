@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Inner Monologue</title>
-    <link>https://www.innermonologue.xyz/posts/</link>
-    <description>Recent content in Posts on Inner Monologue</description>
+    <title>configuration on Inner Monologue</title>
+    <link>https://www.innermonologue.xyz/tags/configuration/</link>
+    <description>Recent content in configuration on Inner Monologue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Sep 2021 21:13:30 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Sep 2021 21:13:30 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spice up your Windows CLI experience</title>
       <link>https://www.innermonologue.xyz/posts/windows_cli/</link>
@@ -28,15 +28,6 @@ Nerd Fonts 🔗Nerd Fonts provides patched versions of monospace fonts containin
  A quick start guide for neovim lua can be found here: nvim-lua-guide.
  Preview     File structure
 ├── init.lua ├── lua │ └── plugins │ ├── telescope.</description>
-    </item>
-    
-    <item>
-      <title>Solidification: The melting, freezing point conundrum</title>
-      <link>https://www.innermonologue.xyz/posts/melting_freezing_conundrum/</link>
-      <pubDate>Fri, 06 Aug 2021 22:43:47 +0530</pubDate>
-      
-      <guid>https://www.innermonologue.xyz/posts/melting_freezing_conundrum/</guid>
-      <description>Solidification 🔗Any phase change is feasible if and only if there is a driving force, here, it is the decrease in free energy that drives the phase transformation. Let us consider a typical liquid to solid phase transformation. When a liquid is cooled below its equilibrium melting temperature $ \mathrm{(T_m)} $, there is a driving force for solidification $ \mathrm{(G_S - G_L)} $, and thus one expects the liquid phase to solidify spontaneously.</description>
     </item>
     
   </channel>

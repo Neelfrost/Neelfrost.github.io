@@ -24,11 +24,6 @@ h6 {
     font-weight: bold;
 }
 
-/* Single title */
-#single {
-    max-width: 750px;
-}
-
 /* Archive */
 #archive {
     max-width: 750px;
@@ -185,4 +180,24 @@ div.cursor {
 
 a.dark-mode-toggle {
     cursor: pointer;
+}
+
+/* Posts */
+#single {
+    max-width: 750px;
+}
+#single .tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+#single .tags a {
+    background: #f2f2f2;
+    color: #757575;
+    font-size: 14px;
+}
+#single .tags a:hover {
+    color: #0366d6;
 }
