@@ -24,6 +24,11 @@ h6 {
     font-weight: bold;
 }
 
+/* Justify paragraphs */
+p {
+    text-align: justify;
+}
+
 /* Archive */
 #archive {
     max-width: 750px;
@@ -185,6 +190,27 @@ a.dark-mode-toggle {
 /* Posts */
 #single {
     max-width: 750px;
+    margin: 60px auto 0 auto;
+    padding: 0 64px;
+}
+
+#single .title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+@media (max-width: 700px) {
+    #single {
+        padding: 0 18px;
+        margin: 20px auto 0 auto;
+    }
+    #single .title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+    }
 }
 #single .tags {
     display: flex;
@@ -200,4 +226,32 @@ a.dark-mode-toggle {
 }
 #single .tags a:hover {
     color: #0366d6;
+}
+
+/* Horizontal scroll */
+.math-scroll {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
+table {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+/* Responsive floats */
+@media (max-width: 700px) {
+    .float-image {
+        float: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 750px) {
+    .float-image {
+        float: right;
+        padding-left: 16px;
+    }
 }
