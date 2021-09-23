@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Inner Monologue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Sep 2021 21:13:30 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 00:46:58 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>metallurgy</title>
+      <link>https://www.innermonologue.xyz/tags/metallurgy/</link>
+      <pubDate>Thu, 23 Sep 2021 00:46:58 +0530</pubDate>
+      
+      <guid>https://www.innermonologue.xyz/tags/metallurgy/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>configuration</title>
       <link>https://www.innermonologue.xyz/tags/configuration/</link>
@@ -31,15 +40,6 @@
       <pubDate>Sat, 14 Aug 2021 20:37:19 +0530</pubDate>
       
       <guid>https://www.innermonologue.xyz/tags/neovim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>metallurgy</title>
-      <link>https://www.innermonologue.xyz/tags/metallurgy/</link>
-      <pubDate>Fri, 06 Aug 2021 22:43:47 +0530</pubDate>
-      
-      <guid>https://www.innermonologue.xyz/tags/metallurgy/</guid>
       <description></description>
     </item>
     

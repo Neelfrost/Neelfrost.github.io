@@ -6,7 +6,16 @@
     <description>Recent content in metallurgy on Inner Monologue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Aug 2021 22:43:47 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/tags/metallurgy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 00:46:58 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/tags/metallurgy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iron-Carbon Diagram: A solidification perspective</title>
+      <link>https://www.innermonologue.xyz/posts/solidification_fe_c/</link>
+      <pubDate>Thu, 23 Sep 2021 00:46:58 +0530</pubDate>
+      
+      <guid>https://www.innermonologue.xyz/posts/solidification_fe_c/</guid>
+      <description>Primer 🔗A study of the composition and structure of all steels and cast irons must begin with an examination of the iron-carbon phase (equilibrium) diagram. The term &amp;ldquo;iron-carbon&amp;rdquo; is, however, incorrect as this equilibrium diagram actually represents the metastable equilibrium between iron and cementite, instead of iron and carbon (graphite). So, strictly speaking, the true equilibrium should be between iron and graphite. Because graphite is practically non-existent in steels but cementite is, the metastable equilibrium between iron and cementite is considered because it accurately reflects the phases present in important (practical) iron-carbon alloys.</description>
+    </item>
+    
     <item>
       <title>Solidification: The melting, freezing point conundrum</title>
       <link>https://www.innermonologue.xyz/posts/melting_freezing_conundrum/</link>
