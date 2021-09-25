@@ -153,26 +153,17 @@
         <div class="content">
             <h2 id="solidification">Solidification <a href="#solidification" class="anchor">🔗</a></h2><p>Any phase change is feasible if and only if there is a driving force, here, it is the decrease in free energy that drives the phase transformation. Let us consider a typical liquid to solid phase transformation. When a liquid is cooled below its <em>equilibrium melting temperature</em> $ \mathrm{(T_m)} $, there is a driving force for solidification $ \mathrm{(G_S - G_L)} $, and thus one expects the liquid phase to solidify spontaneously. In practice, however, this is not the case, as many liquid metal melts can be significantly cooled below the equilibrium melting point (undercooling).</p>
 
-
-
-
-
-
-    
-
-
-
-
-
-<figure class="center">
     <img
-        style="max-width: 100%; width: auto; height: auto;"
-        src="/posts/melting_freezing_conundrum/assets/liquid_to_solid_transformation_hub5afbe777c9b8b033bb2b13dc013e37c_20900_400x0_resize_box_3.png"
-        width="400"
-        height="413"
+        src="assets/liquid_to_solid_transformation.svg"
+        alt="liquid_to_solid_transformation"
+        class="
+            center
+        "
+        height="400px"
+        
+        style="padding:4px;background-color:white"
     />
-    
-</figure>
+
 
 <blockquote>
 <p>What is undercooling?</p>
@@ -182,13 +173,22 @@
 \Delta G_V &amp; = \Delta H_V - T_m\Delta S_V = 0 \nonumber \\<br>
 \therefore \Delta S_V &amp; = \frac{\Delta H_V}{T_m}
 \end{align}
-Assuming $ \mathrm{\Delta G_V} $, $ \mathrm{\Delta S_V} $ are constant w.r.t. temperature, then the free energy change associated with the solidification of metal at any temperature T can be determined as,
+Assuming $ \mathrm{\Delta G_V} $, $ \mathrm{\Delta S_V} $ are constant w.r.t. temperature, then the free energy change associated with the solidification of metal at any temperature T can be determined as,</p>
+
+
+
+<div class="math-scroll">
+<p>
 \begin{align}
-\Delta G_V &amp; = \Delta H_V - T\Delta S_V\nonumber \\<br>
-\Delta G_V &amp; = \Delta H_V - T\left( \frac{\Delta H_V}{T_m} \right)\nonumber \\<br>
-\Delta G_V &amp; = \Delta H_V\left( \frac{T_m-T}{T_m} \right) = \frac{\Delta H_V \Delta T}{T_m}\label{eq:1}
+\Delta G_V & = \Delta H_V - T\Delta S_V\nonumber \\
+\Delta G_V & = \Delta H_V - T\left( \frac{\Delta H_V}{T_m} \right)\nonumber \\
+\Delta G_V & = \Delta H_V\left( \frac{T_m-T}{T_m} \right) = \frac{\Delta H_V \Delta T}{T_m}\label{eq:1}
 \end{align}
-Where $ \mathrm{\Delta T} $ is the degree of undercooling, which is the difference between the equilibrium temperature of solidification and the temperature at which solidification begins spontaneously.</p>
+</p>
+</div>
+
+
+<p>Where $ \mathrm{\Delta T} $ is the degree of undercooling, which is the difference between the equilibrium temperature of solidification and the temperature at which solidification begins spontaneously.</p>
 <blockquote>
 <p>Why does this happen?</p>
 </blockquote>
@@ -199,32 +199,32 @@ Where $ \mathrm{\Delta T} $ is the degree of undercooling, which is the differen
 <li>Generation of new volumes (of nuclei), accompanied by a decrease in bulk $ (\text{liquid} - \text{solid}) $ free energy.</li>
 <li>Generation of new surfaces/interfaces (of nuclei), accompanied by an increase in interface energy.</li>
 </ol>
-<p>\begin{align}
-\Delta G &amp; = \text{Decrease in bulk free energy} + \text{Increase in interface energy} \nonumber \\<br>
-\Delta G &amp; = -\text{Volume}\cdot\Delta G_V + \text{Interface}\cdot\gamma \nonumber \\<br>
-\Delta G &amp; = -\left( \frac{4}{3} \pi r^{3} \right)\cdot\Delta G_V + \left( 4\pi r^{2} \right)\cdot\gamma\label{eq:2}
-\end{align}</p>
 
 
 
+<div class="math-scroll">
+<p>
+\begin{align}
+\Delta G & = \text{Decrease in bulk free energy} + \text{Increase in interface energy} \nonumber \\
+\Delta G & = -\text{Volume}\cdot\Delta G_V + \text{Interface}\cdot\gamma \nonumber \\
+\Delta G & = -\left( \frac{4}{3} \pi r^{3} \right)\cdot\Delta G_V + \left( 4\pi r^{2} \right)\cdot\gamma\label{eq:2}
+\end{align}
+</p>
+</div>
 
 
 
-    
-
-
-
-
-
-<figure class="center">
     <img
-        style="max-width: 100%; width: auto; height: auto;"
-        src="/posts/melting_freezing_conundrum/assets/variation_of_free_energy_with_radius_hudf7ce7ac3d17c98bb3c144251f0f431b_31904_400x0_resize_box_3.png"
-        width="400"
-        height="309"
+        src="assets/variation_of_free_energy_with_radius.svg"
+        alt="variation_of_free_energy_with_radius"
+        class="
+            center
+        "
+        height="300px"
+        
+        style="padding:4px;background-color:white"
     />
-    
-</figure>
+
 
 <p>The above figure shows a possible plot of eq. \ref{eq:2}, wherein the formation of small solid particles always increases free energy because the interfacial term increases as $ \mathrm{r^2} $, whereas the volume free energy released only increases as $ \mathrm{r^3}$. Furthermore, it demonstrates that for a given undercooling, there is a radius, $ \mathrm{r^\ast} $, corresponding to the maximum free energy.</p>
 <p>Unstable nuclei with radius $ \mathrm{r} &lt; \mathrm{r^\ast} $ are known as <em>embryos</em> while stable nuclei with radius $ \mathrm{r} &gt; \mathrm{r^\ast} $ are referred to as <em>supercritical nuclei</em>; $ \mathrm{r^\ast} $ is known as the <em>critical nucleus radius</em>, and can be derived by differentiating eq. \ref{eq:2},</p>
@@ -265,26 +265,17 @@ r^\ast &amp; = -\frac{2\gamma}{\Delta G_V} \label{eq:3} \\<br>
 
 <p>As a result, at smaller undercooling (i.e., closer to the melting point, where the value of $ \mathrm{r^\ast} $ is large), the probability of forming supercritical nuclei is lower, as is the probability of solidification (because at least one nucleus must grow to cause solidification). Solidification is thus more likely at larger undercooling, where the $ \mathrm{r^\ast} $ is smaller.</p>
 
-
-
-
-
-
-    
-
-
-
-
-
-<figure class="center">
     <img
-        style="max-width: 100%; width: auto; height: auto;"
-        src="/posts/melting_freezing_conundrum/assets/critical_nuclei_vs_undercooling_huf2f298be65492b9f36e7673f9b605502_9664_200x0_resize_box_3.png"
-        width="200"
-        height="299"
+        src="assets/critical_nuclei_vs_undercooling.svg"
+        alt="critical_nuclei_vs_undercooling"
+        class="
+            center
+        "
+        height="300px"
+        
+        style="padding:4px;background-color:white"
     />
-    
-</figure>
+
 
 <h2 id="conclusion">Conclusion <a href="#conclusion" class="anchor">🔗</a></h2><p>Recall eq. \ref{eq:1} i.e., $ \Delta G_V = \frac{\Delta H_V \Delta T}{T_m} $. Now, at $ \mathrm{T} = \mathrm{T_m} $, $ \mathrm{\Delta G_V} = 0 $ and therefore, it follows from eq. \ref{eq:3}, that $ \mathrm{r^\ast} = \infty $.</p>
 <p>That is, for solidification to <em>start</em> and <em>continue unaided</em>, a nuclei of size $ \infty $ must form, which is quite impossible. In other words, in a homogeneous melt, spontaneous solidification at the melting point (i.e., zero undercooling) is not feasible. It can also be stated that while there is a fixed melting point, there is no fixed freezing point.</p>
