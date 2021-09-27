@@ -228,6 +228,29 @@ a.dark-mode-toggle {
     color: #0366d6;
 }
 
+/* TOC */
+.toc {
+    margin: auto;
+    background: #f8f8f8;
+    border-radius: 0;
+    padding: 10px 7px;
+    margin-top: 36px;
+}
+.toc details summary {
+    cursor: pointer;
+    margin-inline-start: 14px;
+    font-weight: bold;
+}
+.toc details[open] summary {
+    cursor: pointer;
+}
+.toc #TableOfContents {
+    margin-left: 10px;
+}
+.toc ul {
+    padding-inline-start: 24px;
+}
+
 /* Horizontal scroll */
 .math-scroll {
     display: block;
