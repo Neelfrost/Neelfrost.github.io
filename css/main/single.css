@@ -1,0 +1,75 @@
+/* ---------------------------------- single ---------------------------------- */
+#single {
+    max-width: 750px;
+    margin: 60px auto 0 auto;
+    padding: 0 64px;
+}
+#single .title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 48px;
+}
+#single .tip {
+    text-align: center;
+    color: var(--tag-text);
+    margin-top: 18px;
+    font-size: 14px;
+}
+#single .tip .split {
+    margin: 0 4px;
+}
+#single .content {
+    margin-top: 36px;
+}
+#single .tags {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+#single .tags a {
+    background: var(--tag);
+    padding: 4px 7px;
+    color: var(--tag-text);
+    font-size: 14px;
+    margin-right: 3px;
+}
+#single .tags a:hover {
+    color: var(--accent-hover);
+}
+@media (max-width: 700px) {
+    #single {
+        padding: 0 18px;
+        margin: 20px auto 0 auto;
+    }
+    #single .title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+/* ----------------------------------- TOC ---------------------------------- */
+.toc {
+    margin: auto;
+    background: var(--tag);
+    border-radius: 0;
+    padding: 10px 7px;
+    margin-top: 36px;
+}
+.toc details summary {
+    cursor: pointer;
+    margin-inline-start: 14px;
+    font-weight: bold;
+}
+.toc details[open] summary {
+    cursor: pointer;
+}
+.toc #TableOfContents {
+    margin-left: 10px;
+}
+.toc ul {
+    padding-inline-start: 24px;
+    font-weight: 500;
+}

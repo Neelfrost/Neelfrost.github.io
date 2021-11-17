@@ -1,0 +1,47 @@
+/* --------------------------------- Archive -------------------------------- */
+#archive {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+#archive .total {
+    font-size: 15px;
+}
+#archive .group {
+    margin: 24px auto;
+}
+#archive .group .key {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+#archive .group .value {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+#archive .group .value .date {
+    display: inline-block;
+    color: var(--tag-text);
+    min-width: 60px;
+}
+#archive .group .value .title {
+    font-weight: bold;
+    display: inline;
+}
+#archive .group .value .title a {
+    color: var(--fg1);
+}
+#archive .group .value .title a:hover {
+    color: var(--accent-hover);
+}
+
+/* ----------------------------------- 404 ---------------------------------- */
+#page-404 {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+#page-404 .text {
+    text-align: center;
+    margin-top: 60px;
+}

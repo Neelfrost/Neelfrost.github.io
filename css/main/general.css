@@ -1,0 +1,170 @@
+/* Variables */
+:root {
+    /* Font */
+    --font: "Rubik", sans-serif;
+
+    /* Colors */
+    --accent-hover: #0366d6;
+    --accent: #5badf0;
+    --bg1: #fff;
+    --bg2: #fcfcfc;
+    --border: #dadadc;
+    --fg1: #404040;
+    --tag-text: #757575;
+    --tag: #f2f2f2;
+}
+
+.darktheme {
+    /* Colors */
+    --accent-hover: #5badf0;
+    --accent: #0366d6;
+    --bg1: #131313;
+    --bg2: #161616;
+    --border: #343436;
+    --fg1: #a6a6a6;
+    --tag-text: #888888;
+    --tag: #191919;
+}
+
+/* --------------------------------- Heading -------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-family: var(--font);
+}
+h1:hover a,
+h2:hover a,
+h3:hover a,
+h4:hover a {
+    visibility: visible;
+}
+.anchor {
+    font-size: 100%;
+    visibility: hidden;
+}
+
+/* ---------------------------------- Body ---------------------------------- */
+body {
+    font-family: var(--font);
+    color: var(--fg1);
+    background: var(--bg1);
+    line-height: 1.75;
+}
+
+/* ---------------------------------- Code ---------------------------------- */
+p code,
+pre code {
+    font-family: "Oxygen Mono", monospace;
+    font-size: 14px;
+    line-height: inherit;
+}
+
+.highlight pre {
+    border-radius: 4px;
+    padding: 14px;
+    overflow-x: auto;
+}
+.highlight {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* ------------------------------- Paragraphs ------------------------------- */
+p {
+    text-align: justify;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+}
+
+/* ---------------------------------- Links --------------------------------- */
+a {
+    text-decoration: none;
+    color: var(--accent);
+}
+a:hover {
+    color: var(--accent-hover);
+}
+
+/* ------------------------------- Blockquote ------------------------------- */
+blockquote {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 1em;
+    margin-left: 0px;
+    border-left: 3px solid var(--border);
+    color: var(--tag-text);
+}
+
+hr {
+    display: block;
+    border: none;
+    height: 2px;
+    margin: 40px auto;
+    background: var(--border);
+}
+
+/* ---------------------------------- Table --------------------------------- */
+table {
+    width: 100%;
+    margin: 40px 0;
+    border-collapse: collapse;
+    line-height: 1.5em;
+    overflow-x: auto;
+    display: block;
+}
+
+th,
+td {
+    text-align: left;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+table td,
+td {
+    border-spacing: none;
+    border-style: solid;
+    padding: 10px 15px;
+    border-width: 1px 0 0 0;
+}
+thead th,
+th {
+    text-align: left;
+    padding: 10px 15px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: default;
+    white-space: nowrap;
+    border: 1px solid var(--border);
+}
+
+tr > td {
+    border: 1px solid var(--border);
+}
+
+tr:nth-child(odd) > td {
+    background: var(--bg2);
+}
+
+/* ---------------------------------- Main ---------------------------------- */
+.main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* --------------------------------- Section -------------------------------- */
+#section {
+    max-width: 750px;
+    margin: 48px auto 0 auto;
+    padding: 0 12px;
+}
+
+/* --------------------------------- Comment -------------------------------- */
+#comment {
+    margin-top: 64px;
+}

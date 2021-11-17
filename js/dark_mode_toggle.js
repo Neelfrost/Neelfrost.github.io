@@ -1,6 +1,5 @@
 var button = document.getElementById("dark-mode-toggle");
 var icon = document.getElementById("dark-mode-toggle-icon");
-var darkThemeCSS = document.getElementById("dark-mode-theme");
 
 var savedTheme = localStorage.getItem("dark-mode-storage") || "light";
 var isDark = savedTheme == "dark" ? true : false;
@@ -14,12 +13,11 @@ button.addEventListener("click", () => {
 
 function setTheme(mode) {
     localStorage.setItem("dark-mode-storage", mode);
-
     if (mode === "dark") {
-        darkThemeCSS.disabled = false;
+        document.body.classList.add("darktheme");
         icon.className = "fas fa-sun";
     } else if (mode === "light") {
-        darkThemeCSS.disabled = true;
+        document.body.classList.remove("darktheme");
         icon.className = "fas fa-moon";
     }
 }

@@ -1,0 +1,29 @@
+#tags {
+    max-width: 750px;
+    margin: 48px auto 0 auto;
+    padding: 0 12px;
+    text-align: center;
+}
+#tags .tag {
+    display: inline-block;
+    margin: 7px 7px;
+}
+#tags .tag a {
+    padding: 4px 7px;
+    font-size: 14px;
+    margin-right: 3px;
+    background: var(--tag);
+    color: var(--tag-text);
+}
+#tags .tag a:hover {
+    color: var(--accent-hover);
+}
+@media (max-width: 700px) {
+    #tags {
+        margin: 0 auto 0 auto;
+    }
+    #tags .tag {
+        display: inline-block;
+        margin: 4px 5px;
+    }
+}

@@ -1,504 +1,658 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <title>Iron-Carbon Diagram: A solidification perspective | Inner Monologue</title>
+    <head>
+        <title>Iron-Carbon Diagram: A solidification perspective |Inner Monologue</title>
 
-    <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width,minimum-scale=1" />
-<meta
-    name="description"
-    content="
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1" />
+        <meta
+            name="description"
+            content="
         A deep dive into the iron-carbon diagram and related phase transformations.
     "
-/>
+        />
 
+        <meta name="generator" content="Hugo 0.89.2" />
 
-<meta name="generator" content="Hugo 0.88.1" />
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
 
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/main/general.css" />
 
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/main/nav.css" />
 
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/main/index.css" />
 
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/main/single.css" />
 
-    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/main/graphics.css" />
 
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/main/archive.css" />
 
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/main/tags.css" />
 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLEE30PBG4"></script>
+        <script>
+            var doNotTrack = false;
+            if (!doNotTrack) {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag("js", new Date());
+                gtag("config", "G-TLEE30PBG4", { anonymize_ip: false });
+            }
+        </script>
 
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.css" />
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [
+                        ["$", "$"],
+                        ["\\(", "\\)"],
+                    ],
+                    displayMath: [
+                        ["$$", "$$"],
+                        ["\\[", "\\]"],
+                    ],
+                    processEscapes: true,
+                    processEnvironments: true,
+                    tags: "ams",
+                },
+                options: {
+                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
+                },
+            };
 
+            window.addEventListener("load", (event) => {
+                document.querySelectorAll("mjx-container").forEach(function (x) {
+                    x.parentElement.classList += "has-jax";
+                });
+            });
+        </script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script
+            type="text/javascript"
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+        ></script>
 
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.innermonologue.xyz/icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.innermonologue.xyz/icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="https://www.innermonologue.xyz/icons/favicon-16x16.png" />
+        <link rel="manifest" href="https://www.innermonologue.xyz/icons/site.webmanifest" />
+        <link rel="mask-icon" href="https://www.innermonologue.xyz/icons/safari-pinned-tab.svg" color="" />
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.innermonologue.xyz/icons/favicon.ico" />
 
-    
-        
-        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/custom.css" />
-    
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/fontawesome.min.css" />
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/solid.min.css" />
+        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/brands.min.css" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+    </head>
 
+    <body>
+        <nav class="navigation">
+            <a href="/"> Home </a>
 
+            <a href="/about">About</a>
+            <a href="/posts">Archive</a>
+            <a href="/tags">Tags</a>
+            <a class="dark-mode-toggle" id="dark-mode-toggle"><i id="dark-mode-toggle-icon" class="fas fa-moon"></i></a>
+        </nav>
 
+        <script src="https://www.innermonologue.xyz/js/dark_mode_toggle.js"></script>
 
+        <main class="main">
+            <section id="single">
+                <h1 class="title">Iron-Carbon Diagram: A solidification perspective</h1>
 
+                <div class="tip">
+                    <time datetime="2021-09-23 00:46:58 &#43;0530 IST">Sep 23, 2021</time>
+                    <span class="split"> · </span>
+                    <span> 1950 words </span>
+                    <span class="split"> · </span>
+                    <span> 10 minute read </span>
+                </div>
 
-
-
-    
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TLEE30PBG4"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-TLEE30PBG4', { 'anonymize_ip': false });
-}
-</script>
-
-
-
-
-
-
-    <script>
-    MathJax = {
-        tex: {
-            inlineMath: [
-                ["$", "$"],
-                ["\\(", "\\)"],
-            ],
-            displayMath: [
-                ["$$", "$$"],
-                ["\\[", "\\]"],
-            ],
-            processEscapes: true,
-            processEnvironments: true,
-            tags: "ams",
-        },
-        options: {
-            skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
-        },
-    };
-
-    window.addEventListener("load", (event) => {
-        document.querySelectorAll("mjx-container").forEach(function (x) {
-            x.parentElement.classList += "has-jax";
-        });
-    });
-</script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script
-    type="text/javascript"
-    id="MathJax-script"
-    async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-></script>
-
-
-
-
-
-
-
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="https://www.innermonologue.xyz/icons/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.innermonologue.xyz/icons/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.innermonologue.xyz/icons/favicon-16x16.png" />
-<link rel="manifest" href="https://www.innermonologue.xyz/icons/site.webmanifest" />
-<link rel="mask-icon" href="https://www.innermonologue.xyz/icons/safari-pinned-tab.svg" color="" />
-<link rel="shortcut icon" type="image/x-icon" href="https://www.innermonologue.xyz/icons/favicon.ico" />
-
-
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/fontawesome.min.css" />
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/solid.min.css" />
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/brands.min.css" />
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"
-/>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
-
-
-<link disabled id="dark-mode-theme" rel="stylesheet" href="https://www.innermonologue.xyz/css/dark.css" />
-
-
-  </head>
-
-  <body>
-    <nav class="navigation">
-    
-        <a href="/">
-            
-                Home
-            </a
-        >
-    
-    <a href="/about">About</a>
-    <a href="/posts">Archive</a>
-    <a href="/tags">Tags</a>
-    <a class="dark-mode-toggle" id="dark-mode-toggle"><i id="dark-mode-toggle-icon" class="fas fa-moon"></i></a>
-
-    
-</nav>
-
-
-<script src="https://www.innermonologue.xyz/js/dark_mode_toggle.js"></script>
-
-
-    <main class="main">
-      
-
-    <section id="single">
-        <h1 class="title">Iron-Carbon Diagram: A solidification perspective</h1>
-
-        <div class="tip">
-            <time datetime="2021-09-23 00:46:58 &#43;0530 IST">Sep 23, 2021</time>
-            <span class="split"> · </span>
-            <span>
-                1980 words
-            </span>
-            <span class="split"> · </span>
-            <span>
-                10 minute read
-            </span>
-        </div>
-
-        
-            <div class="tags">
-                
+                <div class="tags">
                     <div><a href="https://www.innermonologue.xyz/tags/metallurgy">metallurgy</a></div>
-                
+                </div>
+
+                <aside class="toc">
+                    <details>
+                        <summary>Table of Contents</summary>
+                        <div>
+                            <nav id="TableOfContents">
+                                <ul>
+                                    <li>
+                                        <a href="#primer">Primer</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#phases-in-iron-carbon-phase-diagram"
+                                                    >Phases in Iron-Carbon Phase Diagram</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#micro-constituents-in-iron-carbon-phase-diagram"
+                                                    >Micro-constituents in Iron-Carbon Phase Diagram</a
+                                                >
+                                            </li>
+                                            <li><a href="#iron-carbon-phase-diagram">Iron-Carbon Phase Diagram</a></li>
+                                            <li><a href="#critical-temperatures">Critical Temperatures</a></li>
+                                            <li><a href="#invariant-reactions">Invariant Reactions</a></li>
+                                            <li><a href="#lever-rule">Lever Rule</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#solidification-of-steels">Solidification of Steels</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#solidification-of-hypoeutectoid-steels"
+                                                    >Solidification of Hypoeutectoid Steels</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#solidification-of-eutectoid-steels"
+                                                    >Solidification of Eutectoid Steels</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a href="#solidification-of-hypereutectoid-steels"
+                                                    >Solidification of Hypereutectoid Steels</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#solidification-of-cast-irons">Solidification of Cast Irons</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </details>
+                </aside>
+
+                <div class="content">
+                    <h2 id="primer">Primer <a href="#primer" class="anchor">🔗</a></h2>
+                    <p>
+                        A study of the composition and structure of all steels and cast irons must begin with an
+                        examination of the iron-carbon phase (equilibrium) diagram. The term &ldquo;iron-carbon&rdquo;
+                        is, however, incorrect as this equilibrium diagram actually represents the metastable
+                        equilibrium between iron and cementite, instead of iron and carbon (graphite). So, strictly
+                        speaking, the true equilibrium should be between iron and graphite. Because graphite is
+                        practically non-existent in steels but cementite is, the metastable equilibrium between iron and
+                        cementite is considered because it accurately reflects the phases present in important
+                        (practical) iron-carbon alloys.
+                    </p>
+                    <blockquote>
+                        <p>
+                            Since cementite is metastable, it will eventually decompose into iron and graphite, this
+                            process is known as <strong>graphitization</strong>. This decomposition, however, takes a
+                            very long time even at elevated temperatures. Moreover, with the help of alloying additions,
+                            graphitization can be retarded, e.g., with Si. So for practical purposes, cementite can be
+                            considered as an equilibrium (stable) phase.
+                        </p>
+                    </blockquote>
+                    <p>
+                        It should be noted that, even with the presence of cementite, the iron-carbon phase diagram is
+                        an equilibrium diagram, which means that the phases encountered during solidification are
+                        <strong>equilibrium phases</strong>, which are the result of
+                        <strong>slow cooling/heating rates</strong> (i.e., sufficient time for carbon to diffuse in and
+                        out of iron lattice is available). Consequently, other metastable phases like martensite,
+                        bainite are not present in the iron-carbon phase diagram since they are the product of fast
+                        cooling i.e., a quench.
+                    </p>
+                    <p>
+                        Before diving into the solidification of various alloys, let us go over a few important topics.
+                        <a href="#solidification-of-steels">Click here</a> to skip the primer.
+                    </p>
+                    <h3 id="phases-in-iron-carbon-phase-diagram">
+                        Phases in Iron-Carbon Phase Diagram
+                        <a href="#phases-in-iron-carbon-phase-diagram" class="anchor">🔗</a>
+                    </h3>
+                    <blockquote>
+                        <p>What is a phase?</p>
+                    </blockquote>
+                    <p>
+                        A phase is a homogeneous, physically distinct, and mechanically separable substance or portion
+                        of matter. It is homogeneous in the sense that its two smallest parts are indistinguishable.
+                        Physically distinct and mechanically separable means that the phase will have a definite
+                        boundary surface.
+                    </p>
+                    <p>
+                        Let us go over the formal definitions and characteristics of the various phases present in the
+                        iron-carbon diagram.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>α-Ferrite</p>
+                            <p>
+                                The interstitial solid solution of carbon in α-iron with crystal structure BCC (lattice
+                                constant of 2.86 Å) is called α-ferrite. Carbon has a maximum solubility of 0.025% at
+                                727 °C and a minimum solubility of 0.0025% at room temperature.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Austenite</p>
+                            <p>
+                                The interstitial solid solution of carbon in γ-iron with crystal structure FCC is called
+                                austenite. Carbon has a maximum solubility of 2% at 1147 °C and a minimum solubility of
+                                0.77% at 727 °C. Unstable at room temperature, but can be made stable by adding alloying
+                                elements such as Ni, Mn, etc.
+                            </p>
+                        </li>
+                        <li>
+                            <p>δ-Ferrite</p>
+                            <p>
+                                The interstitial solid solution of carbon in δ-iron with crystal structure BCC (lattice
+                                constant of 2.89 Å) is called δ-ferrite. The maximum solubility of carbon is 0.09% at
+                                1495 °C. It is non-magnetic, and is a high temperature phase (high temperature
+                                manifestation of α-ferrite). In heat treating practice for plain carbon and low-alloy
+                                steels, δ-ferrite has no significance.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Cementite</p>
+                            <p>
+                                The metastable Fe-C intermetallic compound $(\ce{Fe3C})$ with a fixed carbon wt. % of
+                                6.67% is known as cementite. It has an orthorhombic crystal structure with the lattice
+                                constants a = 4.52 Å, b = 5.09 Å, and c = 6.74 Å. It is the hardest phase in the
+                                iron-carbon diagram and thus plays an important role in the hardening of many commercial
+                                steels.
+                            </p>
+                        </li>
+                    </ol>
+                    <h3 id="micro-constituents-in-iron-carbon-phase-diagram">
+                        Micro-constituents in Iron-Carbon Phase Diagram
+                        <a href="#micro-constituents-in-iron-carbon-phase-diagram" class="anchor">🔗</a>
+                    </h3>
+                    <p>A Micro-constituent is a mixture of phases that has a distinct identity in a microstructure.</p>
+                    <blockquote>
+                        <p>What is a microstructure?</p>
+                    </blockquote>
+                    <p>
+                        A microstructure is the appearance of a material&rsquo;s structure under a microscope. A
+                        microstructure is made up of two parts: phase structure and grain structure. The phase structure
+                        is defined by the presence of various phases, their relative amounts, distribution, and
+                        alignment. The grain structure of the material shows the shape and size of the grains (crystals)
+                        which form the bulk material. It is characterized by grain boundaries, grain shape, and grain
+                        size.
+                    </p>
+                    <p>
+                        Let us go over the formal definitions and characteristics of the various micro-constituent
+                        present in the iron-carbon diagram.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>Pearlite</p>
+                            <p>
+                                Pearlite is the product of austenite decomposition by a eutectoid reaction at 0.8%
+                                carbon and 723 °C. Pearlite of eutectoid composition contains 88.3% ferrite and 11.7%
+                                cementite. It is an intimate mixture of ferrite and cementite. It has a lamellar
+                                structure that consists of alternate plates of ferrite and cementite.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Ledeburite</p>
+                            <p>
+                                Ledeburite is the product of eutectic reaction at 1147 °C and 4.33% carbon. Ledeburite
+                                of a eutectic composition contains 50.1% austenite and 49.9% cementite. It is an
+                                intimate mixture of austenite and cementite. It has a lamellar structure that consists
+                                of alternate plates of austenite and cementite. Austenite of ledeburite undergoes a
+                                eutectoid transformation into pearlite below 723 °C, and the resulting micro-constituent
+                                is known as <strong>transformed ledeburite</strong>.
+                            </p>
+                        </li>
+                    </ol>
+                    <h3 id="iron-carbon-phase-diagram">
+                        Iron-Carbon Phase Diagram <a href="#iron-carbon-phase-diagram" class="anchor">🔗</a>
+                    </h3>
+                    <img
+                        src="assets/iron_carbon_phase_diagram.svg"
+                        alt="iron_carbon_phase_diagram"
+                        class="center"
+                        style="padding: 8px; background-color: white"
+                    />
+
+                    <h3 id="critical-temperatures">
+                        Critical Temperatures <a href="#critical-temperatures" class="anchor">🔗</a>
+                    </h3>
+                    <p>
+                        When an alloy is heated or cooled to &ldquo;critical temperature&rdquo;, certain phase
+                        transformations occur. The following symbols are used for the iron-carbon diagram.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align: center">Critical Points</th>
+                                <th style="text-align: center">Transformation Temperature</th>
+                                <th style="text-align: center">Nature of Transformation</th>
+                                <th>Line of Transformation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ac_{1}}$</td>
+                                <td style="text-align: center">723 °C</td>
+                                <td style="text-align: center">Transformation of pearlite into austenite</td>
+                                <td><strong>PSK</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ar_{1}}$</td>
+                                <td style="text-align: center">723 °C</td>
+                                <td style="text-align: center">Transformation of austenite into pearlite</td>
+                                <td><strong>PSK</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ac_{2}}$</td>
+                                <td style="text-align: center">768 °C</td>
+                                <td style="text-align: center">Transformation of α-iron into non-magnetic β-iron</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ar_{2}}$</td>
+                                <td style="text-align: center">768 °C</td>
+                                <td style="text-align: center">Transformation of β-iron to ferro-magnetic α-iron</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ac_{3}}$</td>
+                                <td style="text-align: center">723-910 °C</td>
+                                <td style="text-align: center">Transformation of ferrite into austenite</td>
+                                <td><strong>GS</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ar_{3}}$</td>
+                                <td style="text-align: center">723-910 °C</td>
+                                <td style="text-align: center">Transformation of austenite into ferrite</td>
+                                <td><strong>GS</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ac_{m}}$</td>
+                                <td style="text-align: center">723-1147 °C</td>
+                                <td style="text-align: center">Transformation of cementite into austenite</td>
+                                <td><strong>SE</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ar_{m}}$</td>
+                                <td style="text-align: center">723-1147 °C</td>
+                                <td style="text-align: center">Transformation of austenite into cementite</td>
+                                <td><strong>SE</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ac_{4}}$</td>
+                                <td style="text-align: center">1400-1492 °C</td>
+                                <td style="text-align: center">Transformation of austenite into δ-ferrite</td>
+                                <td><strong>IJ</strong></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center">$\mathrm{Ar_{4}}$</td>
+                                <td style="text-align: center">1400-1492 °C</td>
+                                <td style="text-align: center">Transformation of δ-ferrite into austenite</td>
+                                <td><strong>IJ</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>The symbols correspond to the first letter of the French words meaning:</p>
+                    <ul>
+                        <li>A: arrêt (i.e. arrest).</li>
+                        <li>c: chauffage (i.e. heating).</li>
+                        <li>r: refroidissement (i.e. cooling).</li>
+                    </ul>
+                    <p>
+                        When equilibrium conditions are observed (i.e., slow cooling/heating) the critical temperatures
+                        $\mathrm{Ac_1} = \mathrm{Ar_1} = \mathrm{A_1} = 723\;^\circ\text{C}$ are equal. However, due to
+                        thermal hysteresis, the critical temperature on heating $\mathrm{Ac_1}$ is always higher than
+                        the critical temperature on cooling $\mathrm{Ar_1}$ at ordinary rates of heating or cooling.
+                    </p>
+                    <h3 id="invariant-reactions">
+                        Invariant Reactions <a href="#invariant-reactions" class="anchor">🔗</a>
+                    </h3>
+                    <p>
+                        The iron-carbon phase diagram contains three invariant reactions, which are associated with
+                        &ldquo;0&rdquo; degrees of freedom (according to Gibb&rsquo;s phase rule), and thus at these
+                        points, phase transformation occurs at a fixed temperature.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>
+                                Peritectic Reaction: Peritectic reaction occurs when liquid containing 0.55% carbon and
+                                δ-ferrite containing 0.09% carbon, transform on cooling into austenite with 0.18% carbon
+                                at 1492 °C.
+                            </p>
+                            <p>
+                                \begin{gather} \ce{$\underset{\text{0.55}}{\text{L}}$ + $\underset{\text{0.09}}{\delta}$
+                                &lt;-&gt;[cooling][heating] $\underset{\text{0.18}}{\gamma}$} \end{gather}
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Eutectic Reaction: Eutectic reaction occurs when liquid containing 4.33% carbon
+                                transform on cooling into austenite with 2% carbon and cementite with 6.67% carbon
+                                (i.e., ledeburite) at 1147 °C.
+                            </p>
+                            <p>
+                                \begin{gather} \ce{$\underset{\text{4.33}}{\text{L}}$ &lt;-&gt;[cooling][heating]
+                                $\underset{\text{2.0}}{\gamma}$ + $\underset{\text{6.67}}{\ce{Fe3C}}$} \end{gather}
+                            </p>
+                            <p>
+                                Alloys containing 4.33% carbon are known as eutectic cast irons. Alloys containing less
+                                than 4.33% carbon are known as hypoeutectic cast irons while those with carbon % greater
+                                than 4.33% are known as hypereutectic cast irons.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Eutectoid Reaction: Eutectoid reaction occurs when austenite containing 0.8% carbon
+                                transforms on cooling into ferrite with 0.025% carbon and cementite with 6.67% carbon
+                                (i.e., pearlite) at 723 °C.
+                            </p>
+                            <p>
+                                \begin{gather} \ce{$\underset{\text{0.8}}{\gamma}$ &lt;-&gt;[cooling][heating]
+                                $\underset{\text{0.025}}{\alpha}$ + $\underset{\text{6.67}}{\ce{Fe3C}}$} \end{gather}
+                            </p>
+                            <p>
+                                Alloys containing 0.8% carbon are known as eutectoid steels. Alloys containing less than
+                                0.8% carbon are known as hypoeutectoid steels while those with carbon % greater than
+                                0.8% are known as hypereutectoid steels.
+                            </p>
+                        </li>
+                    </ol>
+                    <h3 id="lever-rule">Lever Rule <a href="#lever-rule" class="anchor">🔗</a></h3>
+                    <p>
+                        Using a relationship known as the lever rule, we can determine the relative amount of each phase
+                        that is present in the phase diagram in a two-phase region. For the lever rule to be applied on
+                        a two-phase region, a tie-line must be drawn, which is a horizontal line that joins the
+                        conjugate phases that coexist at a specific temperature.
+                    </p>
+                    <p>
+                        Let us take an example of steel containing 0.8% carbon (i.e., eutectoid composition) at a
+                        temperature just below $\mathrm{A_1}$. Here, the conjugate phases will be ferrite and cementite,
+                        and the tie-line will be constructed by joining the points corresponding to 100% ferrite and
+                        100% cementite at $\mathrm{A_1}$ i.e., 0.025% carbon and 6.67% carbon. Coincidentally, this
+                        tie-line corresponds to the eutectoid reaction line. Finally, to complete the lever, the fulcrum
+                        can be situated at the final alloy composition i.e., 0.8% carbon.
+                    </p>
+
+                    <img
+                        src="assets/lever_rule_example.svg"
+                        alt="lever_rule_example"
+                        class="center"
+                        style="padding: 8px; background-color: white; padding: 4px; background-color: white"
+                    />
+
+                    <p>The calculation is as follows:</p>
+                    <div class="math-scroll">
+                        <p>
+                            \begin{align} \text{ferrite} & = \frac{\text{Length of opposite arm (ZY)}}{\text{Total
+                            length (XY)}} \times 100 = \frac{6.67-0.8}{6.67-0.025} \times 100 = 88.3\\% \\\\
+                            \text{cementite} & = \frac{\text{Length of opposite arm (XZ)}}{\text{Total length (XY)}}
+                            \times 100 = \frac{0.8-0.025}{6.67-0.025} \times 100 = 11.7\\% \end{align}
+                        </p>
+                    </div>
+
+                    <h2 id="solidification-of-steels">
+                        Solidification of Steels <a href="#solidification-of-steels" class="anchor">🔗</a>
+                    </h2>
+                    <h3 id="solidification-of-hypoeutectoid-steels">
+                        Solidification of Hypoeutectoid Steels
+                        <a href="#solidification-of-hypoeutectoid-steels" class="anchor">🔗</a>
+                    </h3>
+                    <p class="wrap-left">
+                        <img src="assets/hypoeutectoid_steel.png" alt="hypoeutectoid_steel" width="300px" />
+                    </p>
+
+                    <p>
+                        Since austenite is unstable below 723 °C ($\mathrm{A_1}$), it transforms into two phases which
+                        are stable below 723 °C, namely, ferrite and cementite. However, for this transformation to
+                        occur, austenite must have a eutectoid composition i.e., 0.8% carbon. To achieve such a
+                        composition, just below $x_2$, nucleation of <strong>proeutectoid ferrite</strong> begins at the
+                        austenite grain boundaries.
+                    </p>
+                    <blockquote>
+                        <p>
+                            Proeutectoid ferrite is the ferrite that has formed before eutectoid temperature.
+                            &ldquo;Pro-&rdquo; meaning &ldquo;before&rdquo;.
+                        </p>
+                    </blockquote>
+                    <p>
+                        Since the solubility of carbon in ferrite is very low, the formation/growth of proeutectoid
+                        ferrite proceeds with the rejection of carbon, this, in turn, enriches the austenite in carbon.
+                        This can be seen clearly on the iron-carbon diagram $\to$ the composition of austenite varies
+                        along GS (0.4% at $x_2$ and 0.8% i.e., the eutectoid composition, at $x_4$). Similarly, the
+                        composition of proeutectoid ferrite varies along GP.
+                    </p>
+
+                    <img
+                        src="assets/hypoeutectoid_composition_variation.svg"
+                        alt="composition_variation"
+                        class="center"
+                        style="padding: 8px; background-color: white"
+                    />
+
+                    <blockquote>
+                        <p>
+                            As per the figure, upon cooling the alloy till $\mathrm{A_1}$, 51.6% ferrite must separate
+                            out from the alloy (which was initially composed of 100% austenite) so that the remaining
+                            austenite can achieve eutectoid composition. Note: The compositions are calculated using the
+                            <a href="#lever-rule">lever rule</a> and as an approximation, the lines of transformation
+                            (GS, GP) are considered to be straight.
+                        </p>
+                    </blockquote>
+                    <p>
+                        Hence, as the alloy cools further, the proeutectoid ferrite grains grow, and the remaining
+                        austenite achieves eutectoid composition. Finally, at eutectoid temperature ($x_4$), austenite
+                        (of eutectoid composition), transforms into a lamellar mixture of ferrite and cementite i.e.,
+                        <strong>pearlite</strong>, through a eutectoid reaction. Thus, just below the eutectoid
+                        temperature, the microstructure will consist of proeutectoid ferrite and pearlite, relative
+                        amounts of which can be calculated using the lever rule as shown
+                        <a href="#lever-rule">above</a> .
+                    </p>
+                    <p>
+                        When the alloy is slowly cooled to room temperature, the proeutectoid ferrite begins to reject
+                        carbon because the solubility of carbon in ferrite decreases with temperature. The rejected
+                        carbon (with a carbon percent of 6.67%) will go on to form <strong>tertiary cementite</strong>.
+                        Therefore, the final microstructure of hypoeutectoid steel will consist of proeutectoid ferrite,
+                        pearlite, and tertiary cementite.
+                    </p>
+                    <h3 id="solidification-of-eutectoid-steels">
+                        Solidification of Eutectoid Steels
+                        <a href="#solidification-of-eutectoid-steels" class="anchor">🔗</a>
+                    </h3>
+                    <p class="wrap-right">
+                        <img
+                            src="assets/eutectoid_reaction_cooling_curve.svg"
+                            alt="eutectoid_reaction_cooling_curve"
+                            width="300px"
+                            style="padding: 8px; background-color: white"
+                        />
+                    </p>
+
+                    <p>
+                        Consider the solidification of an alloy of iron-carbon containing 0.8% carbon (i.e., eutectoid
+                        composition). It will remain austenite up to point S (i.e., eutectoid point). Crossing this
+                        point (or more correctly, $\mathrm{A_1}$), the alloy (composed of 100% austenite) transforms
+                        into pearlite through a eutectoid reaction. Regardless of the alloy, this transformation always
+                        takes place at a constant temperature (see figure).
+                    </p>
+                    <blockquote>
+                        <p>
+                            Note: This holds true for all invariant reactions and in both directions i.e., cooling or
+                            heating.
+                        </p>
+                    </blockquote>
+                    <p>
+                        Cooling the alloy further to room temperature has no effect on the microstructure; in other
+                        words, the final microstructure at room temperature consists solely of pearlite.
+                    </p>
+                    <h3 id="solidification-of-hypereutectoid-steels">
+                        Solidification of Hypereutectoid Steels
+                        <a href="#solidification-of-hypereutectoid-steels" class="anchor">🔗</a>
+                    </h3>
+                    <p class="wrap-left">
+                        <img src="assets/hypereutectoid_steel.png" alt="hypereutectoid_steel" width="300px" />
+                    </p>
+
+                    <p>
+                        Consider the cooling of an alloy of iron-carbon containing 1.2% carbon. At point $y_1$ i.e.,
+                        above upper critical temperature $\mathrm{Ac_m}$, the alloy consists only of austenite. When the
+                        alloy is cooled to point $y_2$, i.e., when it crosses the $\mathrm{Ac_m}$,
+                        <strong>proeutectoid cementite</strong> nucleates along the grain boundaries of austenite.
+                    </p>
+                    <blockquote>
+                        <p>
+                            Austenite in hypereutectoid steels is rich in carbon, therefore it rejects excess carbon
+                            (&gt; 0.8%) as cementite, to achieve a eutectoid composition $\to$ phenomenon opposite to
+                            the solidification of hypoeutectoid steels.
+                        </p>
+                    </blockquote>
+                    <p>
+                        As the alloy cools further, cementite grains grow and the remaining austenite achieves eutectoid
+                        composition (at 723 °C, point $y_4$). Austenite (of eutectoid composition) subsequently
+                        transforms into pearlite, through a eutectoid reaction. Cooling the alloy further to room
+                        temperature has no effect on the microstructure. The final microstructure at room temperature
+                        will consist of proeutectoid cementite and pearlite.
+                    </p>
+                    <h2 id="solidification-of-cast-irons">
+                        Solidification of Cast Irons <a href="#solidification-of-cast-irons" class="anchor">🔗</a>
+                    </h2>
+                    <p>TBA.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="powerby">
+                <a class="icon">
+                    <i class="fas fa-snowflake"></i>
+                </a>
+                2021 | Powered by <a href="http://www.gohugo.io/">Hugo</a> |
+                <a class="icon" href="mailto:neelfrost@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                    class="icon"
+                    href="https://github.com/Neelfrost/Neelfrost.github.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fab fa-github"></i>
+                </a>
+                <a
+                    class="icon"
+                    href="https://www.innermonologue.xyz/index.xml"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
             </div>
-        
-
-        
-            
-  
-    <aside class="toc">
-      <details>
-          <summary>Table of Contents
-          </summary>
-          <div>
-              <nav id="TableOfContents">
-  <ul>
-    <li><a href="#primer">Primer</a>
-      <ul>
-        <li><a href="#phases-in-iron-carbon-phase-diagram">Phases in Iron-Carbon Phase Diagram</a></li>
-        <li><a href="#micro-constituents-in-iron-carbon-phase-diagram">Micro-constituents in Iron-Carbon Phase Diagram</a></li>
-        <li><a href="#iron-carbon-phase-diagram">Iron-Carbon Phase Diagram</a></li>
-        <li><a href="#critical-temperatures">Critical Temperatures</a></li>
-        <li><a href="#invariant-reactions">Invariant Reactions</a></li>
-        <li><a href="#lever-rule">Lever Rule</a></li>
-      </ul>
-    </li>
-    <li><a href="#solidification-of-steels">Solidification of Steels</a>
-      <ul>
-        <li><a href="#solidification-of-hypoeutectoid-steels">Solidification of Hypoeutectoid Steels</a></li>
-        <li><a href="#solidification-of-eutectoid-steels">Solidification of Eutectoid Steels</a></li>
-        <li><a href="#solidification-of-hypereutectoid-steels">Solidification of Hypereutectoid Steels</a></li>
-      </ul>
-    </li>
-    <li><a href="#solidification-of-cast-irons">Solidification of Cast Irons</a></li>
-  </ul>
-</nav>
-          </div>
-      </details>
-    </aside>
-  
-
-
-        
-
-
-        <div class="content">
-            <h2 id="primer">Primer <a href="#primer" class="anchor">🔗</a></h2><p>A study of the composition and structure of all steels and cast irons must begin with an examination of the iron-carbon phase (equilibrium) diagram. The term &ldquo;iron-carbon&rdquo; is, however, incorrect as this equilibrium diagram actually represents the metastable equilibrium between iron and cementite, instead of iron and carbon (graphite). So, strictly speaking, the true equilibrium should be between iron and graphite. Because graphite is practically non-existent in steels but cementite is, the metastable equilibrium between iron and cementite is considered because it accurately reflects the phases present in important (practical) iron-carbon alloys.</p>
-<blockquote>
-<p>Since cementite is metastable, it will eventually decompose into iron and graphite, this process is known as <strong>graphitization</strong>. This decomposition, however, takes a very long time even at elevated temperatures. Moreover, with the help of alloying additions, graphitization can be retarded, e.g., with Si. So for practical purposes, cementite can be considered as an equilibrium (stable) phase.</p>
-</blockquote>
-<p>It should be noted that, even with the presence of cementite, the iron-carbon phase diagram is an equilibrium diagram, which means that the phases encountered during solidification are <strong>equilibrium phases</strong>, which are the result of <strong>slow cooling/heating rates</strong> (i.e., sufficient time for carbon to diffuse in and out of iron lattice is available). Consequently, other metastable phases like martensite, bainite are not present in the iron-carbon phase diagram since they are the product of fast cooling i.e., a quench.</p>
-<p>Before diving into the solidification of various alloys, let us go over a few important topics. <a href="#solidification-of-steels">Click here</a> to skip the primer.</p>
-<h3 id="phases-in-iron-carbon-phase-diagram">Phases in Iron-Carbon Phase Diagram <a href="#phases-in-iron-carbon-phase-diagram" class="anchor">🔗</a></h3><blockquote>
-<p>What is a phase?</p>
-</blockquote>
-<p>A phase is a homogeneous, physically distinct, and mechanically separable substance or portion of matter. It is homogeneous in the sense that its two smallest parts are indistinguishable. Physically distinct and mechanically separable means that the phase will have a definite boundary surface.</p>
-<p>Let us go over the formal definitions and characteristics of the various phases present in the iron-carbon diagram.</p>
-<ol>
-<li>
-<p>α-Ferrite</p>
-<p>The interstitial solid solution of carbon in α-iron with crystal structure BCC (lattice constant of 2.86 Å) is called α-ferrite. Carbon has a maximum solubility of 0.025% at 727 °C and a minimum solubility of 0.0025% at room temperature.</p>
-</li>
-<li>
-<p>Austenite</p>
-<p>The interstitial solid solution of carbon in γ-iron with crystal structure FCC is called austenite. Carbon has a maximum solubility of 2% at 1147 °C and a minimum solubility of 0.77% at 727 °C. Unstable at room temperature, but can be made stable by adding alloying elements such as Ni, Mn, etc.</p>
-</li>
-<li>
-<p>δ-Ferrite</p>
-<p>The interstitial solid solution of carbon in δ-iron with crystal structure BCC (lattice constant of 2.89 Å) is called δ-ferrite. The maximum solubility of carbon is 0.1% at 1495 °C. In heat treating practice for plain carbon and low-alloy steels, δ-ferrite has no significance.</p>
-</li>
-<li>
-<p>Cementite</p>
-<p>The metastable Fe-C intermetallic compound $(\ce{Fe3C})$ with a fixed carbon wt. % of 6.67% is known as cementite. It has an orthorhombic crystal structure with the lattice constants a = 4.52 Å, b = 5.09 Å, and c = 6.74 Å. It is the hardest phase in the iron-carbon diagram and thus plays an important role in the hardening of many commercial steels.</p>
-</li>
-</ol>
-<h3 id="micro-constituents-in-iron-carbon-phase-diagram">Micro-constituents in Iron-Carbon Phase Diagram <a href="#micro-constituents-in-iron-carbon-phase-diagram" class="anchor">🔗</a></h3><p>A Micro-constituent is a mixture of phases that has a distinct identity in a microstructure.</p>
-<blockquote>
-<p>What is a microstructure?</p>
-</blockquote>
-<p>A microstructure is the appearance of a material&rsquo;s structure under a microscope. A microstructure is made up of two parts: phase structure and grain structure. The phase structure is defined by the presence of various phases, their relative amounts, distribution, and alignment. The grain structure of the material shows the shape and size of the grains (crystals) which form the bulk material. It is characterized by grain boundaries, grain shape, and grain size.</p>
-<p>Let us go over the formal definitions and characteristics of the various micro-constituent present in the iron-carbon diagram.</p>
-<ol>
-<li>
-<p>Pearlite</p>
-<p>Pearlite is the product of austenite decomposition by a eutectoid reaction at 0.8% carbon and 723 °C. Pearlite of eutectoid composition contains 88.3% ferrite and 11.7% cementite. It is an intimate mixture of ferrite and cementite. It has a lamellar structure that consists of alternate plates of ferrite and cementite.</p>
-</li>
-<li>
-<p>Ledeburite</p>
-<p>Ledeburite is the product of eutectic reaction at 1147 °C and 4.33% carbon. Ledeburite of a eutectic composition contains 50.1% austenite and 49.9% cementite. It is an intimate mixture of austenite and cementite. It has a lamellar structure that consists of alternate plates of austenite and cementite. Austenite of ledeburite undergoes a eutectoid transformation into pearlite below 723 °C, and the resulting micro-constituent is known as <strong>transformed ledeburite</strong>.</p>
-</li>
-</ol>
-<h3 id="iron-carbon-phase-diagram">Iron-Carbon Phase Diagram <a href="#iron-carbon-phase-diagram" class="anchor">🔗</a></h3>
-    <img
-        src="assets/iron_carbon_phase_diagram.svg"
-        alt="iron_carbon_phase_diagram"
-        class="
-            center
-        "
-        
-        
-        style="padding:4px;background-color:white"
-    />
-
-
-<h3 id="critical-temperatures">Critical Temperatures <a href="#critical-temperatures" class="anchor">🔗</a></h3><p>When an alloy is heated or cooled to &ldquo;critical temperature&rdquo;, certain phase transformations occur. The following symbols are used for the iron-carbon diagram.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Critical Points</th>
-<th style="text-align:center">Transformation Temperature</th>
-<th style="text-align:center">Nature of Transformation</th>
-<th>Line of Transformation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">$\mathrm{Ac_{1}}$</td>
-<td style="text-align:center">723 °C</td>
-<td style="text-align:center">Transformation of pearlite into austenite</td>
-<td><strong>PSK</strong></td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ar_{1}}$</td>
-<td style="text-align:center">723 °C</td>
-<td style="text-align:center">Transformation of austenite into pearlite</td>
-<td><strong>PSK</strong></td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ac_{2}}$</td>
-<td style="text-align:center">768 °C</td>
-<td style="text-align:center">Transformation of α-iron into non-magnetic β-iron</td>
-<td>-</td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ar_{2}}$</td>
-<td style="text-align:center">768 °C</td>
-<td style="text-align:center">Transformation of β-iron to ferro-magnetic α-iron</td>
-<td>-</td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ac_{3}}$</td>
-<td style="text-align:center">723-910 °C</td>
-<td style="text-align:center">Transformation of ferrite into austenite</td>
-<td><strong>GS</strong></td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ar_{3}}$</td>
-<td style="text-align:center">723-910 °C</td>
-<td style="text-align:center">Transformation of austenite into ferrite</td>
-<td><strong>GS</strong></td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ac_{m}}$</td>
-<td style="text-align:center">723-1147 °C</td>
-<td style="text-align:center">Transformation of cementite into austenite</td>
-<td><strong>SE</strong></td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ar_{m}}$</td>
-<td style="text-align:center">723-1147 °C</td>
-<td style="text-align:center">Transformation of austenite into cementite</td>
-<td><strong>SE</strong></td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ac_{4}}$</td>
-<td style="text-align:center">1400-1492 °C</td>
-<td style="text-align:center">Transformation of austenite into δ-ferrite</td>
-<td><strong>IJ</strong></td>
-</tr>
-<tr>
-<td style="text-align:center">$\mathrm{Ar_{4}}$</td>
-<td style="text-align:center">1400-1492 °C</td>
-<td style="text-align:center">Transformation of δ-ferrite into austenite</td>
-<td><strong>IJ</strong></td>
-</tr>
-</tbody>
-</table>
-<p>The symbols correspond to the first letter of the French words meaning:</p>
-<ul>
-<li>A: arrêt (i.e. arrest).</li>
-<li>c: chauffage (i.e. heating).</li>
-<li>r: refroidissement (i.e. cooling).</li>
-</ul>
-<p>When equilibrium conditions are observed (i.e., slow cooling/heating) the critical temperatures $\mathrm{Ac_1} = \mathrm{Ar_1} = \mathrm{A_1} = 723\;^\circ\text{C}$ are equal. However, due to thermal hysteresis, the critical temperature on heating $\mathrm{Ac_1}$ is always higher than the critical temperature on cooling $\mathrm{Ar_1}$ at ordinary rates of heating or cooling.</p>
-<h3 id="invariant-reactions">Invariant Reactions <a href="#invariant-reactions" class="anchor">🔗</a></h3><p>The iron-carbon phase diagram contains three invariant reactions, which are associated with &ldquo;0&rdquo; degrees of freedom (according to Gibb&rsquo;s phase rule), and thus at these points, phase transformation occurs at a fixed temperature.</p>
-<ol>
-<li>
-<p>Peritectic Reaction: Peritectic reaction occurs when liquid containing 0.55% carbon and δ-ferrite containing 0.09% carbon, transform on cooling into austenite with 0.18% carbon at 1492 °C.</p>
-<p>\begin{gather}
-\ce{$\underset{\text{0.55}}{\text{L}}$ + $\underset{\text{0.09}}{\delta}$ &lt;-&gt;[cooling][heating] $\underset{\text{0.18}}{\gamma}$}
-\end{gather}</p>
-</li>
-<li>
-<p>Eutectic Reaction: Eutectic reaction occurs when liquid containing 4.33% carbon transform on cooling into austenite with 2% carbon and cementite with 6.67% carbon (i.e., ledeburite) at 1147 °C.</p>
-<p>\begin{gather}
-\ce{$\underset{\text{4.33}}{\text{L}}$ &lt;-&gt;[cooling][heating] $\underset{\text{2.0}}{\gamma}$ + $\underset{\text{6.67}}{\ce{Fe3C}}$}
-\end{gather}</p>
-<p>Alloys containing 4.33% carbon are known as eutectic cast irons. Alloys containing less than 4.33% carbon are known as hypoeutectic cast irons while those with carbon % greater than 4.33% are known as hypereutectic cast irons.</p>
-</li>
-<li>
-<p>Eutectoid Reaction: Eutectoid reaction occurs when austenite containing 0.8% carbon transforms on cooling into ferrite with 0.025% carbon and cementite with 6.67% carbon (i.e., pearlite) at 723 °C.</p>
-<p>\begin{gather}
-\ce{$\underset{\text{0.8}}{\gamma}$ &lt;-&gt;[cooling][heating] $\underset{\text{0.025}}{\alpha}$ + $\underset{\text{6.67}}{\ce{Fe3C}}$}
-\end{gather}</p>
-<p>Alloys containing 0.8% carbon are known as eutectoid steels. Alloys containing less than 0.8% carbon are known as hypoeutectoid steels while those with carbon % greater than 0.8% are known as hypereutectoid steels.</p>
-</li>
-</ol>
-<h3 id="lever-rule">Lever Rule <a href="#lever-rule" class="anchor">🔗</a></h3><p>Using a relationship known as the lever rule, we can determine the relative amount of each phase that is present in the phase diagram in a two-phase region. For the lever rule to be applied on a two-phase region, a tie-line must be drawn, which is a horizontal line that joins the conjugate phases that coexist at a specific temperature.</p>
-<p>Let us take an example of steel containing 0.8% carbon (i.e., eutectoid composition) at a temperature just below $\mathrm{A_1}$. Here, the conjugate phases will be ferrite and cementite, and the tie-line will be constructed by joining the points corresponding to 100% ferrite and 100% cementite at $\mathrm{A_1}$ i.e., 0.025% carbon and 6.67% carbon. Coincidentally, this tie-line corresponds to the eutectoid reaction line. Finally, to complete the lever, the fulcrum can be situated at the final alloy composition i.e., 0.8% carbon.</p>
-
-    <img
-        src="assets/lever_rule_example.svg"
-        alt="lever_rule_example"
-        class="
-            center
-        "
-        
-        
-        style="padding:4px;background-color:white"
-    />
-
-
-<p>The calculation is as follows:</p>
-
-
-
-<div class="math-scroll">
-<p>
-\begin{align}
-\text{ferrite} & = \frac{\text{Length of opposite arm (ZY)}}{\text{Total length (XY)}} \times 100 = \frac{6.67-0.8}{6.67-0.025} \times 100 = 88.3\\% \\\\
-\text{cementite} & = \frac{\text{Length of opposite arm (XZ)}}{\text{Total length (XY)}} \times 100 = \frac{0.8-0.025}{6.67-0.025} \times 100 = 11.7\\%
-\end{align}
-</p>
-</div>
-
-
-<h2 id="solidification-of-steels">Solidification of Steels <a href="#solidification-of-steels" class="anchor">🔗</a></h2><h3 id="solidification-of-hypoeutectoid-steels">Solidification of Hypoeutectoid Steels <a href="#solidification-of-hypoeutectoid-steels" class="anchor">🔗</a></h3>
-
-
-<p class="float-image"><img src="assets/hypoeutectoid_steel.png" alt="hypoeutectoid_steel" width="300px"></p>
-<p>
-Consider the solidification of an alloy of iron-carbon containing 0.4% carbon. At point $x_1$ the alloy consists of only austenite phase above GS ($\mathrm{A_3}$). The phase transformation begins when the alloy cools to point $x_2$, (when it intersects GS).
-</p>
-<p>
-Since austenite is unstable below 723 °C ($\mathrm{A_1}$), it transforms into two phases which are stable below 723 °C, namely, ferrite and cementite. However, for this transformation to occur, austenite must have a eutectoid composition i.e., 0.8% carbon. To achieve such a composition, just below $x_2$, nucleation of <b>proeutectoid ferrite</b> begins at the austenite grain boundaries.
-</p>
-
-
-<blockquote>
-<p>Proeutectoid ferrite is the ferrite that has formed before eutectoid temperature. &ldquo;Pro-&rdquo; meaning &ldquo;before&rdquo;.</p>
-</blockquote>
-<p>Since the solubility of carbon in ferrite is very low, the formation/growth of proeutectoid ferrite proceeds with the rejection of carbon, this, in turn, enriches the austenite in carbon. This can be seen clearly on the iron-carbon diagram $\to$ the composition of austenite varies along GS (0.4% at $x_2$ and 0.8% i.e., the eutectoid composition, at $x_4$). Similarly, the composition of proeutectoid ferrite varies along GP.</p>
-
-    <img
-        src="assets/hypoeutectoid_composition_variation.svg"
-        alt="composition_variation"
-        class="
-            center
-        "
-        
-        
-        style="padding:4px;height: 250px;background-color:white"
-    />
-
-
-<blockquote>
-<p>As per the figure, upon cooling the alloy till $\mathrm{A_1}$, 51.6% ferrite must separate out from the alloy (which was initially composed of 100% austenite) so that the remaining austenite can achieve eutectoid composition. Note: The compositions are calculated using the <a href="#lever-rule">lever rule</a> and as an approximation, the lines of transformation (GS, GP) are considered to be straight.</p>
-</blockquote>
-<p>Hence, as the alloy cools further, the proeutectoid ferrite grains grow, and the remaining austenite achieves eutectoid composition. Finally, at eutectoid temperature ($x_4$), austenite (of eutectoid composition), transforms into a lamellar mixture of ferrite and cementite i.e., <strong>pearlite</strong>, through a eutectoid reaction. Thus, just below the eutectoid temperature, the microstructure will consist of proeutectoid ferrite and pearlite, relative amounts of which can be calculated using the lever rule as shown <a href="#lever-rule">above</a>.</p>
-<p>When the alloy is slowly cooled to room temperature, the proeutectoid ferrite begins to reject carbon because the solubility of carbon in ferrite decreases with temperature. The rejected carbon (with a carbon percent of 6.67%) will go on to form <strong>tertiary cementite</strong>. Therefore, the final microstructure of hypoeutectoid steel will consist of proeutectoid ferrite, pearlite, and tertiary cementite.</p>
-<h3 id="solidification-of-eutectoid-steels">Solidification of Eutectoid Steels <a href="#solidification-of-eutectoid-steels" class="anchor">🔗</a></h3>
-
-
-<p class="float-image">
-<img src="assets/eutectoid_reaction_cooling_curve.svg" alt="eutectoid_reaction_cooling_curve.svg" width="300px" style="padding:4px;background-color:white">
-</p>
-<p>
-Consider the solidification of an alloy of iron-carbon containing 0.8% carbon (i.e., eutectoid composition). It will remain austenite up to point S (i.e., eutectoid point). Crossing this point (or more correctly, $\mathrm{A_1}$), the alloy (composed of 100% austenite) transforms into pearlite through a eutectoid reaction. Regardless of the alloy, this transformation always takes place at a constant temperature (see figure).
-</p>
-
-
-<blockquote>
-<p>Note: This holds true for all invariant reactions and in both directions i.e., cooling or heating.</p>
-</blockquote>
-<p>Cooling the alloy further to room temperature has no effect on the microstructure; in other words, the final microstructure at room temperature consists solely of pearlite.</p>
-<h3 id="solidification-of-hypereutectoid-steels">Solidification of Hypereutectoid Steels <a href="#solidification-of-hypereutectoid-steels" class="anchor">🔗</a></h3>
-
-
-<p class="float-image"><img src="assets/hypereutectoid_steel.png" alt="hypereutectoid_steel" width="300px"></p>
-<p>
-Consider the cooling of an alloy of iron-carbon containing 1.2% carbon. At point $y_1$ i.e., above upper critical temperature $\mathrm{Ac_m}$, the alloy consists only of austenite. When the alloy is cooled to point $y_2$, i.e., when it crosses the $\mathrm{Ac_m}$, <b>proeutectoid cementite</b> nucleates along the grain boundaries of austenite.
-</p>
-
-
-<blockquote>
-<p>Austenite in hypereutectoid steels is rich in carbon, therefore it rejects excess carbon (&gt; 0.8%) as cementite, to achieve a eutectoid composition $\to$ phenomenon opposite to the solidification of hypoeutectoid steels.</p>
-</blockquote>
-<p>As the alloy cools further, cementite grains grow and the remaining austenite achieves eutectoid composition (at 723 °C, point $y_4$). Austenite (of eutectoid composition) subsequently transforms into pearlite, through a eutectoid reaction. Cooling the alloy further to room temperature has no effect on the microstructure. The final microstructure at room temperature will consist of proeutectoid cementite and pearlite.</p>
-<h2 id="solidification-of-cast-irons">Solidification of Cast Irons <a href="#solidification-of-cast-irons" class="anchor">🔗</a></h2><p>TBA.</p>
-
-        </div>
-
-        
-
-    </section>
-
-    </main>
-    
-    <footer id="footer">
-    <div class="powerby">
-        <a class="icon">
-            <i class="fas fa-snowflake"></i>
-        </a>
-        2021 | Powered by <a href="http://www.gohugo.io/">Hugo</a> |
-        <a class="icon" href="mailto:neelfrost@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a
-            class="icon"
-            href="https://github.com/Neelfrost/Neelfrost.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fab fa-github"></i>
-        </a>
-        <a class="icon" href="https://www.innermonologue.xyz/index.xml" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-rss"></i>
-        </a>
-    </div>
-</footer>
-
-  </body>
+        </footer>
+    </body>
 </html>
