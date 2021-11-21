@@ -6,14 +6,13 @@
 }
 #single .title {
     text-align: center;
-    font-size: 32px;
     line-height: 48px;
 }
 #single .tip {
     text-align: center;
     color: var(--tag-text);
     margin-top: 18px;
-    font-size: 14px;
+    font-size: var(--size-400);
 }
 #single .tip .split {
     margin: 0 4px;
@@ -33,7 +32,7 @@
     background: var(--tag);
     padding: 4px 7px;
     color: var(--tag-text);
-    font-size: 14px;
+    font-size: var(--size-400);
     margin-right: 3px;
 }
 #single .tags a:hover {
@@ -43,10 +42,6 @@
     #single {
         padding: 0 18px;
         margin: 20px auto 0 auto;
-    }
-    #single .title {
-        font-size: 24px;
-        line-height: 32px;
     }
 }
 

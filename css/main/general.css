@@ -13,6 +13,15 @@
     --fg1: #404040;
     --tag-text: #757575;
     --tag: #f2f2f2;
+
+    /* Font Sizes */
+    --size-300: 0.833rem;
+    --size-400: 1rem;
+    --size-500: 1.2rem;
+    --size-600: 1.44rem;
+    --size-700: 1.728rem;
+    --size-800: 2.074rem;
+    --size-900: 2.488rem;
 }
 
 .darktheme {
@@ -48,6 +57,29 @@ h3:hover a,
 h4:hover a {
     visibility: visible;
 }
+h1 {
+    font-size: var(--size-800);
+}
+
+h2 {
+    font-size: var(--size-700);
+}
+
+h3 {
+    font-size: var(--size-600);
+}
+
+h4 {
+    font-size: var(--size-500);
+}
+
+h5 {
+    font-size: var(--size-400);
+}
+small,
+.text_small {
+    font-size: var(--size-300);
+}
 .anchor {
     font-size: 100%;
     visibility: hidden;
@@ -65,10 +97,9 @@ body {
 p code,
 pre code {
     font-family: "Oxygen Mono", monospace;
-    font-size: 14px;
     line-height: inherit;
+    font-size: var(--size-400);
 }
-
 .highlight pre {
     border-radius: 4px;
     padding: 14px;
@@ -99,8 +130,8 @@ a:hover {
 blockquote {
     margin-top: 5px;
     margin-bottom: 5px;
-    padding-left: 1em;
     margin-left: 0px;
+    padding-left: 1em;
     border-left: 3px solid var(--border);
     color: var(--tag-text);
 }
@@ -142,7 +173,6 @@ th {
     text-align: left;
     padding: 10px 15px;
     height: 20px;
-    font-size: 13px;
     font-weight: bold;
     cursor: default;
     white-space: nowrap;

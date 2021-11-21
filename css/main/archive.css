@@ -4,20 +4,17 @@
     margin: 0 auto;
     padding: 0 24px;
 }
-#archive .total {
-    font-size: 15px;
-}
 #archive .group {
     margin: 24px auto;
 }
 #archive .group .key {
-    font-size: 20px;
+    font-size: var(--size-600);
     margin-bottom: 12px;
 }
 #archive .group .value {
     display: block;
-    font-size: 16px;
     margin-bottom: 12px;
+    font-size: var(--size-400);
 }
 #archive .group .value .date {
     display: inline-block;

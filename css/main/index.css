@@ -7,7 +7,7 @@
 #list-page .title {
     display: block;
     color: var(--fg1);
-    font-size: 20px;
+    font-size: var(--size-500);
     font-weight: bold;
 }
 #list-page .title a {
@@ -37,13 +37,12 @@
     margin-bottom: 100px;
     text-align: center;
     color: var(--tag-text);
-    font-size: 14px;
+    font-size: var(--size-400);
 }
 .powerby {
     max-width: 750px;
     margin: auto;
     text-align: center;
-    font-size: 14px;
 }
 .powerby a.icon {
     cursor: pointer;
@@ -63,13 +62,13 @@
 .profile h1 {
     font-weight: bold;
     letter-spacing: 0px;
-    font-size: 20px;
+    font-size: var(--size-500);
     color: var(--fg1);
     margin-top: 0;
     margin-bottom: 56px;
 }
 .profile h2 {
-    font-size: 20px;
+    font-size: var(--size-400);
     font-weight: 300;
     color: var(--tag-text);
     margin-top: 0;

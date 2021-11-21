@@ -10,7 +10,7 @@
 }
 #tags .tag a {
     padding: 4px 7px;
-    font-size: 14px;
+    font-size: var(--size-400);
     margin-right: 3px;
     background: var(--tag);
     color: var(--tag-text);
