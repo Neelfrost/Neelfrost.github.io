@@ -2,32 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>configuration on Inner Monologue</title>
-    <link>https://www.innermonologue.xyz/tags/configuration/</link>
-    <description>Recent content in configuration on Inner Monologue</description>
+    <link>https://www.innermonologue.xyz/tags/configuration/</link> 
+    <description>Neel's recent inner monologues</description>
     <generator>Hugo -- gohugo.io</generator>
+    
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Sep 2021 21:13:30 +0530</lastBuildDate><atom:link href="https://www.innermonologue.xyz/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
+    
+    <managingEditor> Neel Basak   (neelfrost@gmail.com) </managingEditor>
+    <webMaster> Neel Basak   (neelfrost@gmail.com) </webMaster>
+    
+    
+    <lastBuildDate>Tue, 21 Sep 2021</lastBuildDate>
+    <atom:link href="https://www.innermonologue.xyz/tags/configuration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spice up your Windows CLI experience</title>
       <link>https://www.innermonologue.xyz/posts/windows_cli/</link>
-      <pubDate>Tue, 21 Sep 2021 21:13:30 +0530</pubDate>
-      
+      <pubDate>Tue, 21 Sep 2021</pubDate>
+      <author>neelfrost@gmail.com (Neel Basak)</author>
       <guid>https://www.innermonologue.xyz/posts/windows_cli/</guid>
-      <description>The terminal experience in windows is not great, but it can be made better. We&amp;rsquo;ll learn how to turn this   into this   Oh My Posh Theme: custom | Windows Terminal (in focus mode) Theme: Gruvbox Dark
-Font: CaskaydiaCove NF
-Nerd Fonts 🔗Nerd Fonts provides patched versions of monospace fonts containing a large number of glyphs (icons). The glyphs will be needed to correctly render the prompts from oh-my-posh.</description>
+      <description>Make Windows CLI great again with oh-my-posh, nerd fonts, windows-terminal, and winfetch!</description>
     </item>
     
     <item>
       <title>Telescope.nvim: Find files in specific directory</title>
       <link>https://www.innermonologue.xyz/posts/telescope_custom_dir/</link>
-      <pubDate>Sat, 14 Aug 2021 20:37:19 +0530</pubDate>
-      
+      <pubDate>Sat, 14 Aug 2021</pubDate>
+      <author>neelfrost@gmail.com (Neel Basak)</author>
       <guid>https://www.innermonologue.xyz/posts/telescope_custom_dir/</guid>
-      <description>I like being able to browse files in certain directories from anywhere. Telescope.nvimalready has a feature that allows you to browse files in the cwd; with this guide, we&amp;rsquo;ll extend that feature to only display files in a specific directory.
- A quick start guide for neovim lua can be found here: nvim-lua-guide.
- Preview     File structure
-├── init.lua ├── lua │ └── plugins │ ├── telescope.</description>
+      <description>How to configure telescope.nvim&#39;s &#39;find files&#39; builtin to display files only from a specific directory.</description>
     </item>
     
   </channel>

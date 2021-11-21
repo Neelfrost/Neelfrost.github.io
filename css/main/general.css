@@ -83,6 +83,7 @@ small,
 .anchor {
     font-size: 100%;
     visibility: hidden;
+    color: var(--fg1) !important;
 }
 
 /* ---------------------------------- Body ---------------------------------- */

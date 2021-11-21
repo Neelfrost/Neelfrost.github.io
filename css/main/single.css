@@ -1,8 +1,8 @@
-/* ---------------------------------- single ---------------------------------- */
+/* ---------------------------------- Single ---------------------------------- */
 #single {
     max-width: 750px;
-    margin: 60px auto 0 auto;
-    padding: 0 64px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 #single .title {
     text-align: center;
@@ -37,12 +37,6 @@
 }
 #single .tags a:hover {
     color: var(--accent-hover);
-}
-@media (max-width: 700px) {
-    #single {
-        padding: 0 18px;
-        margin: 20px auto 0 auto;
-    }
 }
 
 /* ----------------------------------- TOC ---------------------------------- */

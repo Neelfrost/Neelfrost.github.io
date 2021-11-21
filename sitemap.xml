@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.innermonologue.xyz/posts/</loc>
+    <lastmod>2021-09-23T00:46:58+05:30</lastmod>
+  </url><url>
     <loc>https://www.innermonologue.xyz/</loc>
     <lastmod>2021-09-23T00:46:58+05:30</lastmod>
   </url><url>
@@ -9,9 +12,6 @@
     <lastmod>2021-09-23T00:46:58+05:30</lastmod>
   </url><url>
     <loc>https://www.innermonologue.xyz/tags/metallurgy/</loc>
-    <lastmod>2021-09-23T00:46:58+05:30</lastmod>
-  </url><url>
-    <loc>https://www.innermonologue.xyz/posts/</loc>
     <lastmod>2021-09-23T00:46:58+05:30</lastmod>
   </url><url>
     <loc>https://www.innermonologue.xyz/tags/</loc>
