@@ -17,7 +17,7 @@
 
         <meta name="generator" content="Hugo 0.89.4" />
 
-        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+        <meta name="ROBOTS" content="INDEX, FOLLOW, NOARCHIVE" />
 
         <link rel="stylesheet" href="https://www.innermonologue.xyz/css/main/general.css" />
 
@@ -359,21 +359,25 @@
             </section>
         </main>
 
-        <button class="scroll-to-top"><i class="fas fa-chevron-up fa-lg"></i></button>
+        <button class="scroll-to-top" aria-label="scroll-to-top"><i class="fas fa-chevron-up fa-lg"></i></button>
         <script src="https://www.innermonologue.xyz/js/scroll_to_top.js"></script>
         <footer id="footer">
             <div class="powerby">
-                <a class="icon">
-                    <i class="fas fa-snowflake"></i>
-                </a>
-                2021 &nbsp;|&nbsp;Powered by
+                2021 Powered by
                 <a href="http://www.gohugo.io/">Hugo</a>
                 &nbsp;|&nbsp;
-                <a class="icon" href="mailto:neelfrost@gmail.com" target="_blank" rel="noopener noreferrer">
+                <a
+                    class="icon"
+                    aria-label="email"
+                    href="mailto:neelfrost@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <i class="fas fa-envelope"></i>
                 </a>
                 <a
                     class="icon"
+                    aria-label="github"
                     href="https://github.com/Neelfrost/Neelfrost.github.io"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -382,6 +386,7 @@
                 </a>
                 <a
                     class="icon"
+                    aria-label="rss"
                     href="https://www.innermonologue.xyz/index.xml"
                     target="_blank"
                     rel="noopener noreferrer"

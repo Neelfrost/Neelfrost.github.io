@@ -4,8 +4,8 @@
     --font: "Rubik", sans-serif;
 
     /* Colors */
-    --accent-hover: #0366d6;
-    --accent: #5badf0;
+    --accent-hover: #003b73;
+    --accent: #0074b7;
     --bg1: #fff;
     --bg2: #fcfcfc;
     --bg3: #dadadc70;
@@ -26,8 +26,8 @@
 
 .darktheme {
     /* Colors */
-    --accent-hover: #5badf0;
-    --accent: #0366d6;
+    --accent-hover: #0074b7;
+    --accent: #60a3d9;
     --bg1: #131313;
     --bg2: #161616;
     --bg3: #16161670;
