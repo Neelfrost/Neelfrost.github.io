@@ -1,182 +1,231 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Telescope.nvim: Find files in specific directory&nbsp;|&nbsp;Inner Monologue</title>
+        <title>
+            
+                
+                    Telescope.nvim: Find files in specific directory&nbsp;|&nbsp;
+                Inner Monologue
+            
+        </title>
 
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="width=device-width,minimum-scale=1" />
-        <meta
-            name="description"
-            content="
-            
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,minimum-scale=1" />
+<meta
+    name="description"
+    content="
+    
         How to configure telescope.nvim&#39;s &#39;find files&#39; builtin to display files only from a specific directory.
     
     "
-        />
+/>
 
-        <meta name="generator" content="Hugo 0.89.4" />
 
-        <meta name="ROBOTS" content="INDEX, FOLLOW, NOARCHIVE" />
+<meta name="generator" content="Hugo 0.91.2" />
 
-        <link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.css" />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TLEE30PBG4"></script>
-        <script>
-            var doNotTrack = false;
-            if (!doNotTrack) {
-                window.dataLayer = window.dataLayer || [];
-                function gtag() {
-                    dataLayer.push(arguments);
-                }
-                gtag("js", new Date());
-                gtag("config", "G-TLEE30PBG4", { anonymize_ip: false });
-            }
-        </script>
 
-        <script>
-            MathJax = {
-                tex: {
-                    inlineMath: [
-                        ["$", "$"],
-                        ["\\(", "\\)"],
-                    ],
-                    displayMath: [
-                        ["$$", "$$"],
-                        ["\\[", "\\]"],
-                    ],
-                    processEscapes: true,
-                    processEnvironments: true,
-                    tags: "ams",
-                },
-                options: {
-                    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
-                },
-            };
 
-            window.addEventListener("load", (event) => {
-                document.querySelectorAll("mjx-container").forEach(function (x) {
-                    x.parentElement.classList += "has-jax";
-                });
-            });
-        </script>
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script
-            type="text/javascript"
-            id="MathJax-script"
-            async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-        ></script>
+    <meta name="ROBOTS" content="INDEX, FOLLOW, NOARCHIVE" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="https://www.innermonologue.xyz/icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="https://www.innermonologue.xyz/icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="https://www.innermonologue.xyz/icons/favicon-16x16.png" />
-        <link rel="manifest" href="https://www.innermonologue.xyz/icons/site.webmanifest" />
-        <link rel="mask-icon" href="https://www.innermonologue.xyz/icons/safari-pinned-tab.svg" color="" />
-        <link rel="shortcut icon" type="image/x-icon" href="https://www.innermonologue.xyz/icons/favicon.ico" />
 
-        <script src="https://kit.fontawesome.com/05d79ffb1a.js" crossorigin="anonymous"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-            rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.841e1f7a5daf14ebb66b336a3debdf81330bf8cc1b02b3b921007fb361ca829c.css" integrity="sha256-hB4fel2vFOu2azNqPevfgTML&#43;MwbArO5IQB/s2HKgpw=" crossorigin="anonymous" />
+
+
+
+
+
+
+
+
+
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TLEE30PBG4"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-TLEE30PBG4', { 'anonymize_ip': false });
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.innermonologue.xyz/icons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.innermonologue.xyz/icons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.innermonologue.xyz/icons/favicon-16x16.png" />
+<link rel="manifest" href="https://www.innermonologue.xyz/icons/site.webmanifest" />
+<link rel="mask-icon" href="https://www.innermonologue.xyz/icons/safari-pinned-tab.svg" color="" />
+<link rel="shortcut icon" type="image/x-icon" href="https://www.innermonologue.xyz/icons/favicon.ico" />
+
+
+<script src="https://kit.fontawesome.com/05d79ffb1a.js" crossorigin="anonymous"></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+    rel="stylesheet"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+
+
     </head>
 
     <body>
         <nav class="navigation">
-            <a href="/"> Home </a>
+    
+        <a href="/">
+            
+                Home
+            </a
+        >
+    
+    <a href="/about"
+        >
+            About
+        </a
+    >
+    <a href="/posts"
+        >
+            Archive
+        </a
+    >
+    <a href="/tags"
+        >
+            Tags
+        </a
+    >
+    <a class="dark-mode-toggle" id="dark-mode-toggle"
+        ><i id="dark-mode-toggle-icon" class="fas fa-moon"></i
+    ></a>
 
-            <a href="/about">About</a>
-            <a href="/posts">Archive</a>
-            <a href="/tags">Tags</a>
-            <a class="dark-mode-toggle" id="dark-mode-toggle"><i id="dark-mode-toggle-icon" class="fas fa-moon"></i></a>
-        </nav>
+    
+</nav>
 
-        <script src="https://www.innermonologue.xyz/js/dark_mode_toggle.js"></script>
+
+<button class="scroll-to-top" id="scroll-to-top" aria-label="scroll-to-top">
+    <i class="fas fa-chevron-up fa-lg"></i>
+</button>
+
+
+
+<script src="https://www.innermonologue.xyz/js/dark_mode_toggle.min.1655e13bed4cd4f26b5c0595b7a272067f932e0d3428094780c75adbbcbd193e.js" integrity="sha256-FlXhO&#43;1M1PJrXAWVt6JyBn&#43;TLg00KAlHgMda27y9GT4=" crossorigin="anonymous"></script>
+
+
+
+<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.29c9cd3d8ff6efd196802c3222e166f4021a5b147029b7155893d56eec422932.js" integrity="sha256-KcnNPY/279GWgCwyIuFm9AIaWxRwKbcVWJPVbuxCKTI=" crossorigin="anonymous"></script>
+
+
 
         <main class="main">
-            <section id="single">
-                <h1 class="title">Telescope.nvim: Find files in specific directory</h1>
+            
 
-                <div class="tip">
-                    <time datetime="2021-08-14 20:37:19 &#43;0530 IST">Aug 14, 2021</time>
-                    <span class="split"> · </span>
-                    <span> 256 words </span>
-                    <span class="split"> · </span>
-                    <span> 2 minute read </span>
-                </div>
+    <section id="single">
+        <h1 class="title">Telescope.nvim: Find files in specific directory</h1>
 
-                <div class="tags">
+        <div class="tip">
+            <time datetime="2021-08-14 20:37:19 &#43;0530 IST">Aug 14, 2021</time>
+            <span class="split"> · </span>
+            <span>
+                256 words
+            </span>
+            <span class="split"> · </span>
+            <span>
+                2 minute read
+            </span>
+        </div>
+
+        
+            <div class="tags">
+                
                     <div><a href="https://www.innermonologue.xyz/tags/neovim">neovim</a></div>
-
+                
                     <div><a href="https://www.innermonologue.xyz/tags/configuration">configuration</a></div>
-                </div>
+                
+            </div>
+        
 
-                <div class="content">
-                    <p>
-                        I like being able to browse files in certain directories from anywhere.
-                        <a href="https://github.com/nvim-telescope/telescope.nvim" target="_blank" rel="noopener"
-                            >Telescope.nvim</a
-                        >
-                        already has a feature that allows you to browse files in the cwd; with this guide, we&rsquo;ll
-                        extend that feature to only display files in a specific directory.
-                    </p>
-                    <blockquote>
-                        <p>
-                            A quick start guide for neovim lua can be found here:
-                            <a href="https://github.com/nanotee/nvim-lua-guide" target="_blank" rel="noopener"
-                                >nvim-lua-guide</a
-                            >
-                            .
-                        </p>
-                    </blockquote>
+        
+            
+    
 
-                    <figure class="center">
-                        <img src="assets/telescope_preview.gif" alt="Preview" />
 
-                        <figcaption class="center">Preview</figcaption>
-                    </figure>
+        
 
-                    <ol>
-                        <li>
-                            <p>File structure</p>
-                            <div class="highlight">
-                                <pre
-                                    tabindex="0"
-                                    style="
-                                        color: #d0d0d0;
-                                        background-color: #202020;
-                                        -moz-tab-size: 4;
-                                        -o-tab-size: 4;
-                                        tab-size: 4;
-                                    "
-                                ><code class="language-text" data-lang="text">├── init.lua
+
+        <div class="content">
+            <p>I like being able to browse files in certain directories from anywhere. <a
+    href="https://github.com/nvim-telescope/telescope.nvim"
+    
+        target="_blank" rel="noopener"
+    
+    >Telescope.nvim</a
+>
+ already has a feature that allows you to browse files in the cwd; with this guide, we&rsquo;ll extend that feature to only display files in a specific directory.</p>
+<blockquote>
+<p>A quick start guide for neovim lua can be found here: <a
+    href="https://github.com/nanotee/nvim-lua-guide"
+    
+        target="_blank" rel="noopener"
+    
+    >nvim-lua-guide</a
+>
+.</p>
+</blockquote>
+
+    <figure class="center">
+        <img
+            src="assets/telescope_preview.gif"
+            alt="Preview"
+            
+        />
+        
+            <figcaption
+                class="
+                    center
+                "
+                
+            >
+                Preview
+            </figcaption>
+        
+    </figure>
+
+
+<ol>
+<li>
+<p>File structure</p>
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">├── init.lua
 ├── lua
 │   └── plugins
 │       ├── telescope.lua
 │       └── config
 │           ├── telescope.lua
-</code></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <p>Configuring the &lsquo;find files&rsquo; builtin</p>
-                            <p>File: <code>plugins/config/telescope.lua</code></p>
-                            <div class="highlight">
-                                <pre
-                                    tabindex="0"
-                                    style="
-                                        color: #d0d0d0;
-                                        background-color: #202020;
-                                        -moz-tab-size: 4;
-                                        -o-tab-size: 4;
-                                        tab-size: 4;
-                                    "
-                                ><code class="language-lua" data-lang="lua"><span style="color:#6ab825;font-weight:bold">local</span> M = {}
+</code></pre></div></li>
+<li>
+<p>Configuring the &lsquo;find files&rsquo; builtin</p>
+<p>File: <code>plugins/config/telescope.lua</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#6ab825;font-weight:bold">local</span> M = {}
 
 <span style="color:#999;font-style:italic">-- Configure find files builtin with custom opts</span>
 <span style="color:#999;font-style:italic">-- For neovim&#39;s config directory</span>
@@ -197,82 +246,68 @@
 <span style="color:#6ab825;font-weight:bold">end</span>
 
 <span style="color:#6ab825;font-weight:bold">return</span> M
-</code></pre>
-                            </div>
-                            <p>
-                                When called, this will open a picker that will list all files in
-                                <code>~/Appdata/Local/nvim</code>, excluding the ones listed in file_ignore_patterns.
-                            </p>
-                        </li>
-                        <li>
-                            <p>Configure mappings</p>
-                            <p>File: <code>plugins/telescope.lua</code></p>
-                            <div class="highlight">
-                                <pre
-                                    tabindex="0"
-                                    style="
-                                        color: #d0d0d0;
-                                        background-color: #202020;
-                                        -moz-tab-size: 4;
-                                        -o-tab-size: 4;
-                                        tab-size: 4;
-                                    "
-                                ><code class="language-lua" data-lang="lua"><span style="color:#6ab825;font-weight:bold">local</span> opts = { noremap = <span style="color:#6ab825;font-weight:bold">true</span>, silent = <span style="color:#6ab825;font-weight:bold">true</span> }
+</code></pre></div><p>When called, this will open a picker that will list all files in <code>~/Appdata/Local/nvim</code>, excluding the ones listed in file_ignore_patterns.</p>
+</li>
+<li>
+<p>Configure mappings</p>
+<p>File: <code>plugins/telescope.lua</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#6ab825;font-weight:bold">local</span> opts = { noremap = <span style="color:#6ab825;font-weight:bold">true</span>, silent = <span style="color:#6ab825;font-weight:bold">true</span> }
 vim.api.nvim_set_keymap(<span style="color:#ed9d13">&#34;n&#34;</span>, <span style="color:#ed9d13">&#34;&lt;Leader&gt;tn&#34;</span>, <span style="color:#ed9d13">&#34;&lt;cmd&gt;lua require(&#39;plugins.config.telescope&#39;).dir_nvim()&lt;CR&gt;&#34;</span>, opts)
-</code></pre>
-                            </div>
-                            <p>
-                                Now, after restarting or reloading neovim, we can use <code>&lt;Leader&gt;tn</code> to
-                                browse files in neovim&rsquo;s config directory. Find more examples at
-                                <a
-                                    href="https://github.com/Neelfrost/dotfiles/blob/main/lua/plugins/config/telescope.lua"
-                                    target="_blank"
-                                    rel="noopener"
-                                    >config/telescope.lua</a
-                                >
-                                .
-                            </p>
-                        </li>
-                    </ol>
-                </div>
-            </section>
+</code></pre></div><p>Now, after restarting or reloading neovim, we can use <code>&lt;Leader&gt;tn</code> to browse files in neovim&rsquo;s config directory. Find more examples at <a
+    href="https://github.com/Neelfrost/dotfiles/blob/main/lua/plugins/config/telescope.lua"
+    
+        target="_blank" rel="noopener"
+    
+    >config/telescope.lua</a
+>
+.</p>
+</li>
+</ol>
+
+        </div>
+
+        
+
+
+    </section>
+
         </main>
 
-        <button class="scroll-to-top" aria-label="scroll-to-top"><i class="fas fa-chevron-up fa-lg"></i></button>
-        <script src="https://www.innermonologue.xyz/js/scroll_to_top.js"></script>
         <footer id="footer">
-            <div class="powerby">
-                2021 Powered by
-                <a href="http://www.gohugo.io/">Hugo</a>
-                &nbsp;|&nbsp;
-                <a
-                    class="icon"
-                    aria-label="email"
-                    href="mailto:neelfrost@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a
-                    class="icon"
-                    aria-label="github"
-                    href="https://github.com/Neelfrost/Neelfrost.github.io"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <i class="fab fa-github"></i>
-                </a>
-                <a
-                    class="icon"
-                    aria-label="rss"
-                    href="https://www.innermonologue.xyz/index.xml"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <i class="fas fa-rss"></i>
-                </a>
-            </div>
-        </footer>
+    <div class="powerby">
+        2022
+        Powered by
+        <a href="http://www.gohugo.io/">Hugo</a>
+        &nbsp;|&nbsp;
+        <a
+            class="icon"
+            aria-label="email"
+            href="mailto:neelfrost@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a
+            class="icon"
+            aria-label="github"
+            href="https://github.com/Neelfrost/Neelfrost.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fab fa-github"></i>
+        </a>
+        <a
+            class="icon"
+            aria-label="rss"
+            href="https://www.innermonologue.xyz/index.xml"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <i class="fas fa-rss"></i>
+        </a>
+    </div>
+</footer>
+
     </body>
 </html>
