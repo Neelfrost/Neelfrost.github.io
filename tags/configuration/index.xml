@@ -24,9 +24,9 @@
     
     <item>
       <title>Telescope.nvim: Find files in specific directory</title>
-      <link>https://www.innermonologue.xyz/posts/telescope_custom_dir/</link>
+      <link>https://www.innermonologue.xyz/posts/telescope_custom_directory/</link>
       <pubDate>Sat, 14 Aug 2021</pubDate>
-      <guid>https://www.innermonologue.xyz/posts/telescope_custom_dir/</guid>
+      <guid>https://www.innermonologue.xyz/posts/telescope_custom_directory/</guid>
       <description>How to configure telescope.nvim&#39;s &#39;find files&#39; builtin to display files only from a specific directory.</description>
     </item>
     
