@@ -12,8 +12,16 @@
     <webMaster> Neel Basak   (neelfrost@gmail.com) </webMaster>
     
     
-    <lastBuildDate>Thu, 23 Sep 2021</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jan 2022</lastBuildDate>
     <atom:link href="https://www.innermonologue.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>reviews</title>
+      <link>https://www.innermonologue.xyz/tags/reviews/</link>
+      <pubDate>Fri, 07 Jan 2022</pubDate>
+      <guid>https://www.innermonologue.xyz/tags/reviews/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>metallurgy</title>
       <link>https://www.innermonologue.xyz/tags/metallurgy/</link>
