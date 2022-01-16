@@ -22,7 +22,7 @@
 />
 
 
-<meta name="generator" content="Hugo 0.91.2" />
+<meta name="generator" content="Hugo 0.92.0" />
 
 
 
@@ -33,7 +33,7 @@
 
 
 
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.c47b5f3454407f12acb360b1234856d19db194eda395946a42a5fa696ffc3c58.css" integrity="sha256-xHtfNFRAfxKss2CxI0hW0Z2xlO2jlZRqQqX6aW/8PFg=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.aebcc028ddf3b48ee5519333a3f24301383bdb5fe965a35148087cf20597594e.css" integrity="sha256-rrzAKN3ztI7lUZMzo/JDATg721/pZaNRSAh88gWXWU4=" crossorigin="anonymous" />
 
 
 
@@ -127,34 +127,44 @@ if (!doNotTrack) {
     </head>
 
     <body>
-        <nav class="navigation">
+        <nav class="navbar" id="navbar">
     
-        <a href="/">
-            
-                Home
+        <a class="title" href="/">Inner Monologue</a>
+    
+    <div class="menu" id="navbar-menu">
+        
+            <a href="/">
+                
+                    Home
+                </a
+            >
+        
+        <a href="/about"
+            >
+                About
             </a
         >
-    
-    <a href="/about"
+        <a href="/posts"
+            >
+                Archive
+            </a
         >
-            About
-        </a
-    >
-    <a href="/posts"
+        <a href="/tags"
+            >
+                Tags
+            </a
         >
-            Archive
-        </a
-    >
-    <a href="/tags"
-        >
-            Tags
-        </a
-    >
-    <a class="dark-mode-toggle" id="dark-mode-toggle"
-        ><i id="dark-mode-toggle-icon" class="fas fa-moon"></i
-    ></a>
+        
+        <a class="dark-mode-toggle" id="dark-mode-toggle">
+            <i id="dark-mode-toggle-icon" class="fas fa-moon"></i
+        ></a>
+    </div>
 
-    
+    <button class="hamburger" id="navbar-hamburger" aria-label="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 </nav>
 
 
@@ -164,11 +174,15 @@ if (!doNotTrack) {
 
 
 
-<script src="https://www.innermonologue.xyz/js/dark_mode_toggle.min.1655e13bed4cd4f26b5c0595b7a272067f932e0d3428094780c75adbbcbd193e.js" integrity="sha256-FlXhO&#43;1M1PJrXAWVt6JyBn&#43;TLg00KAlHgMda27y9GT4=" crossorigin="anonymous"></script>
+<script src="https://www.innermonologue.xyz/js/navbar.min.674fee51e227a42abac8b6676f1ba492b3898ec41d7af75a1b8b384154c45d54.js" integrity="sha256-Z0/uUeInpCq6yLZnbxukkrOJjsQdevdaG4s4QVTEXVQ=" crossorigin="anonymous"></script>
 
 
 
-<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.29c9cd3d8ff6efd196802c3222e166f4021a5b147029b7155893d56eec422932.js" integrity="sha256-KcnNPY/279GWgCwyIuFm9AIaWxRwKbcVWJPVbuxCKTI=" crossorigin="anonymous"></script>
+<script src="https://www.innermonologue.xyz/js/dark_mode_toggle.min.da1da9138c6c498639544ec39b2c84f408a8043046372845e7859c99211800e3.js" integrity="sha256-2h2pE4xsSYY5VE7DmyyE9AioBDBGNyhF54WcmSEYAOM=" crossorigin="anonymous"></script>
+
+
+
+<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.0fe2c77120ea34c144a458c3d015554da1224ac7fa890e7a53479120ca35ed3b.js" integrity="sha256-D&#43;LHcSDqNMFEpFjD0BVVTaEiSsf6iQ56U0eRIMo17Ts=" crossorigin="anonymous"></script>
 
 
 
@@ -178,15 +192,15 @@ if (!doNotTrack) {
     <section id="single">
         <h1 class="title">Iron-Carbon Diagram: A solidification perspective</h1>
 
-        <div class="tip">
+        <div class="subtext">
             <time datetime="2021-09-23 00:46:58 &#43;0530 IST"
                 >Sep 23, 2021</time
             >
-            <span class="split"> · </span>
+            &nbsp;·&nbsp;
             <span>
                 1962 words
             </span>
-            <span class="split"> · </span>
+            &nbsp;·&nbsp;
             <span>
                 10 minute read
             </span>
