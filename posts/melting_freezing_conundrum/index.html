@@ -22,7 +22,7 @@
 />
 
 
-<meta name="generator" content="Hugo 0.92.0" />
+<meta name="generator" content="Hugo 0.92.1" />
 
 
 
@@ -33,7 +33,7 @@
 
 
 
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.8b6b182308991a84bed95f214770fd9719469880d0f09857d2aa314bbf942ce8.css" integrity="sha256-i2sYIwiZGoS&#43;2V8hR3D9lxlGmIDQ8JhX0qoxS7&#43;ULOg=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.9c17b3465e81d435f1f966c17c790cb4201d6fdb3f65ea1a1d5c8e3010112d09.css" integrity="sha256-nBezRl6B1DXx&#43;WbBfHkMtCAdb9s/ZeoaHVyOMBARLQk=" crossorigin="anonymous" />
 
 
 
@@ -112,60 +112,64 @@ if (!doNotTrack) {
 <link rel="shortcut icon" type="image/x-icon" href="https://www.innermonologue.xyz/icons/favicon.ico" />
 
 
+<link rel="preconnect" href="https://kit.fontawesome.com">
 <script src="https://kit.fontawesome.com/05d79ffb1a.js" crossorigin="anonymous"></script>
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-    rel="stylesheet"
-/>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
 
 
     </head>
 
     <body>
-        <nav class="navbar" id="navbar">
-    
-        <a class="title" href="/">Inner Monologue</a>
-    
-    <div class="menu" id="navbar-menu">
+        <header>
+    <div class="navbar-border-top"></div>
+    <nav class="navbar" id="navbar">
         
-            <a href="/">
-                
-                    Home
+            <span class="no-underline">
+                <a class="title no-underline" href="/"
+                    >Inner Monologue</a
+                >
+            </span>
+        
+        <div class="menu" id="navbar-menu">
+            
+                <a href="/">
+                    
+                        Home
+                    </a
+                >
+            
+            <a href="/about"
+                >
+                    About
                 </a
             >
-        
-        <a href="/about"
+            <a href="/posts"
+                >
+                    Archive
+                </a
             >
-                About
-            </a
-        >
-        <a href="/posts"
+            <a href="/tags"
+                >
+                    Tags
+                </a
             >
-                Archive
-            </a
-        >
-        <a href="/tags"
-            >
-                Tags
-            </a
-        >
-        
-        <a class="dark-mode-toggle" id="dark-mode-toggle">
-            <i id="dark-mode-toggle-icon" class="fas fa-moon"></i
-        ></a>
-    </div>
+            
+            <span class="dark-mode-toggle" id="dark-mode-toggle">
+                <i id="dark-mode-toggle-icon" class="fas fa-moon"></i>
+            </span>
+        </div>
 
-    <button class="hamburger" id="navbar-hamburger" aria-label="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-</nav>
+        <button
+            class="hamburger"
+            id="navbar-hamburger"
+            aria-label="hamburger-menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <div class="navbar-border-bottom"></div>
+</header>
 
 
 <section>
@@ -198,11 +202,11 @@ if (!doNotTrack) {
             <time datetime="2021-08-06 22:43:47 &#43;0530 IST"
                 >Aug 06, 2021</time
             >
-            &nbsp;·&nbsp;
+            ·
             <span>
-                956 words
+                951 words
             </span>
-            &nbsp;·&nbsp;
+            ·
             <span>
                 5 minute read
             </span>
@@ -211,11 +215,9 @@ if (!doNotTrack) {
         
             <div class="tags">
                 
-                    <div>
-                        <a href="https://www.innermonologue.xyz/tags/metallurgy"
-                            >metallurgy</a
-                        >
-                    </div>
+                    <a class="tag" href="https://www.innermonologue.xyz/tags/metallurgy"
+                        >metallurgy</a
+                    >
                 
             </div>
         
@@ -225,9 +227,11 @@ if (!doNotTrack) {
     
         <aside class="toc">
             <details>
-                <summary>Table of Contents
+                <summary>
+                    <i class="fas fa-caret-right fa-sm"> </i>
+                    <span>Table of Contents</span>
                 </summary>
-                <div>
+                <div class="no-underline">
                     <nav id="TableOfContents">
   <ul>
     <li><a href="#solidification">Solidification</a>
@@ -253,7 +257,7 @@ if (!doNotTrack) {
 
 
         <div class="content">
-            <h2 id="solidification">Solidification <a href="#solidification" class="anchor">&nbsp;<i class="fas fa-link"></i></a></h2>
+            <h2 id="solidification">Solidification</h2>
 <p>Any phase change is feasible if and only if there is a driving force, here, it is the decrease in free energy that drives the phase transformation. Let us consider a typical liquid to solid phase transformation. When a liquid is cooled below its <em>equilibrium melting temperature</em> $ \mathrm{(T_m)} $, there is a driving force for solidification $ \mathrm{(G_S - G_L)} $, and thus one expects the liquid phase to solidify spontaneously. In practice, however, this is not the case, as many liquid metal melts can be significantly cooled below the equilibrium melting point (undercooling).</p>
 
     <img
@@ -294,9 +298,9 @@ Assuming $ \mathrm{\Delta G_V} $, $ \mathrm{\Delta S_V} $ are constant w.r.t. te
 <blockquote>
 <p>Why does this happen?</p>
 </blockquote>
-<h3 id="nucleation">Nucleation <a href="#nucleation" class="anchor">&nbsp;<i class="fas fa-link"></i></a></h3>
+<h3 id="nucleation">Nucleation</h3>
 <p>The first stage of solidification is nucleation. Nucleation refers to the formation of the smallest particle <em>(nuclei)</em> of a new phase that is stable in an existing phase. Moreover, nucleation can be either homogeneous or heterogeneous. Let us consider homogeneous nucleation first.</p>
-<h4 id="homogeneous-nucleation">Homogeneous Nucleation <a href="#homogeneous-nucleation" class="anchor">&nbsp;<i class="fas fa-link"></i></a></h4>
+<h4 id="homogeneous-nucleation">Homogeneous Nucleation</h4>
 <p>Also known as self nucleation, this type of nucleation happens in perfectly homogeneous materials <em>(devoid of impurities)</em> like pure liquid metals. Here, nucleation is equiprobable throughout the bulk of the parent phase i.e., it can occur simultaneously at many points in the metal melt.</p>
 <p>Returning to our original case of a liquid to solid transformation with an undercooling of $ \mathrm{\Delta T} $, consider the formation of a small spherical crystal with radius $ \mathrm{r} $ from the melt. The formation of these nuclei will result in,</p>
 <ol>
@@ -342,7 +346,7 @@ r^\ast &amp; = -\frac{2\gamma}{\Delta G_V} \label{eq:3} \\
 <blockquote>
 <p>How does a nucleus form?</p>
 </blockquote>
-<h4 id="statistical-nature-of-atoms">Statistical Nature of Atoms <a href="#statistical-nature-of-atoms" class="anchor">&nbsp;<i class="fas fa-link"></i></a></h4>
+<h4 id="statistical-nature-of-atoms">Statistical Nature of Atoms</h4>
 <p>A nucleus is a cluster of atoms with similar orientations or a group of atoms in a crystalline arrangement. To form a nucleus, loosely packed atoms of the liquid must come together in a crystalline order at a given instant of time.</p>
 <p>Now due to the statistical nature of atoms (random, but with a certain probability), within the liquid, there can exist many small close-packed clusters of atoms that are temporarily in crystalline order. Because this process is random, the probability of finding a large cluster is lower than that of a smaller cluster.</p>
 
@@ -381,7 +385,7 @@ r^\ast &amp; = -\frac{2\gamma}{\Delta G_V} \label{eq:3} \\
     />
 
 
-<h2 id="conclusion">Conclusion <a href="#conclusion" class="anchor">&nbsp;<i class="fas fa-link"></i></a></h2>
+<h2 id="conclusion">Conclusion</h2>
 <p>Recall eq. \ref{eq:1} i.e., $ \Delta G_V = \frac{\Delta H_V \Delta T}{T_m} $. Now, at $ \mathrm{T} = \mathrm{T_m} $, $ \mathrm{\Delta G_V} = 0 $ and therefore, it follows from eq. \ref{eq:3}, that $ \mathrm{r^\ast} = \infty $.</p>
 <p>That is, for solidification to <em>start</em> and <em>continue unaided</em>, a nuclei of size $ \infty $ must form, which is quite impossible. In other words, in a homogeneous melt, spontaneous solidification at the melting point (i.e., zero undercooling) is not feasible. It can also be stated that while there is a fixed melting point, there is no fixed freezing point.</p>
 <p>As a result, either the solid must be undercooled so that stable nuclei can form, or external nucleation sites must be provided. The latter is a case of <strong>heterogeneous nucleation</strong>.</p>
@@ -396,37 +400,37 @@ r^\ast &amp; = -\frac{2\gamma}{\Delta G_V} \label{eq:3} \\
         </main>
 
         <footer id="footer">
-    <div class="powerby">
-        <hr class="footer-line" />
-        Powered by
-        <a href="http://www.gohugo.io/">Hugo</a>
-        <br />
-        <a
-            aria-label="email"
-            href="mailto:neelfrost@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fas fa-envelope"></i>
-        </a>
-        &nbsp;
-        <a
-            aria-label="github"
-            href="https://github.com/Neelfrost/Neelfrost.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fab fa-github"></i>
-        </a>
-        &nbsp;
-        <a
-            aria-label="rss"
-            href="https://www.innermonologue.xyz/index.xml"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fas fa-rss"></i>
-        </a>
+    <div class="footer">
+        <span>
+            Powered by
+            <a href="http://www.gohugo.io/">Hugo</a>
+        </span>
+        <div class="links no-underline">
+            <a
+                aria-label="email"
+                href="mailto:neelfrost@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a
+                aria-label="github"
+                href="https://github.com/Neelfrost/Neelfrost.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-github"></i>
+            </a>
+            <a
+                aria-label="rss"
+                href="https://www.innermonologue.xyz/index.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fas fa-rss"></i>
+            </a>
+        </div>
     </div>
 </footer>
 

@@ -22,7 +22,7 @@
 />
 
 
-<meta name="generator" content="Hugo 0.92.0" />
+<meta name="generator" content="Hugo 0.92.1" />
 
 
 
@@ -33,7 +33,7 @@
 
 
 
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.8b6b182308991a84bed95f214770fd9719469880d0f09857d2aa314bbf942ce8.css" integrity="sha256-i2sYIwiZGoS&#43;2V8hR3D9lxlGmIDQ8JhX0qoxS7&#43;ULOg=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.9c17b3465e81d435f1f966c17c790cb4201d6fdb3f65ea1a1d5c8e3010112d09.css" integrity="sha256-nBezRl6B1DXx&#43;WbBfHkMtCAdb9s/ZeoaHVyOMBARLQk=" crossorigin="anonymous" />
 
 
 
@@ -77,60 +77,64 @@ if (!doNotTrack) {
 <link rel="shortcut icon" type="image/x-icon" href="https://www.innermonologue.xyz/icons/favicon.ico" />
 
 
+<link rel="preconnect" href="https://kit.fontawesome.com">
 <script src="https://kit.fontawesome.com/05d79ffb1a.js" crossorigin="anonymous"></script>
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-    rel="stylesheet"
-/>
-<link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
 
 
     </head>
 
     <body>
-        <nav class="navbar" id="navbar">
-    
-        <a class="title" href="/">Inner Monologue</a>
-    
-    <div class="menu" id="navbar-menu">
+        <header>
+    <div class="navbar-border-top"></div>
+    <nav class="navbar" id="navbar">
         
-            <a href="/">
-                
-                    Home
+            <span class="no-underline">
+                <a class="title no-underline" href="/"
+                    >Inner Monologue</a
+                >
+            </span>
+        
+        <div class="menu" id="navbar-menu">
+            
+                <a href="/">
+                    
+                        Home
+                    </a
+                >
+            
+            <a href="/about"
+                >
+                    About
                 </a
             >
-        
-        <a href="/about"
+            <a href="/posts"
+                >
+                    Archive
+                </a
             >
-                About
-            </a
-        >
-        <a href="/posts"
+            <a href="/tags"
+                >
+                    Tags
+                </a
             >
-                Archive
-            </a
-        >
-        <a href="/tags"
-            >
-                Tags
-            </a
-        >
-        
-        <a class="dark-mode-toggle" id="dark-mode-toggle">
-            <i id="dark-mode-toggle-icon" class="fas fa-moon"></i
-        ></a>
-    </div>
+            
+            <span class="dark-mode-toggle" id="dark-mode-toggle">
+                <i id="dark-mode-toggle-icon" class="fas fa-moon"></i>
+            </span>
+        </div>
 
-    <button class="hamburger" id="navbar-hamburger" aria-label="hamburger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-</nav>
+        <button
+            class="hamburger"
+            id="navbar-hamburger"
+            aria-label="hamburger-menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <div class="navbar-border-bottom"></div>
+</header>
 
 
 <section>
@@ -163,11 +167,11 @@ if (!doNotTrack) {
             <time datetime="2021-08-14 20:37:19 &#43;0530 IST"
                 >Aug 14, 2021</time
             >
-            &nbsp;·&nbsp;
+            ·
             <span>
                 256 words
             </span>
-            &nbsp;·&nbsp;
+            ·
             <span>
                 2 minute read
             </span>
@@ -176,23 +180,31 @@ if (!doNotTrack) {
         
             <div class="tags">
                 
-                    <div>
-                        <a href="https://www.innermonologue.xyz/tags/neovim"
-                            >neovim</a
-                        >
-                    </div>
+                    <a class="tag" href="https://www.innermonologue.xyz/tags/neovim"
+                        >neovim</a
+                    >
                 
-                    <div>
-                        <a href="https://www.innermonologue.xyz/tags/configuration"
-                            >configuration</a
-                        >
-                    </div>
+                    <a class="tag" href="https://www.innermonologue.xyz/tags/configuration"
+                        >configuration</a
+                    >
                 
             </div>
         
 
         
             
+    
+        <aside class="toc">
+            <details>
+                <summary>
+                    <i class="fas fa-caret-right fa-sm"> </i>
+                    <span>Table of Contents</span>
+                </summary>
+                <div class="no-underline">
+                    <nav id="TableOfContents"></nav>
+                </div>
+            </details>
+        </aside>
     
 
 
@@ -243,7 +255,7 @@ if (!doNotTrack) {
 <ol>
 <li>
 <p>File structure</p>
-<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">├── init.lua
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">├── init.lua
 ├── lua
 │   └── plugins
 │       ├── telescope.lua
@@ -253,34 +265,34 @@ if (!doNotTrack) {
 <li>
 <p>Configuring the &lsquo;find files&rsquo; builtin</p>
 <p>File: <code>plugins/config/telescope.lua</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#6ab825;font-weight:bold">local</span> M = {}
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#728e00">local</span> <span style="color:#434f54">M</span> <span style="color:#728e00">=</span> {}
 
-<span style="color:#999;font-style:italic">-- Configure find files builtin with custom opts</span>
-<span style="color:#999;font-style:italic">-- For neovim&#39;s config directory</span>
-<span style="color:#6ab825;font-weight:bold">function</span> <span style="color:#447fcf;text-decoration:underline">M</span>.<span style="color:#447fcf">dir_nvim</span>()
-    <span style="color:#6ab825;font-weight:bold">local</span> opts = {
-        prompt_title = <span style="color:#ed9d13">&#34;Neovim&#34;</span>, <span style="color:#999;font-style:italic">-- Title for the picker</span>
-        shorten_path = <span style="color:#6ab825;font-weight:bold">false</span>, <span style="color:#999;font-style:italic">-- Display full paths, short paths are ugly</span>
-        cwd = <span style="color:#ed9d13">&#34;~/Appdata/Local/nvim&#34;</span>, <span style="color:#999;font-style:italic">-- Set path to directory whose files should be shown</span>
-        file_ignore_patterns = { <span style="color:#ed9d13">&#34;.git&#34;</span>, <span style="color:#ed9d13">&#34;.png&#34;</span>, <span style="color:#ed9d13">&#34;tags&#34;</span> }, <span style="color:#999;font-style:italic">-- Folder/files to be ignored</span>
-        initial_mode = <span style="color:#ed9d13">&#34;insert&#34;</span>, <span style="color:#999;font-style:italic">-- Start in insert mode</span>
-        selection_strategy = <span style="color:#ed9d13">&#34;reset&#34;</span>, <span style="color:#999;font-style:italic">-- Start selection from top when list changes</span>
-        theme = require(<span style="color:#ed9d13">&#34;telescope.themes&#34;</span>).get_dropdown({}), <span style="color:#999;font-style:italic">-- Theme to be used, can be omitted to use defaults</span>
-        previewer = <span style="color:#6ab825;font-weight:bold">false</span>, <span style="color:#999;font-style:italic">-- Disable previewer</span>
+<span style="color:#95a5a6">-- Configure find files builtin with custom opts</span>
+<span style="color:#95a5a6">-- For neovim&#39;s config directory</span>
+<span style="color:#00979d">function</span> <span style="color:#434f54">M</span>.<span style="color:#d35400">dir_nvim</span>()
+    <span style="color:#728e00">local</span> <span style="color:#434f54">opts</span> <span style="color:#728e00">=</span> {
+        <span style="color:#434f54">prompt_title</span> <span style="color:#728e00">=</span> <span style="color:#7f8c8d">&#34;Neovim&#34;</span>, <span style="color:#95a5a6">-- Title for the picker</span>
+        <span style="color:#434f54">shorten_path</span> <span style="color:#728e00">=</span> <span style="color:#00979d">false</span>, <span style="color:#95a5a6">-- Display full paths, short paths are ugly</span>
+        <span style="color:#434f54">cwd</span> <span style="color:#728e00">=</span> <span style="color:#7f8c8d">&#34;~/Appdata/Local/nvim&#34;</span>, <span style="color:#95a5a6">-- Set path to directory whose files should be shown</span>
+        <span style="color:#434f54">file_ignore_patterns</span> <span style="color:#728e00">=</span> { <span style="color:#7f8c8d">&#34;.git&#34;</span>, <span style="color:#7f8c8d">&#34;.png&#34;</span>, <span style="color:#7f8c8d">&#34;tags&#34;</span> }, <span style="color:#95a5a6">-- Folder/files to be ignored</span>
+        <span style="color:#434f54">initial_mode</span> <span style="color:#728e00">=</span> <span style="color:#7f8c8d">&#34;insert&#34;</span>, <span style="color:#95a5a6">-- Start in insert mode</span>
+        <span style="color:#434f54">selection_strategy</span> <span style="color:#728e00">=</span> <span style="color:#7f8c8d">&#34;reset&#34;</span>, <span style="color:#95a5a6">-- Start selection from top when list changes</span>
+        <span style="color:#434f54">theme</span> <span style="color:#728e00">=</span> <span style="color:#434f54">require</span>(<span style="color:#7f8c8d">&#34;telescope.themes&#34;</span>).<span style="color:#434f54">get_dropdown</span>({}), <span style="color:#95a5a6">-- Theme to be used, can be omitted to use defaults</span>
+        <span style="color:#434f54">previewer</span> <span style="color:#728e00">=</span> <span style="color:#00979d">false</span>, <span style="color:#95a5a6">-- Disable previewer</span>
     }
 
-    <span style="color:#999;font-style:italic">-- Pass opts to find_files</span>
-    require(<span style="color:#ed9d13">&#34;telescope.builtin&#34;</span>).find_files(opts)
-<span style="color:#6ab825;font-weight:bold">end</span>
+    <span style="color:#95a5a6">-- Pass opts to find_files</span>
+    <span style="color:#434f54">require</span>(<span style="color:#7f8c8d">&#34;telescope.builtin&#34;</span>).<span style="color:#434f54">find_files</span>(<span style="color:#434f54">opts</span>)
+<span style="color:#00979d">end</span>
 
-<span style="color:#6ab825;font-weight:bold">return</span> M
+<span style="color:#00979d">return</span> <span style="color:#434f54">M</span>
 </code></pre></div><p>When called, this will open a picker that will list all files in <code>~/Appdata/Local/nvim</code>, excluding the ones listed in file_ignore_patterns.</p>
 </li>
 <li>
 <p>Configure mappings</p>
 <p>File: <code>plugins/telescope.lua</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#6ab825;font-weight:bold">local</span> opts = { noremap = <span style="color:#6ab825;font-weight:bold">true</span>, silent = <span style="color:#6ab825;font-weight:bold">true</span> }
-vim.api.nvim_set_keymap(<span style="color:#ed9d13">&#34;n&#34;</span>, <span style="color:#ed9d13">&#34;&lt;Leader&gt;tn&#34;</span>, <span style="color:#ed9d13">&#34;&lt;cmd&gt;lua require(&#39;plugins.config.telescope&#39;).dir_nvim()&lt;CR&gt;&#34;</span>, opts)
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#728e00">local</span> <span style="color:#434f54">opts</span> <span style="color:#728e00">=</span> { <span style="color:#434f54">noremap</span> <span style="color:#728e00">=</span> <span style="color:#00979d">true</span>, <span style="color:#434f54">silent</span> <span style="color:#728e00">=</span> <span style="color:#00979d">true</span> }
+<span style="color:#434f54">vim.api</span>.<span style="color:#434f54">nvim_set_keymap</span>(<span style="color:#7f8c8d">&#34;n&#34;</span>, <span style="color:#7f8c8d">&#34;&lt;Leader&gt;tn&#34;</span>, <span style="color:#7f8c8d">&#34;&lt;cmd&gt;lua require(&#39;plugins.config.telescope&#39;).dir_nvim()&lt;CR&gt;&#34;</span>, <span style="color:#434f54">opts</span>)
 </code></pre></div><p>Now, after restarting or reloading neovim, we can use <code>&lt;Leader&gt;tn</code> to browse files in neovim&rsquo;s config directory. Find more examples at <a
     href="https://github.com/Neelfrost/dotfiles/blob/main/lua/plugins/config/telescope.lua"
     
@@ -302,37 +314,37 @@ vim.api.nvim_set_keymap(<span style="color:#ed9d13">&#34;n&#34;</span>, <span st
         </main>
 
         <footer id="footer">
-    <div class="powerby">
-        <hr class="footer-line" />
-        Powered by
-        <a href="http://www.gohugo.io/">Hugo</a>
-        <br />
-        <a
-            aria-label="email"
-            href="mailto:neelfrost@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fas fa-envelope"></i>
-        </a>
-        &nbsp;
-        <a
-            aria-label="github"
-            href="https://github.com/Neelfrost/Neelfrost.github.io"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fab fa-github"></i>
-        </a>
-        &nbsp;
-        <a
-            aria-label="rss"
-            href="https://www.innermonologue.xyz/index.xml"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <i class="fas fa-rss"></i>
-        </a>
+    <div class="footer">
+        <span>
+            Powered by
+            <a href="http://www.gohugo.io/">Hugo</a>
+        </span>
+        <div class="links no-underline">
+            <a
+                aria-label="email"
+                href="mailto:neelfrost@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a
+                aria-label="github"
+                href="https://github.com/Neelfrost/Neelfrost.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fab fa-github"></i>
+            </a>
+            <a
+                aria-label="rss"
+                href="https://www.innermonologue.xyz/index.xml"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <i class="fas fa-rss"></i>
+            </a>
+        </div>
     </div>
 </footer>
 
