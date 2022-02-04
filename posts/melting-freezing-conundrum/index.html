@@ -14,11 +14,8 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1" />
 <meta
     name="description"
-    content="
-    
-        Logic dictates that melting and freezing points should be the same, but are they?
-    
-    "
+    content="Logic dictates that melting and freezing points should be the same, but are they?"
+
 />
 
 
@@ -32,8 +29,7 @@
 
 
 
-
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.3bf619ac0927f97adf87846eb615a1d41404c09e5a3b98f4fcb811921a8aa874.css" integrity="sha256-O/YZrAkn&#43;Xrfh4RuthWh1BQEwJ5aO5j0/LgRkhqKqHQ=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.e9f633185f0069e6eed613162cdc891d82ec3f8c1701d0ff51c952f7463c799b.css" integrity="sha256-6fYzGF8Aaebu1hMWLNyJHYLsP4wXAdD/UclS90Y8eZs=" crossorigin="anonymous" />
 
 
 
@@ -81,12 +77,6 @@ if (!doNotTrack) {
             skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
         },
     };
-
-    window.addEventListener("load", (event) => {
-        document.querySelectorAll("mjx-container").forEach(function (x) {
-            x.parentElement.classList += "has-jax";
-        });
-    });
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script
@@ -188,7 +178,7 @@ if (!doNotTrack) {
 
 
 
-<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.0fe2c77120ea34c144a458c3d015554da1224ac7fa890e7a53479120ca35ed3b.js" integrity="sha256-D&#43;LHcSDqNMFEpFjD0BVVTaEiSsf6iQ56U0eRIMo17Ts=" crossorigin="anonymous"></script>
+<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.4cf5d8577d4466c7b4a729559f7b05119eccc8169af8495bb32efe3e4c4d91ab.js" integrity="sha256-TPXYV31EZse0pylVn3sFEZ7MyBaa&#43;Elbsy7&#43;PkxNkas=" crossorigin="anonymous"></script>
 
 
 
@@ -204,7 +194,7 @@ if (!doNotTrack) {
             >
             ·
             <span>
-                951 words
+                953 words
             </span>
             ·
             <span>
@@ -244,6 +234,7 @@ if (!doNotTrack) {
         </li>
       </ul>
     </li>
+    <li><a href="#heterogeneous-nucleation">Heterogeneous Nucleation</a></li>
     <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
@@ -259,39 +250,26 @@ if (!doNotTrack) {
         <div class="content">
             <h2 id="solidification">Solidification</h2>
 <p>Any phase change is feasible if and only if there is a driving force, here, it is the decrease in free energy that drives the phase transformation. Let us consider a typical liquid to solid phase transformation. When a liquid is cooled below its <em>equilibrium melting temperature</em> $ \mathrm{(T_m)} $, there is a driving force for solidification $ \mathrm{(G_S - G_L)} $, and thus one expects the liquid phase to solidify spontaneously. In practice, however, this is not the case, as many liquid metal melts can be significantly cooled below the equilibrium melting point (undercooling).</p>
-
-    <img
-        src="assets/liquid_to_solid_transformation.svg"
-        alt="liquid_to_solid_transformation"
-        class="
-            center
-        "
-        height="400px"
-        
-        style="padding:8px;background-color:white;"
-    />
-
-
+<img
+        src="assets/liquid_to_solid_transformation.svg"alt="liquid_to_solid_transformation"class="image svg align-center"style="width:28rem"/>
 <blockquote>
 <p>What is undercooling?</p>
 </blockquote>
 <p>Since at $ \mathrm{(T_m)} $ both phases are in equilibrum, we have,
+<div class="math-scroll">
 \begin{align}
-\Delta G_V &amp; = \Delta H_V - T_m\Delta S_V = 0 \nonumber \\
-\therefore \Delta S_V &amp; = \frac{\Delta H_V}{T_m}
+\Delta G_V & = \Delta H_V - T_m\Delta S_V = 0 \nonumber \\
+\therefore \Delta S_V & = \frac{\Delta H_V}{T_m}
 \end{align}
+</div>
+
 Assuming $ \mathrm{\Delta G_V} $, $ \mathrm{\Delta S_V} $ are constant w.r.t. temperature, then the free energy change associated with the solidification of metal at any temperature T can be determined as,</p>
 <div class="math-scroll">
-     <!-- prettier-ignore --> 
-    <p>
-        
 \begin{align}
 \Delta G_V & = \Delta H_V - T\Delta S_V\nonumber \\
 \Delta G_V & = \Delta H_V - T\left( \frac{\Delta H_V}{T_m} \right)\nonumber \\
 \Delta G_V & = \Delta H_V\left( \frac{T_m-T}{T_m} \right) = \frac{\Delta H_V \Delta T}{T_m}\label{eq:1}
 \end{align}
-
-    </p>
 </div>
 
 <p>Where $ \mathrm{\Delta T} $ is the degree of undercooling, which is the difference between the equilibrium temperature of solidification and the temperature at which solidification begins spontaneously.</p>
@@ -308,40 +286,27 @@ Assuming $ \mathrm{\Delta G_V} $, $ \mathrm{\Delta S_V} $ are constant w.r.t. te
 <li>Generation of new surfaces/interfaces (of nuclei), accompanied by an increase in interface energy.</li>
 </ol>
 <div class="math-scroll">
-     <!-- prettier-ignore --> 
-    <p>
-        
 \begin{align}
 \Delta G & = \text{Decrease in bulk free energy} + \text{Increase in interface energy} \nonumber \\
 \Delta G & = -\text{Volume}\cdot\Delta G_V + \text{Interface}\cdot\gamma \nonumber \\
 \Delta G & = -\left( \frac{4}{3} \pi r^{3} \right)\cdot\Delta G_V + \left( 4\pi r^{2} \right)\cdot\gamma\label{eq:2}
 \end{align}
-
-    </p>
 </div>
 
-
-    <img
-        src="assets/variation_of_free_energy_with_radius.svg"
-        alt="variation_of_free_energy_with_radius"
-        class="
-            center
-        "
-        height="300px"
-        
-        style="padding:8px;background-color:white;"
-    />
-
-
+<img
+        src="assets/variation_of_free_energy_with_radius.svg"alt="variation_of_free_energy_with_radius"class="image svg align-center"style="width:28rem"/>
 <p>The above figure shows a possible plot of eq. \ref{eq:2}, wherein the formation of small solid particles always increases free energy because the interfacial term increases as $ \mathrm{r^2} $, whereas the volume free energy released only increases as $ \mathrm{r^3}$. Furthermore, it demonstrates that for a given undercooling, there is a radius, $ \mathrm{r^\ast} $, corresponding to the maximum free energy.</p>
 <p>Unstable nuclei with radius $ \mathrm{r} &lt; \mathrm{r^\ast} $ are known as <em>embryos</em> while stable nuclei with radius $ \mathrm{r} &gt; \mathrm{r^\ast} $ are referred to as <em>supercritical nuclei</em>; $ \mathrm{r^\ast} $ is known as the <em>critical nucleus radius</em>, and can be derived by differentiating eq. \ref{eq:2},</p>
-<p>\begin{gather}
+<div class="math-scroll">
+\begin{gather}
 \frac{d\Delta G}{dr} = 0 \nonumber
 \end{gather}
 \begin{align}
-r^\ast &amp; = -\frac{2\gamma}{\Delta G_V} \label{eq:3} \\
-\Delta G^\ast &amp; = \frac{16}{3} \pi \frac{\gamma^{3}}{\Delta G_V^{2}}
-\end{align}</p>
+r^\ast & = -\frac{2\gamma}{\Delta G_V} \label{eq:3} \\
+\Delta G^\ast & = \frac{16}{3} \pi \frac{\gamma^{3}}{\Delta G_V^{2}}
+\end{align}
+</div>
+
 <p>When $ \mathrm{r} &lt; \mathrm{r^\ast} $, it can be seen that the system is not in a minimum free energy state. Moreover, the growth of the nuclei will result in a further increase in free energy and is thus not possible. Hence, the system will be driven to the minimum free energy state by the dissolution of the nuclei. Applying the same principle when $ \mathrm{r} &gt; \mathrm{r^\ast} $, the free energy of the system can be decreased by the growth of the nuclei.</p>
 <blockquote>
 <p>How does a nucleus form?</p>
@@ -349,42 +314,12 @@ r^\ast &amp; = -\frac{2\gamma}{\Delta G_V} \label{eq:3} \\
 <h4 id="statistical-nature-of-atoms">Statistical Nature of Atoms</h4>
 <p>A nucleus is a cluster of atoms with similar orientations or a group of atoms in a crystalline arrangement. To form a nucleus, loosely packed atoms of the liquid must come together in a crystalline order at a given instant of time.</p>
 <p>Now due to the statistical nature of atoms (random, but with a certain probability), within the liquid, there can exist many small close-packed clusters of atoms that are temporarily in crystalline order. Because this process is random, the probability of finding a large cluster is lower than that of a smaller cluster.</p>
-
-
-
-
-
-
-    
-
-
-
-
-
-<figure class="center">
-    <img
-        style="max-width: 100%; width: auto; height: auto;"
-        src="/posts/melting_freezing_conundrum/assets/crystalline_order_hu8b9c90d1dfaab116340b88a1c3a6b75f_75034_600x0_resize_box_3.png"
-        width="600"
-        height="271"
-    />
-    
-</figure>
-
+<img
+        src="assets/crystalline_order.png"alt="clustering of atoms"class="image align-center"/>
 <p>As a result, at smaller undercooling (i.e., closer to the melting point, where the value of $ \mathrm{r^\ast} $ is large), the probability of forming supercritical nuclei is lower, as is the probability of solidification (because at least one nucleus must grow to cause solidification). Solidification is thus more likely at larger undercooling, where the $ \mathrm{r^\ast} $ is smaller.</p>
-
-    <img
-        src="assets/critical_nuclei_vs_undercooling.svg"
-        alt="critical_nuclei_vs_undercooling"
-        class="
-            center
-        "
-        height="300px"
-        
-        style="padding:8px;background-color:white;"
-    />
-
-
+<img
+        src="assets/critical_nuclei_vs_undercooling.svg"alt="critical_nuclei_vs_undercooling"class="image svg align-center"style="width:24rem"/>
+<h2 id="heterogeneous-nucleation">Heterogeneous Nucleation</h2>
 <h2 id="conclusion">Conclusion</h2>
 <p>Recall eq. \ref{eq:1} i.e., $ \Delta G_V = \frac{\Delta H_V \Delta T}{T_m} $. Now, at $ \mathrm{T} = \mathrm{T_m} $, $ \mathrm{\Delta G_V} = 0 $ and therefore, it follows from eq. \ref{eq:3}, that $ \mathrm{r^\ast} = \infty $.</p>
 <p>That is, for solidification to <em>start</em> and <em>continue unaided</em>, a nuclei of size $ \infty $ must form, which is quite impossible. In other words, in a homogeneous melt, spontaneous solidification at the melting point (i.e., zero undercooling) is not feasible. It can also be stated that while there is a fixed melting point, there is no fixed freezing point.</p>

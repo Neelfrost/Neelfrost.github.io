@@ -16,9 +16,9 @@
     <atom:link href="https://www.innermonologue.xyz/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Spice up your Windows CLI experience</title>
-      <link>https://www.innermonologue.xyz/posts/windows_cli/</link>
+      <link>https://www.innermonologue.xyz/posts/spice-up-windows-cli/</link>
       <pubDate>Tue, 21 Sep 2021</pubDate>
-      <guid>https://www.innermonologue.xyz/posts/windows_cli/</guid>
+      <guid>https://www.innermonologue.xyz/posts/spice-up-windows-cli/</guid>
       <description>Make Windows CLI great again with oh-my-posh, nerd fonts, windows-terminal, and winfetch!</description>
     </item>
     

@@ -14,11 +14,8 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1" />
 <meta
     name="description"
-    content="
-    
-        A deep dive into the iron-carbon diagram and related phase transformations.
-    
-    "
+    content="A deep dive into the iron-carbon diagram and related phase transformations."
+
 />
 
 
@@ -32,8 +29,7 @@
 
 
 
-
-<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.3bf619ac0927f97adf87846eb615a1d41404c09e5a3b98f4fcb811921a8aa874.css" integrity="sha256-O/YZrAkn&#43;Xrfh4RuthWh1BQEwJ5aO5j0/LgRkhqKqHQ=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://www.innermonologue.xyz/css/style.min.e9f633185f0069e6eed613162cdc891d82ec3f8c1701d0ff51c952f7463c799b.css" integrity="sha256-6fYzGF8Aaebu1hMWLNyJHYLsP4wXAdD/UclS90Y8eZs=" crossorigin="anonymous" />
 
 
 
@@ -81,12 +77,6 @@ if (!doNotTrack) {
             skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
         },
     };
-
-    window.addEventListener("load", (event) => {
-        document.querySelectorAll("mjx-container").forEach(function (x) {
-            x.parentElement.classList += "has-jax";
-        });
-    });
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script
@@ -188,7 +178,7 @@ if (!doNotTrack) {
 
 
 
-<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.0fe2c77120ea34c144a458c3d015554da1224ac7fa890e7a53479120ca35ed3b.js" integrity="sha256-D&#43;LHcSDqNMFEpFjD0BVVTaEiSsf6iQ56U0eRIMo17Ts=" crossorigin="anonymous"></script>
+<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.4cf5d8577d4466c7b4a729559f7b05119eccc8169af8495bb32efe3e4c4d91ab.js" integrity="sha256-TPXYV31EZse0pylVn3sFEZ7MyBaa&#43;Elbsy7&#43;PkxNkas=" crossorigin="anonymous"></script>
 
 
 
@@ -318,19 +308,8 @@ if (!doNotTrack) {
 </li>
 </ol>
 <h3 id="iron-carbon-phase-diagram">Iron-Carbon Phase Diagram</h3>
-
-    <img
-        src="assets/iron_carbon_phase_diagram.svg"
-        alt="iron_carbon_phase_diagram"
-        class="
-            center
-        "
-        
-        
-        style="padding:8px;background-color:white;"
-    />
-
-
+<img
+        src="assets/iron_carbon_phase_diagram.svg"alt="iron_carbon_phase_diagram"class="image svg align-center"/>
 <h3 id="critical-temperatures">Critical Temperatures</h3>
 <p>When an alloy is heated or cooled to &ldquo;critical temperature&rdquo;, certain phase transformations occur. The following symbols are used for the iron-carbon diagram.</p>
 <table>
@@ -439,64 +418,27 @@ if (!doNotTrack) {
 <h3 id="lever-rule">Lever Rule</h3>
 <p>Using a relationship known as the lever rule, we can determine the relative amount of each phase that is present in the phase diagram in a two-phase region. For the lever rule to be applied on a two-phase region, a tie-line must be drawn, which is a horizontal line that joins the conjugate phases that coexist at a specific temperature.</p>
 <p>Let us take an example of steel containing 0.8% carbon (i.e., eutectoid composition) at a temperature just below $\mathrm{A_1}$. Here, the conjugate phases will be ferrite and cementite, and the tie-line will be constructed by joining the points corresponding to 100% ferrite and 100% cementite at $\mathrm{A_1}$ i.e., 0.025% carbon and 6.67% carbon. Coincidentally, this tie-line corresponds to the eutectoid reaction line. Finally, to complete the lever, the fulcrum can be situated at the final alloy composition i.e., 0.8% carbon.</p>
-
-    <img
-        src="assets/lever_rule_example.svg"
-        alt="lever_rule_example"
-        class="
-            center
-        "
-        
-        
-        style="padding:8px;background-color:white;padding:4px;background-color:white"
-    />
-
-
+<img
+        src="assets/lever_rule_example.svg"alt="lever_rule_example"class="image svg align-center"/>
 <p>The calculation is as follows:</p>
 <div class="math-scroll">
-     <!-- prettier-ignore --> 
-    <p>
-        
 \begin{align}
 \text{% ferrite} & = \frac{\text{Length of opposite arm (ZY)}}{\text{Total length (XY)}} \times 100 = \frac{6.67-0.8}{6.67-0.025} \times 100 = 88.3\% \\
 \text{% cementite} & = \frac{\text{Length of opposite arm (XZ)}}{\text{Total length (XY)}} \times 100 = \frac{0.8-0.025}{6.67-0.025} \times 100 = 11.7\%
 \end{align}
-
-    </p>
 </div>
 
 <h2 id="solidification-of-steels">Solidification of Steels</h2>
 <h3 id="solidification-of-hypoeutectoid-steels">Solidification of Hypoeutectoid Steels</h3>
-<p class="wrap-right">
-    
-        <img
-            src="assets/hypoeutectoid_steel.png"
-            alt="hypoeutectoid_steel"
-            
-            width="300px"
-            
-        />
-    
-</p>
-
+<img
+        src="assets/hypoeutectoid_steel.png"alt="hypoeutectoid_steel"class="image align-right"style="width:20rem"/>
 <p>Since austenite is unstable below 723 °C ($\mathrm{A_1}$), it transforms into two phases which are stable below 723 °C, namely, ferrite and cementite. However, for this transformation to occur, austenite must have a eutectoid composition i.e., 0.8% carbon. To achieve such a composition, just below $x_2$, nucleation of <strong>proeutectoid ferrite</strong> begins at the austenite grain boundaries.</p>
 <blockquote>
 <p>Proeutectoid ferrite is the ferrite that has formed before eutectoid temperature. &ldquo;Pro-&rdquo; meaning &ldquo;before&rdquo;.</p>
 </blockquote>
 <p>Since the solubility of carbon in ferrite is very low, the formation/growth of proeutectoid ferrite proceeds with the rejection of carbon, this, in turn, enriches the austenite in carbon. This can be seen clearly on the iron-carbon diagram $\to$ the composition of austenite varies along GS (0.4% at $x_2$ and 0.8% i.e., the eutectoid composition, at $x_4$). Similarly, the composition of proeutectoid ferrite varies along GP.</p>
-
-    <img
-        src="assets/hypoeutectoid_composition_variation.svg"
-        alt="composition_variation"
-        class="
-            center
-        "
-        
-        
-        style="padding:8px;background-color:white;"
-    />
-
-
+<img
+        src="assets/hypoeutectoid_composition_variation.svg"alt="composition_variation"class="image svg align-center"/>
 <blockquote>
 <p>As per the figure, upon cooling the alloy till $\mathrm{A_1}$, 51.6% ferrite must separate out from the alloy (which was initially composed of 100% austenite) so that the remaining austenite can achieve eutectoid composition. Note: The compositions are calculated using the <a
     href="#lever-rule"
@@ -513,36 +455,16 @@ if (!doNotTrack) {
 .</p>
 <p>When the alloy is slowly cooled to room temperature, the proeutectoid ferrite begins to reject carbon because the solubility of carbon in ferrite decreases with temperature. The rejected carbon (with a carbon percent of 6.67%) will go on to form <strong>tertiary cementite</strong>. Therefore, the final microstructure of hypoeutectoid steel will consist of proeutectoid ferrite, pearlite, and tertiary cementite.</p>
 <h3 id="solidification-of-eutectoid-steels">Solidification of Eutectoid Steels</h3>
-<p class="wrap-right">
-    
-        <img
-            src="assets/eutectoid_reaction_cooling_curve.svg"
-            alt="eutectoid_reaction_cooling_curve"
-            
-            width="300px"
-            style="padding:8px;background-color:white;"
-        />
-    
-</p>
-
+<img
+        src="assets/eutectoid_reaction_cooling_curve.svg"alt="eutectoid_reaction_cooling_curve"class="image svg align-right"style="width:24rem"/>
 <p>Consider the solidification of an alloy of iron-carbon containing 0.8% carbon (i.e., eutectoid composition). It will remain austenite up to point S (i.e., eutectoid point). Crossing this point (or more correctly, $\mathrm{A_1}$), the alloy (composed of 100% austenite) transforms into pearlite through a eutectoid reaction. Regardless of the alloy, this transformation always takes place at a constant temperature (see figure).</p>
 <blockquote>
 <p>Note: This holds true for all invariant reactions and in both directions i.e., cooling or heating.</p>
 </blockquote>
 <p>Cooling the alloy further to room temperature has no effect on the microstructure; in other words, the final microstructure at room temperature consists solely of pearlite.</p>
 <h3 id="solidification-of-hypereutectoid-steels">Solidification of Hypereutectoid Steels</h3>
-<p class="wrap-left">
-    
-        <img
-            src="assets/hypereutectoid_steel.png"
-            alt="hypereutectoid_steel"
-            
-            width="300px"
-            
-        />
-    
-</p>
-
+<img
+        src="assets/hypereutectoid_steel.png"alt="hypereutectoid_steel"class="image align-left"style="width:20rem"/>
 <p>Consider the cooling of an alloy of iron-carbon containing 1.2% carbon. At point $y_1$ i.e., above upper critical temperature $\mathrm{Ac_m}$, the alloy consists only of austenite. When the alloy is cooled to point $y_2$, i.e., when it crosses the $\mathrm{Ac_m}$, <strong>proeutectoid cementite</strong> nucleates along the grain boundaries of austenite.</p>
 <p>Austenite in hypereutectoid steels is rich in carbon, therefore it rejects excess carbon (&gt; 0.8%) as cementite, to achieve a eutectoid composition $\to$ phenomenon opposite to the solidification of hypoeutectoid steels.</p>
 <p>As the alloy cools further, cementite grains grow and the remaining austenite achieves eutectoid composition (at 723 °C, point $y_4$). Austenite (of eutectoid composition) subsequently transforms into pearlite, through a eutectoid reaction. Cooling the alloy further to room temperature has no effect on the microstructure. The final microstructure at room temperature will consist of proeutectoid cementite and pearlite.</p>
