@@ -1,1 +1,0 @@
-const cards=Array.from(document.querySelectorAll(".card"));cards.forEach(a=>a.addEventListener("click",b=>{a.querySelector(".main-link").click()}))

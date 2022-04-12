@@ -19,7 +19,7 @@
 />
 
 
-<meta name="generator" content="Hugo 0.92.1" />
+<meta name="generator" content="Hugo 0.96.0" />
 
 
 
@@ -145,11 +145,11 @@ if (!doNotTrack) {
 
 
 
-<script src="https://www.innermonologue.xyz/js/dark_mode_toggle.min.da1da9138c6c498639544ec39b2c84f408a8043046372845e7859c99211800e3.js" integrity="sha256-2h2pE4xsSYY5VE7DmyyE9AioBDBGNyhF54WcmSEYAOM=" crossorigin="anonymous"></script>
+<script src="https://www.innermonologue.xyz/js/dark_mode_toggle.min.0d0dcdcc307e02a49053dd7bc89ee0ad14cf5661c935b9f95eab84b79c0d4fac.js" integrity="sha256-DQ3NzDB&#43;AqSQU917yJ7grRTPVmHJNbn5XquEt5wNT6w=" crossorigin="anonymous"></script>
 
 
 
-<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.4cf5d8577d4466c7b4a729559f7b05119eccc8169af8495bb32efe3e4c4d91ab.js" integrity="sha256-TPXYV31EZse0pylVn3sFEZ7MyBaa&#43;Elbsy7&#43;PkxNkas=" crossorigin="anonymous"></script>
+<script src="https://www.innermonologue.xyz/js/scroll_to_top.min.994ee1917dac08f4ae273025d5df35c679133e05d36b35e7b308fa4901a81ef8.js" integrity="sha256-mU7hkX2sCPSuJzAl1d81xnkTPgXTazXnswj6SQGoHvg=" crossorigin="anonymous"></script>
 
 
 
@@ -272,8 +272,8 @@ if (!doNotTrack) {
     >instructions</a
 >
 . Open a powershell instance use the following cmd to install the oh-my-posh module:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#728e00">Install-Module</span> <span style="color:#728e00">oh-my</span><span style="color:#434f54">-posh</span> <span style="color:#434f54">-Scope</span> <span style="color:#434f54">CurrentUser</span>
-</code></pre></div><p>Head over to the <a
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#728e00">Install-Module</span> <span style="color:#728e00">oh-my</span><span style="color:#434f54">-posh</span> <span style="color:#434f54">-Scope</span> <span style="color:#434f54">CurrentUser</span>
+</span></span></code></pre></div><p>Head over to the <a
     href="https://ohmyposh.dev/docs/themes"
     
         target="_blank" rel="noopener"
@@ -281,57 +281,57 @@ if (!doNotTrack) {
     >themes</a
 >
  section for a web-preview of pre-configured themes. After choosing a theme, oh-my-posh prompt can be activated using:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#728e00">Set-PoshPrompt</span> <span style="color:#434f54">-Theme</span> &lt;<span style="color:#434f54">theme_name</span>&gt;
-<span style="color:#95a5a6"># Example:</span>
-<span style="color:#728e00">Set-PoshPrompt</span> <span style="color:#434f54">-Theme</span> <span style="color:#434f54">sorin</span>
-</code></pre></div><p>This is not a permanent change, and the prompt will revert to the default prompt when powershell is launched again. To resolve this, the above cmd must be added to the powershell profile. This can be done as follows:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#95a5a6"># The following will overwrite the profile</span>
-<span style="color:#728e00">echo </span><span style="color:#7f8c8d">&#34;Set-PoshPrompt -Theme sorin&#34;</span> &gt; <span style="color:#434f54">$PROFILE</span>
-<span style="color:#95a5a6"># The following will append to the profile</span>
-<span style="color:#728e00">echo </span><span style="color:#7f8c8d">&#34;Set-PoshPrompt -Theme sorin&#34;</span> &gt;&gt; <span style="color:#434f54">$PROFILE</span>
-</code></pre></div><h2 id="windows-terminal">Windows Terminal</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#728e00">Set-PoshPrompt</span> <span style="color:#434f54">-Theme</span> &lt;<span style="color:#434f54">theme_name</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#95a5a6"># Example:</span>
+</span></span><span style="display:flex;"><span><span style="color:#728e00">Set-PoshPrompt</span> <span style="color:#434f54">-Theme</span> <span style="color:#434f54">sorin</span>
+</span></span></code></pre></div><p>This is not a permanent change, and the prompt will revert to the default prompt when powershell is launched again. To resolve this, the above cmd must be added to the powershell profile. This can be done as follows:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#95a5a6"># The following will overwrite the profile</span>
+</span></span><span style="display:flex;"><span><span style="color:#728e00">echo </span><span style="color:#7f8c8d">&#34;Set-PoshPrompt -Theme sorin&#34;</span> &gt; <span style="color:#434f54">$PROFILE</span>
+</span></span><span style="display:flex;"><span><span style="color:#95a5a6"># The following will append to the profile</span>
+</span></span><span style="display:flex;"><span><span style="color:#728e00">echo </span><span style="color:#7f8c8d">&#34;Set-PoshPrompt -Theme sorin&#34;</span> &gt;&gt; <span style="color:#434f54">$PROFILE</span>
+</span></span></code></pre></div><h2 id="windows-terminal">Windows Terminal</h2>
 <p>Windows Terminal is a new, modern, feature-rich, productive terminal application for command-line users. It includes many of the features most frequently requested by the Windows command-line community including support for tabs, rich text, globalization, configurability, theming &amp; styling, and more.</p>
 <h3 id="installation-1">Installation</h3>
 <p>We can install windows terminal using chocolatey using:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#434f54">choco</span> <span style="color:#434f54">install</span> <span style="color:#728e00">microsoft-windows</span><span style="color:#434f54">-terminal</span>
-</code></pre></div><h3 id="configuration">Configuration</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#434f54">choco</span> <span style="color:#434f54">install</span> <span style="color:#728e00">microsoft-windows</span><span style="color:#434f54">-terminal</span>
+</span></span></code></pre></div><h3 id="configuration">Configuration</h3>
 <p>The configuration file for windows terminal can be accessed as:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#434f54">notepad</span> <span style="color:#7f8c8d">&#34;$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json&#34;</span>
-</code></pre></div><p>Configure windows terminal theme and font:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#95a5a6">// Add under &#34;profiles&#34; key
-</span><span style="color:#95a5a6"></span><span style="color:#7f8c8d">&#34;defaults&#34;</span><span style="color:#a61717">:</span> {
-    <span style="color:#434f54">&#34;colorScheme&#34;</span>: <span style="color:#7f8c8d">&#34;Gruvbox Dark&#34;</span>, <span style="color:#95a5a6">// terminal colorscheme
-</span><span style="color:#95a5a6"></span>    <span style="color:#434f54">&#34;font&#34;</span>: {
-        <span style="color:#434f54">&#34;face&#34;</span>: <span style="color:#7f8c8d">&#34;CaskaydiaCove NF&#34;</span> <span style="color:#95a5a6">// terminal font
-</span><span style="color:#95a5a6"></span>                                   <span style="color:#95a5a6">// (replace with name of downloaded nerd font)
-</span><span style="color:#95a5a6"></span>    },
-}<span style="color:#a61717">,</span>
-</code></pre></div><p>P.S. remove the comments after copying.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json"><span style="color:#95a5a6">// Add inside &#34;schemes&#34; array
-</span><span style="color:#95a5a6"></span>{
-    <span style="color:#434f54">&#34;background&#34;</span>: <span style="color:#7f8c8d">&#34;#14171C&#34;</span>,
-    <span style="color:#434f54">&#34;black&#34;</span>: <span style="color:#7f8c8d">&#34;#14171C&#34;</span>,
-    <span style="color:#434f54">&#34;blue&#34;</span>: <span style="color:#7f8c8d">&#34;#377375&#34;</span>,
-    <span style="color:#434f54">&#34;brightBlack&#34;</span>: <span style="color:#7f8c8d">&#34;#7F7061&#34;</span>,
-    <span style="color:#434f54">&#34;brightBlue&#34;</span>: <span style="color:#7f8c8d">&#34;#719586&#34;</span>,
-    <span style="color:#434f54">&#34;brightCyan&#34;</span>: <span style="color:#7f8c8d">&#34;#7DB669&#34;</span>,
-    <span style="color:#434f54">&#34;brightGreen&#34;</span>: <span style="color:#7f8c8d">&#34;#AAB01E&#34;</span>,
-    <span style="color:#434f54">&#34;brightPurple&#34;</span>: <span style="color:#7f8c8d">&#34;#C77089&#34;</span>,
-    <span style="color:#434f54">&#34;brightRed&#34;</span>: <span style="color:#7f8c8d">&#34;#F73028&#34;</span>,
-    <span style="color:#434f54">&#34;brightWhite&#34;</span>: <span style="color:#7f8c8d">&#34;#E6D4A3&#34;</span>,
-    <span style="color:#434f54">&#34;brightYellow&#34;</span>: <span style="color:#7f8c8d">&#34;#F7B125&#34;</span>,
-    <span style="color:#434f54">&#34;cursorColor&#34;</span>: <span style="color:#7f8c8d">&#34;#FFFFFF&#34;</span>,
-    <span style="color:#434f54">&#34;cyan&#34;</span>: <span style="color:#7f8c8d">&#34;#578E57&#34;</span>,
-    <span style="color:#434f54">&#34;foreground&#34;</span>: <span style="color:#7f8c8d">&#34;#E6D4A3&#34;</span>,
-    <span style="color:#434f54">&#34;green&#34;</span>: <span style="color:#7f8c8d">&#34;#868715&#34;</span>,
-    <span style="color:#434f54">&#34;name&#34;</span>: <span style="color:#7f8c8d">&#34;Gruvbox Dark&#34;</span>,
-    <span style="color:#434f54">&#34;purple&#34;</span>: <span style="color:#7f8c8d">&#34;#A04B73&#34;</span>,
-    <span style="color:#434f54">&#34;red&#34;</span>: <span style="color:#7f8c8d">&#34;#BE0F17&#34;</span>,
-    <span style="color:#434f54">&#34;selectionBackground&#34;</span>: <span style="color:#7f8c8d">&#34;#FFFFFF&#34;</span>,
-    <span style="color:#434f54">&#34;white&#34;</span>: <span style="color:#7f8c8d">&#34;#978771&#34;</span>,
-    <span style="color:#434f54">&#34;yellow&#34;</span>: <span style="color:#7f8c8d">&#34;#CC881A&#34;</span>
-}<span style="color:#a61717">,</span>
-</code></pre></div><h2 id="winfetch">Winfetch</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#434f54">notepad</span> <span style="color:#7f8c8d">&#34;$HOME\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json&#34;</span>
+</span></span></code></pre></div><p>Configure windows terminal theme and font:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#95a5a6">// Add under &#34;profiles&#34; key
+</span></span></span><span style="display:flex;"><span><span style="color:#95a5a6"></span><span style="color:#7f8c8d">&#34;defaults&#34;</span><span style="color:#a61717">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;colorScheme&#34;</span>: <span style="color:#7f8c8d">&#34;Gruvbox Dark&#34;</span>, <span style="color:#95a5a6">// terminal colorscheme
+</span></span></span><span style="display:flex;"><span><span style="color:#95a5a6"></span>    <span style="color:#434f54">&#34;font&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#434f54">&#34;face&#34;</span>: <span style="color:#7f8c8d">&#34;CaskaydiaCove NF&#34;</span> <span style="color:#95a5a6">// terminal font
+</span></span></span><span style="display:flex;"><span><span style="color:#95a5a6"></span>                                   <span style="color:#95a5a6">// (replace with name of downloaded nerd font)
+</span></span></span><span style="display:flex;"><span><span style="color:#95a5a6"></span>    },
+</span></span><span style="display:flex;"><span>}<span style="color:#a61717">,</span>
+</span></span></code></pre></div><p>P.S. remove the comments after copying.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#95a5a6">// Add inside &#34;schemes&#34; array
+</span></span></span><span style="display:flex;"><span><span style="color:#95a5a6"></span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;background&#34;</span>: <span style="color:#7f8c8d">&#34;#14171C&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;black&#34;</span>: <span style="color:#7f8c8d">&#34;#14171C&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;blue&#34;</span>: <span style="color:#7f8c8d">&#34;#377375&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;brightBlack&#34;</span>: <span style="color:#7f8c8d">&#34;#7F7061&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;brightBlue&#34;</span>: <span style="color:#7f8c8d">&#34;#719586&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;brightCyan&#34;</span>: <span style="color:#7f8c8d">&#34;#7DB669&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;brightGreen&#34;</span>: <span style="color:#7f8c8d">&#34;#AAB01E&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;brightPurple&#34;</span>: <span style="color:#7f8c8d">&#34;#C77089&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;brightRed&#34;</span>: <span style="color:#7f8c8d">&#34;#F73028&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;brightWhite&#34;</span>: <span style="color:#7f8c8d">&#34;#E6D4A3&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;brightYellow&#34;</span>: <span style="color:#7f8c8d">&#34;#F7B125&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;cursorColor&#34;</span>: <span style="color:#7f8c8d">&#34;#FFFFFF&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;cyan&#34;</span>: <span style="color:#7f8c8d">&#34;#578E57&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;foreground&#34;</span>: <span style="color:#7f8c8d">&#34;#E6D4A3&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;green&#34;</span>: <span style="color:#7f8c8d">&#34;#868715&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;name&#34;</span>: <span style="color:#7f8c8d">&#34;Gruvbox Dark&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;purple&#34;</span>: <span style="color:#7f8c8d">&#34;#A04B73&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;red&#34;</span>: <span style="color:#7f8c8d">&#34;#BE0F17&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;selectionBackground&#34;</span>: <span style="color:#7f8c8d">&#34;#FFFFFF&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;white&#34;</span>: <span style="color:#7f8c8d">&#34;#978771&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#434f54">&#34;yellow&#34;</span>: <span style="color:#7f8c8d">&#34;#CC881A&#34;</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#a61717">,</span>
+</span></span></code></pre></div><h2 id="winfetch">Winfetch</h2>
 <p><a
     href="https://github.com/kiedtl/winfetch"
     
@@ -342,11 +342,11 @@ if (!doNotTrack) {
  is a CLI utility that displays information about your operating system, software, and hardware in an aesthetic and visually pleasing way.</p>
 <h3 id="installation-2">Installation</h3>
 <p>We can install winfetch using chocolatey using:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#434f54">choco</span> <span style="color:#434f54">install</span> <span style="color:#434f54">winfetch</span>
-</code></pre></div><h3 id="usage">Usage</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#434f54">choco</span> <span style="color:#434f54">install</span> <span style="color:#434f54">winfetch</span>
+</span></span></code></pre></div><h3 id="usage">Usage</h3>
 <p>Run winfetch using:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#434f54">winfetch</span>.<span style="color:#434f54">bat</span>
-</code></pre></div><h3 id="configuration-1">Configuration</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#434f54">winfetch</span>.<span style="color:#434f54">bat</span>
+</span></span></code></pre></div><h3 id="configuration-1">Configuration</h3>
 <p>Custom configuration settings can be found <a
     href="https://github.com/kiedtl/winfetch/wiki/Configuration"
     
